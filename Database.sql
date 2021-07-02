@@ -78,7 +78,7 @@ go
 create table TAIKHOAN
 (
     USERNAME nvarchar(20) primary key not null,
-	PASS_WORD nvarchar(100)
+    PASS_WORD nvarchar(100)
 )
 go
 
