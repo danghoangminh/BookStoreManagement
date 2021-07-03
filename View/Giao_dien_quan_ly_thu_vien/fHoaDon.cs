@@ -33,7 +33,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void bXoa_Click(object sender, EventArgs e)
         {
             //Khi ấn đăng nhập thì hiện ra giao diện fXoaHoaDon
-            fXoaHoaDon f = new fXoaHoaDon();
+            fXoaHD f = new fXoaHD();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
