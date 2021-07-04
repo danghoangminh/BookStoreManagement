@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj": {}
+    "D:\\Nhap mon CNPM\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj": {}
   },
   "projects": {
-    "D:\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj": {
+    "D:\\Nhap mon CNPM\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj",
+        "projectUniqueName": "D:\\Nhap mon CNPM\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj",
         "projectName": "Giao_dien_quan_ly_thu_vien",
-        "projectPath": "D:\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj",
+        "projectPath": "D:\\Nhap mon CNPM\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj",
         "packagesPath": "C:\\Users\\dangh\\.nuget\\packages\\",
-        "outputPath": "D:\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\obj\\",
+        "outputPath": "D:\\Nhap mon CNPM\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dangh\\AppData\\Roaming\\NuGet\\NuGet.Config",
