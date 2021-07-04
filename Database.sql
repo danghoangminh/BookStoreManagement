@@ -1,59 +1,53 @@
-﻿create database QLNS
+create database QLNS
 go
+use QLNS;
 
-use QLNS
-set dateformat DMY
-go
+set dateformat DMY;
 
+-- Create table
 create table CHITIETHOADON
 (
-	MAHOADON int primary key not null,
+	MAHOADON char(13),
 	MASACH char(13),
 	SOLUONG int,
 	GIATIEN int,
 	THANHTIEN int
-)
-go
+);
 
 create table HOADON
 (
-	MAHOADON int identity primary key not null,
+	MAHOADON char(13) primary key not null,
 	TENKHACHHANG nvarchar(50),
 	NGAYLAP datetime,
 	TONGTIEN decimal(10,2) 
-)
-go
+);
 
 create table KHO
 (
 	MASACH char(13) primary key not null,
 	SOLUONG int
-)
-go
+);
 
 create table LINHVUC
 (
 	TENLINHVUC nvarchar(30) primary key not null
-)
-go
+);
 
 create table LOAISACH
 (
 	TENLOAISACH nvarchar(30) primary key not null
-)
-go
+);
 
 create table NHAXUATBAN
 (
 	TENNHAXUATBAN nvarchar(50) primary key not null
-)
-go
+);
 
 create table SACH
 (
 	MASACH char(13) primary key not null,
 	TENSACH nvarchar(100),
-	MATG int,
+	MATG char(5),
 	TENLINHVUC nvarchar(30),
 	TENLOAISACH nvarchar(30),
 	GIAMUA int,
@@ -61,34 +55,48 @@ create table SACH
 	LANTAIBAN int,
 	TENNHAXUATBAN nvarchar(50),
 	NAMXUATBAN datetime
-)
-go
-
+);
 
 create table TACGIA
 (
-    MATG int identity primary key not null,
+    MATG char(5) primary key not null,
 	TENTG nvarchar(40),
 	NAMSINH date,
 	NAMMAT date,
 	QUEQUAN nvarchar(20)
-)
-go
+);
 
 create table TAIKHOAN
 (
     USERNAME nvarchar(20) primary key not null,
     PASS_WORD nvarchar(100)
-)
-go
+);
 
+-- Add foreign key
+alter table CHITIETHOADON add constraint FK_CHITIETHOADON_HOADON foreign key(MAHOADON) references HOADON(MAHOADON);
+alter table CHITIETHOADON add constraint FK_CHITIETHOADON_SACH foreign key(MASACH) references SACH(MASACH);
+alter table KHO add constraint FK_KHO_SACH foreign key(MASACH) references SACH(MASACH);
+alter table SACH add constraint FK_SACH_LOAISACH foreign key(TENLOAISACH) references LOAISACH(TENLOAISACH);
+alter table SACH add constraint FK_SACH_TACGIA foreign key(MATG) references TACGIA(MATG);
+alter table SACH add constraint FK_SACH_LINHVUC foreign key(TENLINHVUC) references LINHVUC(TENLINHVUC);
+alter table SACH add constraint FK_SACH_NHAXUATBAN foreign key(TENNHAXUATBAN) references NHAXUATBAN(TENNHAXUATBAN);
 
---Thêm khóa ngoại
-alter table CHITIETHOADON add constraint FK_CHITIETHOADON_HOADON foreign key(MAHOADON) references HOADON(MAHOADON)
-alter table CHITIETHOADON add constraint FK_CHITIETHOADON_SACH foreign key(MASACH) references SACH(MASACH)
-alter table KHO add constraint FK_KHO_SACH foreign key(MASACH) references SACH(MASACH)
-alter table SACH add constraint FK_SACH_LOAISACH foreign key(TENLOAISACH) references LOAISACH(TENLOAISACH)
-alter table SACH add constraint FK_SACH_TACGIA foreign key(MATG) references TACGIA(MATG)
-alter table SACH add constraint FK_SACH_LINHVUC foreign key(TENLINHVUC) references LINHVUC(TENLINHVUC)
-alter table SACH add constraint FK_SACH_NHAXUATBAN foreign key(TENNHAXUATBAN) references NHAXUATBAN(TENNHAXUATBAN)
-
+-- Add data
+INSERT INTO TAIKHOAN (USERNAME, PASS_WORD) VALUES ('admin', 'Admin@123')
+INSERT INTO TACGIA (MATG, TENTG, NAMSINH, NAMMAT, QUEQUAN) VALUES ('TG001', 'Nam Cao', '1971', '1951', 'Ha Nam');
+INSERT INTO TACGIA (MATG, TENTG, NAMSINH, NAMMAT, QUEQUAN) VALUES ('TG002', 'Xuan Dieu', '1916', '1985', 'Binh Dinh');
+INSERT INTO LINHVUC(TENLINHVUC) VALUES ('Tho ca');
+INSERT INTO LINHVUC(TENLINHVUC) VALUES ('Truyen ngan');
+INSERT INTO LOAISACH(TENLOAISACH) VALUES ('Tieng Anh');
+INSERT INTO LOAISACH(TENLOAISACH) VALUES ('Tieng Viet');
+INSERT INTO NHAXUATBAN(TENNHAXUATBAN) VALUES ('Song moi Sai Gon');
+INSERT INTO NHAXUATBAN(TENNHAXUATBAN) VALUES ('Van Hoc');
+INSERT INTO SACH(MASACH, TENSACH, MATG, TENLINHVUC, TENLOAISACH, GIAMUA, GIABIA, LANTAIBAN, TENNHAXUATBAN, NAMXUATBAN) VALUES ('S001', 'Tho tho', 'TG002', 'Tho ca', 'Tieng Viet', 50000, 75000, 5, 'Song moi Sai Gon', 1938);
+INSERT INTO SACH(MASACH, TENSACH, MATG, TENLINHVUC, TENLOAISACH, GIAMUA, GIABIA, LANTAIBAN, TENNHAXUATBAN, NAMXUATBAN) VALUES ('S002', 'Lao Hac', 'TG001', 'Truyen ngan', 'Tieng Viet', 20000, 25000, 2, 'Van Hoc', 1943);
+INSERT INTO KHO(MASACH, SOLUONG) VALUES ('S001', 10);
+INSERT INTO KHO(MASACH, SOLUONG) VALUES ('S002', 12);
+INSERT INTO HOADON(MAHOADON, TENKHACHHANG, NGAYLAP, TONGTIEN) VALUES ('HD001', 'Nguyen Van A', '01/07/2021', 100000);
+INSERT INTO HOADON(MAHOADON, TENKHACHHANG, NGAYLAP, TONGTIEN) VALUES ('HD002', 'Tran Van B', '02/07/2021', 75000);
+INSERT INTO CHITIETHOADON(MAHOADON, MASACH, SOLUONG, GIATIEN, THANHTIEN) VALUES ('HD001', 'S001', 1, 75000, 75000);
+INSERT INTO CHITIETHOADON(MAHOADON, MASACH, SOLUONG, GIATIEN, THANHTIEN) VALUES ('HD001', 'S002', 1, 25000, 25000);
+INSERT INTO CHITIETHOADON(MAHOADON, MASACH, SOLUONG, GIATIEN, THANHTIEN) VALUES ('HD002', 'S002', 3, 25000, 75000);

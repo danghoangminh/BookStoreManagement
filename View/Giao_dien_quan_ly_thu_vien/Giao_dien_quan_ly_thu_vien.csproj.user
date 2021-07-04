@@ -46,9 +46,6 @@
     <Compile Update="fThemHD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="fThemHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="fThemKho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,9 +71,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="fXoaHD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="fXoaHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="fXoaKho.cs">
