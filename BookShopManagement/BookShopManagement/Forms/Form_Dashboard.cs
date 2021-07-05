@@ -128,5 +128,7 @@ namespace BookShopManagement.Forms
             DateTime dt = DateTime.Now;
             labelTime.Text = dt.ToString("HH:MM:ss");
         }
+
+    
     }
 }
