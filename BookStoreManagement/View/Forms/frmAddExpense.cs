@@ -1,18 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookShopManagement.Forms
+namespace BookStoreManagement.Forms
 {
-    public partial class Form_AddExpense : Form
+    public partial class frmAddExpense : Form
     {
-        public Form_AddExpense()
+        public frmAddExpense()
         {
             InitializeComponent();
         }

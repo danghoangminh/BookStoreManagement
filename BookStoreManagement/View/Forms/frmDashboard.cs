@@ -1,47 +1,35 @@
-﻿using BookShopManagement.UserControls;
+﻿using BookStoreManagement.UserControls;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookShopManagement.Forms
+namespace BookStoreManagement.Forms
 {
-    public partial class Form_Dashboard : Form
+    public partial class frmDashboard : Form
     {
         int PanelWidth;
         bool isCollapsed;
 
-        public Form_Dashboard()
+        public frmDashboard()
         {
             InitializeComponent();
             timerTime.Start();
-            PanelWidth = panelLeft.Width;
+            PanelWidth = pnlFunction.Width;
             isCollapsed = false;
             UC_Home uch = new UC_Home();
             AddControlsToPanel(uch);
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             this.Dispose();
-        }
-
-        private void Form_Dashboard_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (isCollapsed)
             {
-                panelLeft.Width = panelLeft.Width + 10;
-                if (panelLeft.Width >= PanelWidth)
+                pnlFunction.Width += 80;
+                if (pnlFunction.Width >= PanelWidth)
                 {
                     timer1.Stop();
                     isCollapsed = false;
@@ -50,8 +38,8 @@ namespace BookShopManagement.Forms
             }
             else
             {
-                panelLeft.Width = panelLeft.Width - 10;
-                if (panelLeft.Width <= 59)
+                pnlFunction.Width -= 80;
+                if (pnlFunction.Width <= 59)
                 {
                     timer1.Stop();
                     isCollapsed = true;
@@ -60,21 +48,21 @@ namespace BookShopManagement.Forms
             }
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void btnMenu_Click(object sender, EventArgs e)
         {
             timer1.Start();
         }
         private void moveSidePanel(Control btn)
         {
-            panelSide.Top = btn.Top;
-            panelSide.Height = btn.Height;
+            pnlSide.Top = btn.Top;
+            pnlSide.Height = btn.Height;
         }
 
         private void AddControlsToPanel(Control c)
         {
             c.Dock = DockStyle.Fill;
-            panelControls.Controls.Clear();
-            panelControls.Controls.Add(c);
+            pnlControls.Controls.Clear();
+            pnlControls.Controls.Add(c);
         }
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -97,7 +85,7 @@ namespace BookShopManagement.Forms
             AddControlsToPanel(up);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnExpense_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnExpense);
             UC_ManageExpense ea = new UC_ManageExpense();
@@ -118,7 +106,7 @@ namespace BookShopManagement.Forms
             AddControlsToPanel(vs);
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void btnSettings_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnSettings);
         }
@@ -126,7 +114,7 @@ namespace BookShopManagement.Forms
         private void timerTime_Tick(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;
-            labelTime.Text = dt.ToString("HH:MM:ss");
+            lblTime.Text = dt.ToString("dd/MM/yyyy      HH:MM:ss");
         }
     }
 }

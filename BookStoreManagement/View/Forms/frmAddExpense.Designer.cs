@@ -1,6 +1,6 @@
 ﻿namespace BookStoreManagement.Forms
 {
-    partial class Form_AddExpense
+    partial class frmAddExpense
     {
         /// <summary>
         /// Required designer variable.

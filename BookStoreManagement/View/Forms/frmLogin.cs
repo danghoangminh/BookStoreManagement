@@ -1,8 +1,8 @@
-﻿using BookShopManagement.Forms;
+﻿using BookStoreManagement.Forms;
 using System;
 using System.Windows.Forms;
 
-namespace BookShopManagement
+namespace BookStoreManagement
 {
     public partial class frmLogin : Form
     {
@@ -16,9 +16,9 @@ namespace BookShopManagement
             this.Dispose();
         }
 
-        private void BtnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            using (Form_Dashboard fd = new Form_Dashboard())
+            using (frmDashboard fd = new frmDashboard())
             {
                 fd.ShowDialog();
             }

@@ -115,12 +115,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\UserControls\UC_About.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\UserControls\UC_About.Designer.cs">
-      <DependentUpon>UC_About.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\UserControls\UC_Home.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -1,18 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookShopManagement.Forms
+namespace BookStoreManagement.Forms
 {
-    public partial class Form_AddNewBook : Form
+    public partial class frmAddNewBook : Form
     {
-        public Form_AddNewBook()
+        public frmAddNewBook()
         {
             InitializeComponent();
         }
@@ -24,7 +17,7 @@ namespace BookShopManagement.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            using (Form_AddCategory ac = new Form_AddCategory())
+            using (frmAddCategory ac = new frmAddCategory())
             {
                 ac.ShowDialog();
             }

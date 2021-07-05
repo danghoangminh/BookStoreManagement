@@ -1,6 +1,6 @@
 ﻿namespace BookStoreManagement.Forms
 {
-    partial class Form_AddCategory
+    partial class frmAddCategory
     {
         /// <summary>
         /// Required designer variable.
