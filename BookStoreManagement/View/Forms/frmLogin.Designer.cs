@@ -33,9 +33,9 @@
             this.lblNameStore = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.tbxUser = new System.Windows.Forms.TextBox();
+            this.txbUser = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.tbxPassword = new System.Windows.Forms.TextBox();
+            this.txbPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.pnlLogin.SuspendLayout();
@@ -103,14 +103,14 @@
             this.picLogo.TabIndex = 2;
             this.picLogo.TabStop = false;
             // 
-            // tbxUser
+            // txbUser
             // 
-            this.tbxUser.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tbxUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxUser.Location = new System.Drawing.Point(350, 369);
-            this.tbxUser.Name = "tbxUser";
-            this.tbxUser.Size = new System.Drawing.Size(500, 29);
-            this.tbxUser.TabIndex = 3;
+            this.txbUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbUser.Location = new System.Drawing.Point(350, 369);
+            this.txbUser.Name = "txbUser";
+            this.txbUser.Size = new System.Drawing.Size(500, 29);
+            this.txbUser.TabIndex = 3;
             // 
             // lblPassword
             // 
@@ -123,15 +123,15 @@
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Password:";
             // 
-            // tbxPassword
+            // txbPassword
             // 
-            this.tbxPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tbxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxPassword.Location = new System.Drawing.Point(350, 442);
-            this.tbxPassword.Name = "tbxPassword";
-            this.tbxPassword.Size = new System.Drawing.Size(500, 29);
-            this.tbxPassword.TabIndex = 3;
-            this.tbxPassword.UseSystemPasswordChar = true;
+            this.txbPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbPassword.Location = new System.Drawing.Point(350, 442);
+            this.txbPassword.Name = "txbPassword";
+            this.txbPassword.Size = new System.Drawing.Size(500, 29);
+            this.txbPassword.TabIndex = 3;
+            this.txbPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
@@ -169,8 +169,8 @@
             this.ClientSize = new System.Drawing.Size(1200, 720);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.tbxPassword);
-            this.Controls.Add(this.tbxUser);
+            this.Controls.Add(this.txbPassword);
+            this.Controls.Add(this.txbUser);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUser);
@@ -195,9 +195,9 @@
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.TextBox tbxUser;
+        private System.Windows.Forms.TextBox txbUser;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox tbxPassword;
+        private System.Windows.Forms.TextBox txbPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label lblWelcome;
     }

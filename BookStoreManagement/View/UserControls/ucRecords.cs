@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BookStoreManagement.UserControls
 {
-    public partial class UC_ManageUser : UserControl
+    public partial class ucRecords : UserControl
     {
-        public UC_ManageUser()
+        public ucRecords()
         {
             InitializeComponent();
         }

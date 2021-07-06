@@ -32,20 +32,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
             this.pnlFunction = new System.Windows.Forms.Panel();
             this.pnlSide = new System.Windows.Forms.Panel();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.btnViewSales = new System.Windows.Forms.Button();
+            this.btnRecords = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
-            this.btnExpense = new System.Windows.Forms.Button();
-            this.btnPurchase = new System.Windows.Forms.Button();
-            this.btnSaleBooks = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
+            this.btnBooks = new System.Windows.Forms.Button();
+            this.btnSales = new System.Windows.Forms.Button();
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.lblMenu = new System.Windows.Forms.Label();
             this.btnMenu = new System.Windows.Forms.Button();
             this.pnlDashboard = new System.Windows.Forms.Panel();
+            this.lblNameStore = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblUser = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
-            this.lblStore = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timerTime = new System.Windows.Forms.Timer(this.components);
             this.pnlControls = new System.Windows.Forms.Panel();
@@ -58,13 +56,10 @@
             // 
             this.pnlFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.pnlFunction.Controls.Add(this.pnlSide);
-            this.pnlFunction.Controls.Add(this.btnSettings);
-            this.pnlFunction.Controls.Add(this.btnViewSales);
+            this.pnlFunction.Controls.Add(this.btnRecords);
             this.pnlFunction.Controls.Add(this.btnUsers);
-            this.pnlFunction.Controls.Add(this.btnExpense);
-            this.pnlFunction.Controls.Add(this.btnPurchase);
-            this.pnlFunction.Controls.Add(this.btnSaleBooks);
-            this.pnlFunction.Controls.Add(this.btnHome);
+            this.pnlFunction.Controls.Add(this.btnBooks);
+            this.pnlFunction.Controls.Add(this.btnSales);
             this.pnlFunction.Controls.Add(this.pnlMenu);
             this.pnlFunction.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlFunction.Location = new System.Drawing.Point(0, 0);
@@ -75,44 +70,27 @@
             // pnlSide
             // 
             this.pnlSide.BackColor = System.Drawing.Color.White;
-            this.pnlSide.Location = new System.Drawing.Point(1, 59);
+            this.pnlSide.Location = new System.Drawing.Point(1, 77);
             this.pnlSide.Name = "pnlSide";
             this.pnlSide.Size = new System.Drawing.Size(7, 60);
             this.pnlSide.TabIndex = 1;
             // 
-            // btnSettings
+            // btnRecords
             // 
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.Image = global::BookStoreManagement.Properties.Resources.group;
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(12, 447);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(203, 60);
-            this.btnSettings.TabIndex = 2;
-            this.btnSettings.Text = "     Settings";
-            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettings.UseVisualStyleBackColor = true;
-            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
-            // 
-            // btnViewSales
-            // 
-            this.btnViewSales.FlatAppearance.BorderSize = 0;
-            this.btnViewSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewSales.ForeColor = System.Drawing.Color.White;
-            this.btnViewSales.Image = ((System.Drawing.Image)(resources.GetObject("btnViewSales.Image")));
-            this.btnViewSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViewSales.Location = new System.Drawing.Point(12, 383);
-            this.btnViewSales.Name = "btnViewSales";
-            this.btnViewSales.Size = new System.Drawing.Size(203, 60);
-            this.btnViewSales.TabIndex = 2;
-            this.btnViewSales.Text = "     View Sales";
-            this.btnViewSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnViewSales.UseVisualStyleBackColor = true;
-            this.btnViewSales.Click += new System.EventHandler(this.btnViewSales_Click);
+            this.btnRecords.FlatAppearance.BorderSize = 0;
+            this.btnRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecords.ForeColor = System.Drawing.Color.White;
+            this.btnRecords.Image = ((System.Drawing.Image)(resources.GetObject("btnRecords.Image")));
+            this.btnRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRecords.Location = new System.Drawing.Point(12, 261);
+            this.btnRecords.Name = "btnRecords";
+            this.btnRecords.Size = new System.Drawing.Size(203, 60);
+            this.btnRecords.TabIndex = 2;
+            this.btnRecords.Text = "     Records";
+            this.btnRecords.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRecords.UseVisualStyleBackColor = true;
+            this.btnRecords.Click += new System.EventHandler(this.btnRecords_Click);
             // 
             // btnUsers
             // 
@@ -120,9 +98,9 @@
             this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsers.ForeColor = System.Drawing.Color.White;
-            this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
+            this.btnUsers.Image = global::BookStoreManagement.Properties.Resources.group;
             this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsers.Location = new System.Drawing.Point(12, 319);
+            this.btnUsers.Location = new System.Drawing.Point(12, 353);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Size = new System.Drawing.Size(203, 60);
             this.btnUsers.TabIndex = 2;
@@ -131,94 +109,48 @@
             this.btnUsers.UseVisualStyleBackColor = true;
             this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
-            // btnExpense
+            // btnBooks
             // 
-            this.btnExpense.FlatAppearance.BorderSize = 0;
-            this.btnExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExpense.ForeColor = System.Drawing.Color.White;
-            this.btnExpense.Image = ((System.Drawing.Image)(resources.GetObject("btnExpense.Image")));
-            this.btnExpense.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExpense.Location = new System.Drawing.Point(12, 253);
-            this.btnExpense.Name = "btnExpense";
-            this.btnExpense.Size = new System.Drawing.Size(203, 60);
-            this.btnExpense.TabIndex = 2;
-            this.btnExpense.Text = "     Expenses";
-            this.btnExpense.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExpense.UseVisualStyleBackColor = true;
-            this.btnExpense.Click += new System.EventHandler(this.btnExpense_Click);
+            this.btnBooks.FlatAppearance.BorderSize = 0;
+            this.btnBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooks.ForeColor = System.Drawing.Color.White;
+            this.btnBooks.Image = global::BookStoreManagement.Properties.Resources.book;
+            this.btnBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBooks.Location = new System.Drawing.Point(12, 77);
+            this.btnBooks.Name = "btnBooks";
+            this.btnBooks.Size = new System.Drawing.Size(203, 60);
+            this.btnBooks.TabIndex = 2;
+            this.btnBooks.Text = "     Books";
+            this.btnBooks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBooks.UseVisualStyleBackColor = true;
+            this.btnBooks.Click += new System.EventHandler(this.btnBooks_Click);
             // 
-            // btnPurchase
+            // btnSales
             // 
-            this.btnPurchase.FlatAppearance.BorderSize = 0;
-            this.btnPurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPurchase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPurchase.ForeColor = System.Drawing.Color.White;
-            this.btnPurchase.Image = global::BookStoreManagement.Properties.Resources.import;
-            this.btnPurchase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPurchase.Location = new System.Drawing.Point(12, 188);
-            this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(203, 60);
-            this.btnPurchase.TabIndex = 2;
-            this.btnPurchase.Text = "     Purchase Items";
-            this.btnPurchase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPurchase.UseVisualStyleBackColor = true;
-            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
-            // 
-            // btnSaleBooks
-            // 
-            this.btnSaleBooks.FlatAppearance.BorderSize = 0;
-            this.btnSaleBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaleBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaleBooks.ForeColor = System.Drawing.Color.White;
-            this.btnSaleBooks.Image = ((System.Drawing.Image)(resources.GetObject("btnSaleBooks.Image")));
-            this.btnSaleBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaleBooks.Location = new System.Drawing.Point(12, 122);
-            this.btnSaleBooks.Name = "btnSaleBooks";
-            this.btnSaleBooks.Size = new System.Drawing.Size(203, 60);
-            this.btnSaleBooks.TabIndex = 2;
-            this.btnSaleBooks.Text = "     Sale Books";
-            this.btnSaleBooks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSaleBooks.UseVisualStyleBackColor = true;
-            this.btnSaleBooks.Click += new System.EventHandler(this.btnSaleBooks_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::BookStoreManagement.Properties.Resources.home;
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(11, 59);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(203, 58);
-            this.btnHome.TabIndex = 2;
-            this.btnHome.Text = "     Home";
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            this.btnSales.FlatAppearance.BorderSize = 0;
+            this.btnSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSales.ForeColor = System.Drawing.Color.White;
+            this.btnSales.Image = global::BookStoreManagement.Properties.Resources.sale;
+            this.btnSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSales.Location = new System.Drawing.Point(12, 169);
+            this.btnSales.Name = "btnSales";
+            this.btnSales.Size = new System.Drawing.Size(203, 60);
+            this.btnSales.TabIndex = 2;
+            this.btnSales.Text = "     Sales";
+            this.btnSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSales.UseVisualStyleBackColor = true;
+            this.btnSales.Click += new System.EventHandler(this.btnSales_Click);
             // 
             // pnlMenu
             // 
-            this.pnlMenu.Controls.Add(this.lblMenu);
             this.pnlMenu.Controls.Add(this.btnMenu);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(215, 57);
             this.pnlMenu.TabIndex = 0;
-            // 
-            // lblMenu
-            // 
-            this.lblMenu.AutoSize = true;
-            this.lblMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu.ForeColor = System.Drawing.Color.White;
-            this.lblMenu.Location = new System.Drawing.Point(70, 17);
-            this.lblMenu.Name = "lblMenu";
-            this.lblMenu.Size = new System.Drawing.Size(53, 20);
-            this.lblMenu.TabIndex = 3;
-            this.lblMenu.Text = "Menu";
             // 
             // btnMenu
             // 
@@ -228,10 +160,11 @@
             this.btnMenu.ForeColor = System.Drawing.Color.White;
             this.btnMenu.Image = global::BookStoreManagement.Properties.Resources.menu;
             this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.Location = new System.Drawing.Point(12, 12);
+            this.btnMenu.Location = new System.Drawing.Point(12, -1);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(42, 36);
+            this.btnMenu.Size = new System.Drawing.Size(203, 60);
             this.btnMenu.TabIndex = 2;
+            this.btnMenu.Text = "     Menu";
             this.btnMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
@@ -239,14 +172,53 @@
             // pnlDashboard
             // 
             this.pnlDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.pnlDashboard.Controls.Add(this.lblNameStore);
+            this.pnlDashboard.Controls.Add(this.lblUsername);
+            this.pnlDashboard.Controls.Add(this.lblUser);
             this.pnlDashboard.Controls.Add(this.lblTime);
             this.pnlDashboard.Controls.Add(this.btnExit);
-            this.pnlDashboard.Controls.Add(this.lblStore);
             this.pnlDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlDashboard.Location = new System.Drawing.Point(215, 0);
             this.pnlDashboard.Name = "pnlDashboard";
             this.pnlDashboard.Size = new System.Drawing.Size(985, 57);
             this.pnlDashboard.TabIndex = 0;
+            // 
+            // lblNameStore
+            // 
+            this.lblNameStore.AutoSize = true;
+            this.lblNameStore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameStore.ForeColor = System.Drawing.Color.White;
+            this.lblNameStore.Location = new System.Drawing.Point(6, 15);
+            this.lblNameStore.Name = "lblNameStore";
+            this.lblNameStore.Size = new System.Drawing.Size(171, 25);
+            this.lblNameStore.TabIndex = 7;
+            this.lblNameStore.Text = "UIT Book Store";
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.White;
+            this.lblUsername.Location = new System.Drawing.Point(601, 20);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(40, 20);
+            this.lblUsername.TabIndex = 6;
+            this.lblUsername.Text = "test";
+            // 
+            // lblUser
+            // 
+            this.lblUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.ForeColor = System.Drawing.Color.White;
+            this.lblUser.Location = new System.Drawing.Point(554, 20);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(52, 20);
+            this.lblUser.TabIndex = 3;
+            this.lblUser.Text = "User:";
             // 
             // lblTime
             // 
@@ -276,17 +248,6 @@
             this.btnExit.TabIndex = 5;
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // lblStore
-            // 
-            this.lblStore.AutoSize = true;
-            this.lblStore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStore.ForeColor = System.Drawing.Color.White;
-            this.lblStore.Location = new System.Drawing.Point(6, 19);
-            this.lblStore.Name = "lblStore";
-            this.lblStore.Size = new System.Drawing.Size(142, 20);
-            this.lblStore.TabIndex = 0;
-            this.lblStore.Text = "UIT Books Store";
             // 
             // timer1
             // 
@@ -319,7 +280,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlFunction.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);
-            this.pnlMenu.PerformLayout();
             this.pnlDashboard.ResumeLayout(false);
             this.pnlDashboard.PerformLayout();
             this.ResumeLayout(false);
@@ -331,21 +291,19 @@
         private System.Windows.Forms.Panel pnlFunction;
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Panel pnlSide;
-        private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel pnlDashboard;
-        private System.Windows.Forms.Button btnSettings;
-        private System.Windows.Forms.Button btnViewSales;
+        private System.Windows.Forms.Button btnRecords;
         private System.Windows.Forms.Button btnUsers;
-        private System.Windows.Forms.Button btnExpense;
-        private System.Windows.Forms.Button btnPurchase;
-        private System.Windows.Forms.Button btnSaleBooks;
+        private System.Windows.Forms.Button btnBooks;
+        private System.Windows.Forms.Button btnSales;
         private System.Windows.Forms.Button btnMenu;
-        private System.Windows.Forms.Label lblStore;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timerTime;
         private System.Windows.Forms.Panel pnlControls;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Label lblMenu;
+        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblNameStore;
     }
 }

@@ -11,18 +11,26 @@ using BookStoreManagement.Forms;
 
 namespace BookStoreManagement.UserControls
 {
-    public partial class UC_ManageExpense : UserControl
+    public partial class ucBooks : UserControl
     {
-        public UC_ManageExpense()
+        public ucBooks()
         {
             InitializeComponent();
         }
 
         private void btnAddNewBooks_Click(object sender, EventArgs e)
         {
-            using (frmAddExpense ae = new frmAddExpense())
+            using (frmAddNewBook abn = new frmAddNewBook())
             {
-                ae.ShowDialog();
+                abn.ShowDialog();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (frmAddStock ads = new frmAddStock())
+            {
+                ads.ShowDialog();
             }
         }
     }

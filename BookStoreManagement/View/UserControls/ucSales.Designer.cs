@@ -1,6 +1,6 @@
 ﻿namespace BookStoreManagement.UserControls
 {
-    partial class UC_Sales
+    partial class ucSales
     {
         /// <summary> 
         /// Required designer variable.

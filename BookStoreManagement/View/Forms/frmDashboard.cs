@@ -9,14 +9,15 @@ namespace BookStoreManagement.Forms
         int PanelWidth;
         bool isCollapsed;
 
-        public frmDashboard()
+        public frmDashboard(string username)
         {
             InitializeComponent();
+            lblUsername.Text = username;
             timerTime.Start();
             PanelWidth = pnlFunction.Width;
             isCollapsed = false;
-            UC_Home uch = new UC_Home();
-            AddControlsToPanel(uch);
+            ucBooks ucBooks = new ucBooks();
+            AddControlsToPanel(ucBooks);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -52,63 +53,46 @@ namespace BookStoreManagement.Forms
         {
             timer1.Start();
         }
+
         private void moveSidePanel(Control btn)
         {
             pnlSide.Top = btn.Top;
             pnlSide.Height = btn.Height;
         }
 
-        private void AddControlsToPanel(Control c)
+        private void AddControlsToPanel(Control ctrl)
         {
-            c.Dock = DockStyle.Fill;
+            ctrl.Dock = DockStyle.Fill;
             pnlControls.Controls.Clear();
-            pnlControls.Controls.Add(c);
-        }
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            moveSidePanel(btnHome);
-            UC_Home uch = new UC_Home();
-            AddControlsToPanel(uch);
+            pnlControls.Controls.Add(ctrl);
         }
 
-        private void btnSaleBooks_Click(object sender, EventArgs e)
+        private void btnBooks_Click(object sender, EventArgs e)
         {
-            moveSidePanel(btnSaleBooks);
-            UC_Sales us = new UC_Sales();
-            AddControlsToPanel(us);
+            moveSidePanel(btnBooks);
+            ucBooks ucBooks = new ucBooks();
+            AddControlsToPanel(ucBooks);
         }
 
-        private void btnPurchase_Click(object sender, EventArgs e)
+        private void btnSales_Click(object sender, EventArgs e)
         {
-            moveSidePanel(btnPurchase);
-            UC_PurchaseDetails up = new UC_PurchaseDetails();
-            AddControlsToPanel(up);
+            moveSidePanel(btnSales);
+            ucSales ucSales = new ucSales();
+            AddControlsToPanel(ucSales);
         }
 
-        private void btnExpense_Click(object sender, EventArgs e)
+        private void btnRecords_Click(object sender, EventArgs e)
         {
-            moveSidePanel(btnExpense);
-            UC_ManageExpense ea = new UC_ManageExpense();
-            AddControlsToPanel(ea);
+            moveSidePanel(btnRecords);
+            ucRecords ucRecords = new ucRecords();
+            AddControlsToPanel(ucRecords);
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnUsers);
-            UC_ManageUser um = new UC_ManageUser();
-            AddControlsToPanel(um);
-        }
-
-        private void btnViewSales_Click(object sender, EventArgs e)
-        {
-            moveSidePanel(btnViewSales);
-            UC_ViewSales vs = new UC_ViewSales();
-            AddControlsToPanel(vs);
-        }
-
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-            moveSidePanel(btnSettings);
+            ucUser ucUser = new ucUser();
+            AddControlsToPanel(ucUser);
         }
 
         private void timerTime_Tick(object sender, EventArgs e)

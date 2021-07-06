@@ -18,7 +18,7 @@ namespace BookStoreManagement
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            using (frmDashboard fd = new frmDashboard())
+            using (frmDashboard fd = new frmDashboard(txbUser.Text))
             {
                 fd.ShowDialog();
             }

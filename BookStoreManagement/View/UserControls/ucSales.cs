@@ -11,9 +11,9 @@ using BookStoreManagement.Forms;
 
 namespace BookStoreManagement.UserControls
 {
-    public partial class UC_Sales : UserControl
+    public partial class ucSales : UserControl
     {
-        public UC_Sales()
+        public ucSales()
         {
             InitializeComponent();
         }

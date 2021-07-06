@@ -83,12 +83,6 @@
     <Compile Include="View\Forms\frmAddCategory.Designer.cs">
       <DependentUpon>frmAddCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Forms\frmAddExpense.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Forms\frmAddExpense.Designer.cs">
-      <DependentUpon>frmAddExpense.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Forms\frmAddNewBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,50 +109,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="View\UserControls\UC_Home.cs">
+    <Compile Include="View\UserControls\ucUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\UserControls\UC_Home.Designer.cs">
-      <DependentUpon>UC_Home.cs</DependentUpon>
+    <Compile Include="View\UserControls\ucUser.Designer.cs">
+      <DependentUpon>ucUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\UserControls\UC_ManageExpense.cs">
+    <Compile Include="View\UserControls\ucBooks.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\UserControls\UC_ManageExpense.Designer.cs">
-      <DependentUpon>UC_ManageExpense.cs</DependentUpon>
+    <Compile Include="View\UserControls\ucBooks.Designer.cs">
+      <DependentUpon>ucBooks.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\UserControls\UC_ManageUser.cs">
+    <Compile Include="View\UserControls\ucSales.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\UserControls\UC_ManageUser.Designer.cs">
-      <DependentUpon>UC_ManageUser.cs</DependentUpon>
+    <Compile Include="View\UserControls\ucSales.Designer.cs">
+      <DependentUpon>ucSales.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\UserControls\UC_PurchaseDetails.cs">
+    <Compile Include="View\UserControls\ucRecords.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\UserControls\UC_PurchaseDetails.Designer.cs">
-      <DependentUpon>UC_PurchaseDetails.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\UserControls\UC_Sales.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\UserControls\UC_Sales.Designer.cs">
-      <DependentUpon>UC_Sales.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\UserControls\UC_ViewSales.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\UserControls\UC_ViewSales.Designer.cs">
-      <DependentUpon>UC_ViewSales.cs</DependentUpon>
+    <Compile Include="View\UserControls\ucRecords.Designer.cs">
+      <DependentUpon>ucRecords.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="View\Forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\frmAddCategory.resx">
       <DependentUpon>frmAddCategory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Forms\frmAddExpense.resx">
-      <DependentUpon>frmAddExpense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\frmAddNewBook.resx">
       <DependentUpon>frmAddNewBook.cs</DependentUpon>
@@ -182,23 +161,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="View\UserControls\UC_Home.resx">
-      <DependentUpon>UC_Home.cs</DependentUpon>
+    <EmbeddedResource Include="View\UserControls\ucUser.resx">
+      <DependentUpon>ucUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\UserControls\UC_ManageExpense.resx">
-      <DependentUpon>UC_ManageExpense.cs</DependentUpon>
+    <EmbeddedResource Include="View\UserControls\ucBooks.resx">
+      <DependentUpon>ucBooks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\UserControls\UC_ManageUser.resx">
-      <DependentUpon>UC_ManageUser.cs</DependentUpon>
+    <EmbeddedResource Include="View\UserControls\ucSales.resx">
+      <DependentUpon>ucSales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\UserControls\UC_PurchaseDetails.resx">
-      <DependentUpon>UC_PurchaseDetails.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\UserControls\UC_Sales.resx">
-      <DependentUpon>UC_Sales.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\UserControls\UC_ViewSales.resx">
-      <DependentUpon>UC_ViewSales.cs</DependentUpon>
+    <EmbeddedResource Include="View\UserControls\ucRecords.resx">
+      <DependentUpon>ucRecords.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -230,13 +203,13 @@
     <None Include="Resources\menu.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\home.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\import.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
