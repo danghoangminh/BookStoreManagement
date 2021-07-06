@@ -81,7 +81,7 @@
             this.btnRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecords.ForeColor = System.Drawing.Color.White;
-            this.btnRecords.Image = ((System.Drawing.Image)(resources.GetObject("btnRecords.Image")));
+            this.btnRecords.Image = global::BookStoreManagement.Properties.Resources.record;
             this.btnRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecords.Location = new System.Drawing.Point(12, 261);
             this.btnRecords.Name = "btnRecords";
