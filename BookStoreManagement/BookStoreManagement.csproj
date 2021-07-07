@@ -68,6 +68,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="QLNSDataSet_Book.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNSDataSet_Book.xsd</DependentUpon>
+    </Compile>
     <Compile Include="View\CustomControls\DragControl.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -187,6 +192,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLNSDataSet_Book.xsc">
+      <DependentUpon>QLNSDataSet_Book.xsd</DependentUpon>
+    </None>
+    <None Include="QLNSDataSet_Book.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNSDataSet_Book.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNSDataSet_Book.xss">
+      <DependentUpon>QLNSDataSet_Book.xsd</DependentUpon>
+    </None>
     <None Include="Resources\logo-uit.png" />
   </ItemGroup>
   <ItemGroup>

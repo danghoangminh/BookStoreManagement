@@ -22,5 +22,15 @@ namespace BookStoreManagement.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HTT27\\SQLEXPRESS;Initial Catalog=QLNS;Integrated Security=True")]
+        public string QLNSConnectionString {
+            get {
+                return ((string)(this["QLNSConnectionString"]));
+            }
+        }
     }
 }
