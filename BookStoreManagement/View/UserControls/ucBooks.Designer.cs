@@ -39,7 +39,7 @@
             this.cboSearch = new System.Windows.Forms.ComboBox();
             this.btnAddStock = new System.Windows.Forms.Button();
             this.btnAddNewBooks = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.pnlBook = new System.Windows.Forms.Panel();
             this.dgvListBook = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,8 +49,9 @@
             this.language = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sellprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantiny = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlFunction.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.pnlBook.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListBook)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,14 +174,14 @@
             this.btnAddNewBooks.UseVisualStyleBackColor = true;
             this.btnAddNewBooks.Click += new System.EventHandler(this.btnAddNewBooks_Click);
             // 
-            // panel6
+            // pnlBook
             // 
-            this.panel6.Controls.Add(this.dgvListBook);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(10, 77);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(965, 493);
-            this.panel6.TabIndex = 6;
+            this.pnlBook.Controls.Add(this.dgvListBook);
+            this.pnlBook.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBook.Location = new System.Drawing.Point(10, 77);
+            this.pnlBook.Name = "pnlBook";
+            this.pnlBook.Size = new System.Drawing.Size(965, 493);
+            this.pnlBook.TabIndex = 6;
             // 
             // dgvListBook
             // 
@@ -196,7 +197,8 @@
             this.publisher,
             this.language,
             this.costprice,
-            this.sellprice});
+            this.sellprice,
+            this.quantiny});
             this.dgvListBook.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvListBook.Location = new System.Drawing.Point(0, 0);
             this.dgvListBook.Name = "dgvListBook";
@@ -209,7 +211,7 @@
             // 
             // id
             // 
-            this.id.HeaderText = "Tracking ID";
+            this.id.HeaderText = "Book ID";
             this.id.MinimumWidth = 6;
             this.id.Name = "id";
             this.id.ReadOnly = true;
@@ -271,11 +273,19 @@
             this.sellprice.ReadOnly = true;
             this.sellprice.Width = 125;
             // 
+            // quantiny
+            // 
+            this.quantiny.HeaderText = "Quantiny";
+            this.quantiny.MinimumWidth = 6;
+            this.quantiny.Name = "quantiny";
+            this.quantiny.ReadOnly = true;
+            this.quantiny.Width = 125;
+            // 
             // ucBooks
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.pnlBook);
             this.Controls.Add(this.pnlFunction);
             this.Controls.Add(this.pnlLeft);
             this.Controls.Add(this.pnlTop);
@@ -284,9 +294,10 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ucBooks";
             this.Size = new System.Drawing.Size(985, 580);
+            this.Load += new System.EventHandler(this.LoadBook);
             this.pnlFunction.ResumeLayout(false);
             this.pnlFunction.PerformLayout();
-            this.panel6.ResumeLayout(false);
+            this.pnlBook.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListBook)).EndInit();
             this.ResumeLayout(false);
 
@@ -302,7 +313,7 @@
         private System.Windows.Forms.ComboBox cboSearch;
         private System.Windows.Forms.Button btnAddStock;
         private System.Windows.Forms.Button btnAddNewBooks;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel pnlBook;
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txbSearch;
         private System.Windows.Forms.DataGridView dgvListBook;
@@ -314,5 +325,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn language;
         private System.Windows.Forms.DataGridViewTextBoxColumn costprice;
         private System.Windows.Forms.DataGridViewTextBoxColumn sellprice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantiny;
     }
 }
