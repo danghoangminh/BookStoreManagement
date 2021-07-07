@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
             this.pnlFunction = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.pnlSide = new System.Windows.Forms.Panel();
             this.btnRecords = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timerTime = new System.Windows.Forms.Timer(this.components);
             this.pnlControls = new System.Windows.Forms.Panel();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.pnlFunction.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.pnlDashboard.SuspendLayout();
@@ -69,6 +69,23 @@
             this.pnlFunction.Size = new System.Drawing.Size(215, 720);
             this.pnlFunction.TabIndex = 0;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Image = global::BookStoreManagement.Properties.Resources.logout;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(12, 429);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(203, 60);
+            this.btnLogout.TabIndex = 3;
+            this.btnLogout.Text = "     Log Out";
+            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pnlSide
             // 
             this.pnlSide.BackColor = System.Drawing.Color.White;
@@ -85,7 +102,7 @@
             this.btnRecords.ForeColor = System.Drawing.Color.White;
             this.btnRecords.Image = global::BookStoreManagement.Properties.Resources.record;
             this.btnRecords.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRecords.Location = new System.Drawing.Point(12, 261);
+            this.btnRecords.Location = new System.Drawing.Point(12, 253);
             this.btnRecords.Name = "btnRecords";
             this.btnRecords.Size = new System.Drawing.Size(203, 60);
             this.btnRecords.TabIndex = 2;
@@ -102,7 +119,7 @@
             this.btnUsers.ForeColor = System.Drawing.Color.White;
             this.btnUsers.Image = global::BookStoreManagement.Properties.Resources.group;
             this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsers.Location = new System.Drawing.Point(12, 353);
+            this.btnUsers.Location = new System.Drawing.Point(12, 341);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Size = new System.Drawing.Size(203, 60);
             this.btnUsers.TabIndex = 2;
@@ -136,7 +153,7 @@
             this.btnSales.ForeColor = System.Drawing.Color.White;
             this.btnSales.Image = global::BookStoreManagement.Properties.Resources.sale;
             this.btnSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSales.Location = new System.Drawing.Point(12, 169);
+            this.btnSales.Location = new System.Drawing.Point(12, 165);
             this.btnSales.Name = "btnSales";
             this.btnSales.Size = new System.Drawing.Size(203, 60);
             this.btnSales.TabIndex = 2;
@@ -192,7 +209,7 @@
             this.lblNameStore.ForeColor = System.Drawing.Color.White;
             this.lblNameStore.Location = new System.Drawing.Point(6, 15);
             this.lblNameStore.Name = "lblNameStore";
-            this.lblNameStore.Size = new System.Drawing.Size(214, 31);
+            this.lblNameStore.Size = new System.Drawing.Size(171, 25);
             this.lblNameStore.TabIndex = 7;
             this.lblNameStore.Text = "UIT Book Store";
             // 
@@ -205,7 +222,7 @@
             this.lblUsername.ForeColor = System.Drawing.Color.White;
             this.lblUsername.Location = new System.Drawing.Point(546, 20);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(47, 25);
+            this.lblUsername.Size = new System.Drawing.Size(40, 20);
             this.lblUsername.TabIndex = 6;
             this.lblUsername.Text = "test";
             // 
@@ -218,7 +235,7 @@
             this.lblUser.ForeColor = System.Drawing.Color.White;
             this.lblUser.Location = new System.Drawing.Point(488, 20);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(64, 25);
+            this.lblUser.Size = new System.Drawing.Size(52, 20);
             this.lblUser.TabIndex = 3;
             this.lblUser.Text = "User:";
             // 
@@ -230,7 +247,7 @@
             this.lblTime.ForeColor = System.Drawing.Color.White;
             this.lblTime.Location = new System.Drawing.Point(679, 20);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(294, 25);
+            this.lblTime.Size = new System.Drawing.Size(239, 20);
             this.lblTime.TabIndex = 1;
             this.lblTime.Text = "DD/MM/YYYY      HH:MM:SS";
             // 
@@ -266,23 +283,6 @@
             this.pnlControls.Name = "pnlControls";
             this.pnlControls.Size = new System.Drawing.Size(985, 663);
             this.pnlControls.TabIndex = 2;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Image = global::BookStoreManagement.Properties.Resources.power;
-            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(12, 429);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(203, 60);
-            this.btnLogout.TabIndex = 3;
-            this.btnLogout.Text = "     Log Out";
-            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLogout.UseVisualStyleBackColor = true;
-            this.btnLogout.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmDashboard
             // 
