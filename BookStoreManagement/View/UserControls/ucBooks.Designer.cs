@@ -28,146 +28,137 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucBooks));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.pnlLeft = new System.Windows.Forms.Panel();
+            this.pnlTop = new System.Windows.Forms.Panel();
+            this.pnRight = new System.Windows.Forms.Panel();
+            this.pnlBottom = new System.Windows.Forms.Panel();
+            this.pnlFunction = new System.Windows.Forms.Panel();
+            this.txbSearch = new System.Windows.Forms.TextBox();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.cboSearch = new System.Windows.Forms.ComboBox();
+            this.btnAddStock = new System.Windows.Forms.Button();
             this.btnAddNewBooks = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.qLNSDataSet_Book = new BookStoreManagement.QLNSDataSet_Book();
-            this.sACHBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sACHTableAdapter = new BookStoreManagement.QLNSDataSet_BookTableAdapters.SACHTableAdapter();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel5.SuspendLayout();
+            this.dgvListBook = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.author = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.publisher = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.language = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.costprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sellprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlFunction.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNSDataSet_Book)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListBook)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
+            // pnlLeft
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 10);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 560);
-            this.panel2.TabIndex = 1;
+            this.pnlLeft.BackColor = System.Drawing.Color.White;
+            this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlLeft.Location = new System.Drawing.Point(0, 10);
+            this.pnlLeft.Name = "pnlLeft";
+            this.pnlLeft.Size = new System.Drawing.Size(10, 560);
+            this.pnlLeft.TabIndex = 1;
             // 
-            // panel3
+            // pnlTop
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(975, 10);
-            this.panel3.TabIndex = 2;
+            this.pnlTop.BackColor = System.Drawing.Color.White;
+            this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlTop.Name = "pnlTop";
+            this.pnlTop.Size = new System.Drawing.Size(975, 10);
+            this.pnlTop.TabIndex = 2;
             // 
-            // panel4
+            // pnRight
             // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(975, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 570);
-            this.panel4.TabIndex = 3;
+            this.pnRight.BackColor = System.Drawing.Color.White;
+            this.pnRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnRight.Location = new System.Drawing.Point(975, 0);
+            this.pnRight.Name = "pnRight";
+            this.pnRight.Size = new System.Drawing.Size(10, 570);
+            this.pnRight.TabIndex = 3;
             // 
-            // panel1
+            // pnlBottom
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 570);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(985, 10);
-            this.panel1.TabIndex = 4;
+            this.pnlBottom.BackColor = System.Drawing.Color.White;
+            this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlBottom.Location = new System.Drawing.Point(0, 570);
+            this.pnlBottom.Name = "pnlBottom";
+            this.pnlBottom.Size = new System.Drawing.Size(985, 10);
+            this.pnlBottom.TabIndex = 4;
             // 
-            // panel5
+            // pnlFunction
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel5.Controls.Add(this.textBox7);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.comboBox2);
-            this.panel5.Controls.Add(this.button2);
-            this.panel5.Controls.Add(this.btnAddNewBooks);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(10, 10);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(965, 67);
-            this.panel5.TabIndex = 5;
+            this.pnlFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.pnlFunction.Controls.Add(this.txbSearch);
+            this.pnlFunction.Controls.Add(this.lblSearch);
+            this.pnlFunction.Controls.Add(this.cboSearch);
+            this.pnlFunction.Controls.Add(this.btnAddStock);
+            this.pnlFunction.Controls.Add(this.btnAddNewBooks);
+            this.pnlFunction.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlFunction.Location = new System.Drawing.Point(10, 10);
+            this.pnlFunction.Name = "pnlFunction";
+            this.pnlFunction.Size = new System.Drawing.Size(965, 67);
+            this.pnlFunction.TabIndex = 5;
             // 
-            // textBox7
+            // txbSearch
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Location = new System.Drawing.Point(768, 23);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(179, 30);
-            this.textBox7.TabIndex = 5;
+            this.txbSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbSearch.Location = new System.Drawing.Point(815, 23);
+            this.txbSearch.Multiline = true;
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.Size = new System.Drawing.Size(144, 28);
+            this.txbSearch.TabIndex = 5;
             // 
-            // label5
+            // lblSearch
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(523, 26);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 25);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Search By:";
+            this.lblSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSearch.ForeColor = System.Drawing.Color.White;
+            this.lblSearch.Location = new System.Drawing.Point(585, 26);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(96, 20);
+            this.lblSearch.TabIndex = 4;
+            this.lblSearch.Text = "Search By:";
             // 
-            // comboBox2
+            // cboSearch
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Barcode",
+            this.cboSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSearch.FormattingEnabled = true;
+            this.cboSearch.Items.AddRange(new object[] {
             "Tracking ID",
             "Book Title",
             "Author",
+            "Category",
             "Publisher"});
-            this.comboBox2.Location = new System.Drawing.Point(625, 23);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(138, 33);
-            this.comboBox2.TabIndex = 3;
+            this.cboSearch.Location = new System.Drawing.Point(687, 23);
+            this.cboSearch.Name = "cboSearch";
+            this.cboSearch.Size = new System.Drawing.Size(122, 28);
+            this.cboSearch.TabIndex = 3;
             // 
-            // button2
+            // btnAddStock
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(193, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(163, 67);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "   Add Stock";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnAddStock.FlatAppearance.BorderSize = 0;
+            this.btnAddStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStock.ForeColor = System.Drawing.Color.White;
+            this.btnAddStock.Image = ((System.Drawing.Image)(resources.GetObject("btnAddStock.Image")));
+            this.btnAddStock.Location = new System.Drawing.Point(199, 0);
+            this.btnAddStock.Name = "btnAddStock";
+            this.btnAddStock.Size = new System.Drawing.Size(163, 67);
+            this.btnAddStock.TabIndex = 1;
+            this.btnAddStock.Text = "   Add Stock";
+            this.btnAddStock.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddStock.UseVisualStyleBackColor = true;
+            this.btnAddStock.Click += new System.EventHandler(this.btnAddStock_Click);
             // 
             // btnAddNewBooks
             // 
-            this.btnAddNewBooks.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnAddNewBooks.FlatAppearance.BorderSize = 0;
             this.btnAddNewBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNewBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -184,183 +175,144 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.dataGridView1);
+            this.panel6.Controls.Add(this.dgvListBook);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(10, 77);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(965, 493);
             this.panel6.TabIndex = 6;
             // 
-            // dataGridView1
+            // dgvListBook
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9,
-            this.Column10});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(965, 493);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvListBook.AllowUserToAddRows = false;
+            this.dgvListBook.AllowUserToDeleteRows = false;
+            this.dgvListBook.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvListBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.title,
+            this.author,
+            this.category,
+            this.publisher,
+            this.language,
+            this.costprice,
+            this.sellprice});
+            this.dgvListBook.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvListBook.Location = new System.Drawing.Point(0, 0);
+            this.dgvListBook.Name = "dgvListBook";
+            this.dgvListBook.ReadOnly = true;
+            this.dgvListBook.RowHeadersVisible = false;
+            this.dgvListBook.RowHeadersWidth = 51;
+            this.dgvListBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvListBook.Size = new System.Drawing.Size(965, 493);
+            this.dgvListBook.TabIndex = 0;
             // 
-            // qLNSDataSet_Book
+            // id
             // 
-            this.qLNSDataSet_Book.DataSetName = "QLNSDataSet_Book";
-            this.qLNSDataSet_Book.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.id.HeaderText = "Tracking ID";
+            this.id.MinimumWidth = 6;
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 120;
             // 
-            // sACHBindingSource
+            // title
             // 
-            this.sACHBindingSource.DataMember = "SACH";
-            this.sACHBindingSource.DataSource = this.qLNSDataSet_Book;
+            this.title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.title.HeaderText = "Book Title";
+            this.title.MinimumWidth = 6;
+            this.title.Name = "title";
+            this.title.ReadOnly = true;
             // 
-            // sACHTableAdapter
+            // author
             // 
-            this.sACHTableAdapter.ClearBeforeFill = true;
+            this.author.HeaderText = "Author";
+            this.author.MinimumWidth = 6;
+            this.author.Name = "author";
+            this.author.ReadOnly = true;
+            this.author.Width = 150;
             // 
-            // Column1
+            // category
             // 
-            this.Column1.HeaderText = "Tracking ID";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 120;
+            this.category.HeaderText = "Category";
+            this.category.MinimumWidth = 6;
+            this.category.Name = "category";
+            this.category.ReadOnly = true;
+            this.category.Width = 125;
             // 
-            // Column2
+            // publisher
             // 
-            this.Column2.HeaderText = "Book Title";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 220;
+            this.publisher.HeaderText = "Publisher";
+            this.publisher.MinimumWidth = 6;
+            this.publisher.Name = "publisher";
+            this.publisher.ReadOnly = true;
+            this.publisher.Width = 125;
             // 
-            // Column3
+            // language
             // 
-            this.Column3.HeaderText = "Author";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 150;
+            this.language.HeaderText = "Language";
+            this.language.MinimumWidth = 6;
+            this.language.Name = "language";
+            this.language.ReadOnly = true;
+            this.language.Width = 125;
             // 
-            // Column4
+            // costprice
             // 
-            this.Column4.HeaderText = "Category";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 125;
+            this.costprice.HeaderText = "Cost Price";
+            this.costprice.MinimumWidth = 6;
+            this.costprice.Name = "costprice";
+            this.costprice.ReadOnly = true;
+            this.costprice.Width = 125;
             // 
-            // Column5
+            // sellprice
             // 
-            this.Column5.HeaderText = "Language";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Cost Price";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 125;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Selling Price";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 125;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Reprint";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 125;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Publisher";
-            this.Column9.MinimumWidth = 6;
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Width = 125;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Year";
-            this.Column10.MinimumWidth = 6;
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Width = 125;
+            this.sellprice.HeaderText = "Selling Price";
+            this.sellprice.MinimumWidth = 6;
+            this.sellprice.Name = "sellprice";
+            this.sellprice.ReadOnly = true;
+            this.sellprice.Width = 125;
             // 
             // ucBooks
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlFunction);
+            this.Controls.Add(this.pnlLeft);
+            this.Controls.Add(this.pnlTop);
+            this.Controls.Add(this.pnRight);
+            this.Controls.Add(this.pnlBottom);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ucBooks";
             this.Size = new System.Drawing.Size(985, 580);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.pnlFunction.ResumeLayout(false);
+            this.pnlFunction.PerformLayout();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLNSDataSet_Book)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sACHBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListBook)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel pnlLeft;
+        private System.Windows.Forms.Panel pnlTop;
+        private System.Windows.Forms.Panel pnRight;
+        private System.Windows.Forms.Panel pnlBottom;
+        private System.Windows.Forms.Panel pnlFunction;
+        private System.Windows.Forms.ComboBox cboSearch;
+        private System.Windows.Forms.Button btnAddStock;
         private System.Windows.Forms.Button btnAddNewBooks;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource sACHBindingSource;
-        private QLNSDataSet_Book qLNSDataSet_Book;
-        private QLNSDataSet_BookTableAdapters.SACHTableAdapter sACHTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.TextBox txbSearch;
+        private System.Windows.Forms.DataGridView dgvListBook;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn title;
+        private System.Windows.Forms.DataGridViewTextBoxColumn author;
+        private System.Windows.Forms.DataGridViewTextBoxColumn category;
+        private System.Windows.Forms.DataGridViewTextBoxColumn publisher;
+        private System.Windows.Forms.DataGridViewTextBoxColumn language;
+        private System.Windows.Forms.DataGridViewTextBoxColumn costprice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sellprice;
     }
 }

@@ -27,7 +27,7 @@ namespace BookStoreManagement.UserControls
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnAddStock_Click(object sender, EventArgs e)
         {
             using (frmAddStock ads = new frmAddStock())
             {
@@ -51,30 +51,30 @@ namespace BookStoreManagement.UserControls
 
         private void fViewTong_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = new BindingSource(LoadSach(), "");
-            dataGridView1.Columns[0].HeaderText = "MASACH";
-            dataGridView1.Columns[1].HeaderText = "TENSACH";
-            dataGridView1.Columns[2].HeaderText = "MATG";
-            dataGridView1.Columns[3].HeaderText = "TENLINHVUC";
-            dataGridView1.Columns[4].HeaderText = "TENLOAISACH";
-            dataGridView1.Columns[5].HeaderText = "GIAMUA";
-            dataGridView1.Columns[6].HeaderText = "GIABIA";
-            dataGridView1.Columns[7].HeaderText = "LANTAIBAN";
-            dataGridView1.Columns[8].HeaderText = "TENNHAXUATBAN";
-            dataGridView1.Columns[9].HeaderText = "NAMXUATBAN";
-            dataGridView1.Columns[0].Width = 95;
-            dataGridView1.Columns[1].Width = 100;
-            dataGridView1.Columns[2].Width = 100;
-            dataGridView1.Columns[3].Width = 102;
-            dataGridView1.Columns[4].Width = 120;
-            dataGridView1.Columns[5].Width = 100;
-            dataGridView1.Columns[6].Width = 100;
-            dataGridView1.Columns[7].Width = 95;
-            dataGridView1.Columns[8].Width = 150;
-            dataGridView1.Columns[9].Width = 110;
+            dgvListBook.DataSource = new BindingSource(LoadSach(), "");
+            dgvListBook.Columns[0].HeaderText = "MASACH";
+            dgvListBook.Columns[1].HeaderText = "TENSACH";
+            dgvListBook.Columns[2].HeaderText = "MATG";
+            dgvListBook.Columns[3].HeaderText = "TENLINHVUC";
+            dgvListBook.Columns[4].HeaderText = "TENLOAISACH";
+            dgvListBook.Columns[5].HeaderText = "GIAMUA";
+            dgvListBook.Columns[6].HeaderText = "GIABIA";
+            dgvListBook.Columns[7].HeaderText = "LANTAIBAN";
+            dgvListBook.Columns[8].HeaderText = "TENNHAXUATBAN";
+            dgvListBook.Columns[9].HeaderText = "NAMXUATBAN";
+            dgvListBook.Columns[0].Width = 95;
+            dgvListBook.Columns[1].Width = 100;
+            dgvListBook.Columns[2].Width = 100;
+            dgvListBook.Columns[3].Width = 102;
+            dgvListBook.Columns[4].Width = 120;
+            dgvListBook.Columns[5].Width = 100;
+            dgvListBook.Columns[6].Width = 100;
+            dgvListBook.Columns[7].Width = 95;
+            dgvListBook.Columns[8].Width = 150;
+            dgvListBook.Columns[9].Width = 110;
 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dgvListBook.AllowUserToAddRows = false;
+            dgvListBook.EditMode = DataGridViewEditMode.EditProgrammatically;
 
         }
     }
