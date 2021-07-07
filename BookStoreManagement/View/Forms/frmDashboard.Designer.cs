@@ -47,6 +47,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timerTime = new System.Windows.Forms.Timer(this.components);
             this.pnlControls = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.pnlFunction.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.pnlDashboard.SuspendLayout();
@@ -55,6 +56,7 @@
             // pnlFunction
             // 
             this.pnlFunction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.pnlFunction.Controls.Add(this.btnLogout);
             this.pnlFunction.Controls.Add(this.pnlSide);
             this.pnlFunction.Controls.Add(this.btnRecords);
             this.pnlFunction.Controls.Add(this.btnUsers);
@@ -190,7 +192,7 @@
             this.lblNameStore.ForeColor = System.Drawing.Color.White;
             this.lblNameStore.Location = new System.Drawing.Point(6, 15);
             this.lblNameStore.Name = "lblNameStore";
-            this.lblNameStore.Size = new System.Drawing.Size(171, 25);
+            this.lblNameStore.Size = new System.Drawing.Size(214, 31);
             this.lblNameStore.TabIndex = 7;
             this.lblNameStore.Text = "UIT Book Store";
             // 
@@ -203,7 +205,7 @@
             this.lblUsername.ForeColor = System.Drawing.Color.White;
             this.lblUsername.Location = new System.Drawing.Point(546, 20);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(40, 20);
+            this.lblUsername.Size = new System.Drawing.Size(47, 25);
             this.lblUsername.TabIndex = 6;
             this.lblUsername.Text = "test";
             // 
@@ -216,7 +218,7 @@
             this.lblUser.ForeColor = System.Drawing.Color.White;
             this.lblUser.Location = new System.Drawing.Point(488, 20);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(52, 20);
+            this.lblUser.Size = new System.Drawing.Size(64, 25);
             this.lblUser.TabIndex = 3;
             this.lblUser.Text = "User:";
             // 
@@ -228,7 +230,7 @@
             this.lblTime.ForeColor = System.Drawing.Color.White;
             this.lblTime.Location = new System.Drawing.Point(679, 20);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(239, 20);
+            this.lblTime.Size = new System.Drawing.Size(294, 25);
             this.lblTime.TabIndex = 1;
             this.lblTime.Text = "DD/MM/YYYY      HH:MM:SS";
             // 
@@ -264,6 +266,23 @@
             this.pnlControls.Name = "pnlControls";
             this.pnlControls.Size = new System.Drawing.Size(985, 663);
             this.pnlControls.TabIndex = 2;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Image = global::BookStoreManagement.Properties.Resources.power;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(12, 429);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(203, 60);
+            this.btnLogout.TabIndex = 3;
+            this.btnLogout.Text = "     Log Out";
+            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmDashboard
             // 
@@ -305,5 +324,6 @@
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblNameStore;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

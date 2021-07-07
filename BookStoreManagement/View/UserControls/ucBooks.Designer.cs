@@ -121,7 +121,7 @@
             this.lblSearch.ForeColor = System.Drawing.Color.White;
             this.lblSearch.Location = new System.Drawing.Point(585, 26);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(96, 20);
+            this.lblSearch.Size = new System.Drawing.Size(119, 25);
             this.lblSearch.TabIndex = 4;
             this.lblSearch.Text = "Search By:";
             // 
@@ -138,7 +138,7 @@
             "Publisher"});
             this.cboSearch.Location = new System.Drawing.Point(687, 23);
             this.cboSearch.Name = "cboSearch";
-            this.cboSearch.Size = new System.Drawing.Size(122, 28);
+            this.cboSearch.Size = new System.Drawing.Size(122, 33);
             this.cboSearch.TabIndex = 3;
             // 
             // btnAddStock
@@ -249,7 +249,7 @@
             // 
             // language
             // 
-            this.language.HeaderText = "Language";
+            this.language.HeaderText = "Quantity";
             this.language.MinimumWidth = 6;
             this.language.Name = "language";
             this.language.ReadOnly = true;

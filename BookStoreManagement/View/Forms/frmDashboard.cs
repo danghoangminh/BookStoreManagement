@@ -100,5 +100,10 @@ namespace BookStoreManagement.Forms
             DateTime dt = DateTime.Now;
             lblTime.Text = dt.ToString("dd/MM/yyyy      HH:MM:ss");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

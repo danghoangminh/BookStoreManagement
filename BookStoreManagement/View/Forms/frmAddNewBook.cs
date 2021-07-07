@@ -22,5 +22,10 @@ namespace BookStoreManagement.Forms
                 ac.ShowDialog();
             }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
