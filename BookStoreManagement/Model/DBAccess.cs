@@ -22,7 +22,7 @@ namespace BookStoreManagement.Model
 
         private DBAccess() { }
 
-        private string connectionString = string.Format(@"Data Source={0}\database.sqlite;Version=3;", Application.StartupPath);
+        private string connectionString = "Data Source=D:\\quan-li-nha-sach\\BookStoreManagement\\Model\\database.sqlite;Version=3;";
 
         public DataTable ExecuteQuery(string query)
         {
