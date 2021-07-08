@@ -77,7 +77,7 @@
             this.lblNameStore.ForeColor = System.Drawing.Color.White;
             this.lblNameStore.Location = new System.Drawing.Point(12, 15);
             this.lblNameStore.Name = "lblNameStore";
-            this.lblNameStore.Size = new System.Drawing.Size(171, 25);
+            this.lblNameStore.Size = new System.Drawing.Size(214, 31);
             this.lblNameStore.TabIndex = 1;
             this.lblNameStore.Text = "UIT Book Store";
             // 
@@ -88,7 +88,7 @@
             this.lblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.lblUser.Location = new System.Drawing.Point(347, 346);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(93, 20);
+            this.lblUser.Size = new System.Drawing.Size(116, 25);
             this.lblUser.TabIndex = 1;
             this.lblUser.Text = "User Name:";
             // 
@@ -109,8 +109,8 @@
             this.txbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUser.Location = new System.Drawing.Point(350, 369);
             this.txbUser.Name = "txbUser";
-            this.txbUser.Size = new System.Drawing.Size(500, 29);
-            this.txbUser.TabIndex = 3;
+            this.txbUser.Size = new System.Drawing.Size(500, 34);
+            this.txbUser.TabIndex = 1;
             // 
             // lblPassword
             // 
@@ -119,7 +119,7 @@
             this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.lblPassword.Location = new System.Drawing.Point(347, 419);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(82, 20);
+            this.lblPassword.Size = new System.Drawing.Size(104, 25);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Password:";
             // 
@@ -129,8 +129,8 @@
             this.txbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPassword.Location = new System.Drawing.Point(350, 442);
             this.txbPassword.Name = "txbPassword";
-            this.txbPassword.Size = new System.Drawing.Size(500, 29);
-            this.txbPassword.TabIndex = 3;
+            this.txbPassword.Size = new System.Drawing.Size(500, 34);
+            this.txbPassword.TabIndex = 2;
             this.txbPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
@@ -144,7 +144,7 @@
             this.btnLogin.Location = new System.Drawing.Point(350, 499);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(500, 39);
-            this.btnLogin.TabIndex = 4;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -157,7 +157,7 @@
             this.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.lblWelcome.Location = new System.Drawing.Point(450, 303);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(301, 25);
+            this.lblWelcome.Size = new System.Drawing.Size(374, 31);
             this.lblWelcome.TabIndex = 5;
             this.lblWelcome.Text = "Welcome to UIT Book Store";
             // 

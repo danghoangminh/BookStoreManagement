@@ -17,15 +17,31 @@ namespace BookStoreManagement.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            using (frmAddCategory ac = new frmAddCategory())
+            using (frmAddCategory addCategory= new frmAddCategory())
             {
-                ac.ShowDialog();
+                addCategory.ShowDialog();
             }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            using (frmAddAuthor addAuthor = new frmAddAuthor())
+            {
+                addAuthor.ShowDialog();
+            }
+        }
+
+        private void btnAddpublisher_Click(object sender, EventArgs e)
+        {
+            using (frmAddPublisher addPublisher = new frmAddPublisher())
+            {
+                addPublisher.ShowDialog();
+            }
         }
     }
 }
