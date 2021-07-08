@@ -121,6 +121,18 @@
     <Compile Include="View\CustomControls\DragControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="View\Forms\frmAddAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\frmAddAuthor.Designer.cs">
+      <DependentUpon>frmAddAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Forms\frmAddPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\frmAddPublisher.Designer.cs">
+      <DependentUpon>frmAddPublisher.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Forms\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +195,12 @@
     <Compile Include="View\UserControls\ucRecords.Designer.cs">
       <DependentUpon>ucRecords.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Forms\frmAddAuthor.resx">
+      <DependentUpon>frmAddAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\frmAddPublisher.resx">
+      <DependentUpon>frmAddPublisher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>

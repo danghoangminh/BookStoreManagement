@@ -97,7 +97,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(137, 34);
+            this.label4.Location = new System.Drawing.Point(140, 32);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(151, 32);
             this.label4.TabIndex = 19;
@@ -114,7 +114,7 @@
             this.btnClose.Location = new System.Drawing.Point(28, 341);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(104, 38);
-            this.btnClose.TabIndex = 24;
+            this.btnClose.TabIndex = 4;
             this.btnClose.Text = "Cancel";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.button3_Click);
@@ -130,7 +130,7 @@
             this.btnSave.Location = new System.Drawing.Point(286, 341);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(104, 38);
-            this.btnSave.TabIndex = 23;
+            this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
@@ -145,7 +145,7 @@
             this.cboBookTittle.Location = new System.Drawing.Point(156, 117);
             this.cboBookTittle.Name = "cboBookTittle";
             this.cboBookTittle.Size = new System.Drawing.Size(213, 31);
-            this.cboBookTittle.TabIndex = 26;
+            this.cboBookTittle.TabIndex = 1;
             // 
             // lblQuantity
             // 
@@ -172,7 +172,7 @@
             0});
             this.nudQuantity.Name = "nudQuantity";
             this.nudQuantity.Size = new System.Drawing.Size(213, 32);
-            this.nudQuantity.TabIndex = 34;
+            this.nudQuantity.TabIndex = 2;
             this.nudQuantity.Value = new decimal(new int[] {
             1,
             0,

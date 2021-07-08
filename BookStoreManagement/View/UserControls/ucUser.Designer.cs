@@ -94,7 +94,7 @@
             this.txbLastname.Location = new System.Drawing.Point(223, 169);
             this.txbLastname.Name = "txbLastname";
             this.txbLastname.Size = new System.Drawing.Size(244, 30);
-            this.txbLastname.TabIndex = 1;
+            this.txbLastname.TabIndex = 2;
             // 
             // lblPhone
             // 
@@ -113,7 +113,7 @@
             this.txbPassword.Location = new System.Drawing.Point(704, 169);
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.Size = new System.Drawing.Size(244, 30);
-            this.txbPassword.TabIndex = 1;
+            this.txbPassword.TabIndex = 5;
             // 
             // lblEmail
             // 
@@ -132,7 +132,7 @@
             this.txbEmail.Location = new System.Drawing.Point(223, 220);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(244, 30);
-            this.txbEmail.TabIndex = 1;
+            this.txbEmail.TabIndex = 3;
             // 
             // lblUsername
             // 
@@ -152,7 +152,7 @@
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.ReadOnly = true;
             this.txbUsername.Size = new System.Drawing.Size(244, 30);
-            this.txbUsername.TabIndex = 1;
+            this.txbUsername.TabIndex = 23;
             // 
             // lblPassword
             // 
@@ -171,7 +171,7 @@
             this.txbPhone.Location = new System.Drawing.Point(223, 273);
             this.txbPhone.Name = "txbPhone";
             this.txbPhone.Size = new System.Drawing.Size(244, 30);
-            this.txbPhone.TabIndex = 1;
+            this.txbPhone.TabIndex = 4;
             // 
             // btnSave
             // 
@@ -184,7 +184,7 @@
             this.btnSave.Location = new System.Drawing.Point(223, 399);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(566, 38);
-            this.btnSave.TabIndex = 22;
+            this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
@@ -205,7 +205,7 @@
             this.txbPasswordagain.Location = new System.Drawing.Point(704, 220);
             this.txbPasswordagain.Name = "txbPasswordagain";
             this.txbPasswordagain.Size = new System.Drawing.Size(244, 30);
-            this.txbPasswordagain.TabIndex = 24;
+            this.txbPasswordagain.TabIndex = 6;
             // 
             // ucUser
             // 

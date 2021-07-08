@@ -14,5 +14,10 @@ namespace BookStoreManagement.Forms
         {
             this.Dispose();
         }
+
+        private void frmAddCategory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

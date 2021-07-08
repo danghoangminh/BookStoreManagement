@@ -44,18 +44,18 @@
             this.lblPurchasebooks = new System.Windows.Forms.Label();
             this.lblCategory = new System.Windows.Forms.Label();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAddcategory = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.cmbAuthor = new System.Windows.Forms.ComboBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnAddauthor = new System.Windows.Forms.Button();
             this.cmbPublisher = new System.Windows.Forms.ComboBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnAddpublisher = new System.Windows.Forms.Button();
             this.nudQuantity = new System.Windows.Forms.NumericUpDown();
             this.nudCostprice = new System.Windows.Forms.NumericUpDown();
             this.nudSellingprice = new System.Windows.Forms.NumericUpDown();
             this.lblQuantity = new System.Windows.Forms.Label();
-            this.dragControl1 = new DragControlDemo.DragControl();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.dragControl1 = new DragControlDemo.DragControl();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCostprice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSellingprice)).BeginInit();
@@ -108,7 +108,7 @@
             this.btnSave.Location = new System.Drawing.Point(570, 440);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 38);
-            this.btnSave.TabIndex = 20;
+            this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
@@ -117,7 +117,7 @@
             this.txbBooktitle.Location = new System.Drawing.Point(545, 88);
             this.txbBooktitle.Name = "txbBooktitle";
             this.txbBooktitle.Size = new System.Drawing.Size(234, 32);
-            this.txbBooktitle.TabIndex = 14;
+            this.txbBooktitle.TabIndex = 5;
             // 
             // txbBookID
             // 
@@ -125,7 +125,7 @@
             this.txbBookID.Name = "txbBookID";
             this.txbBookID.ReadOnly = true;
             this.txbBookID.Size = new System.Drawing.Size(177, 32);
-            this.txbBookID.TabIndex = 18;
+            this.txbBookID.TabIndex = 1;
             // 
             // lblSellingprice
             // 
@@ -215,22 +215,22 @@
             this.cmbCategory.Location = new System.Drawing.Point(176, 227);
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(177, 31);
-            this.cmbCategory.TabIndex = 21;
+            this.cmbCategory.TabIndex = 4;
             // 
-            // button2
+            // btnAddcategory
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(359, 227);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(33, 29);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "+";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnAddcategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.btnAddcategory.FlatAppearance.BorderSize = 0;
+            this.btnAddcategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddcategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddcategory.ForeColor = System.Drawing.Color.White;
+            this.btnAddcategory.Location = new System.Drawing.Point(359, 227);
+            this.btnAddcategory.Name = "btnAddcategory";
+            this.btnAddcategory.Size = new System.Drawing.Size(33, 29);
+            this.btnAddcategory.TabIndex = 20;
+            this.btnAddcategory.Text = "+";
+            this.btnAddcategory.UseVisualStyleBackColor = false;
+            this.btnAddcategory.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnExit
             // 
@@ -254,21 +254,22 @@
             this.cmbAuthor.Location = new System.Drawing.Point(176, 135);
             this.cmbAuthor.Name = "cmbAuthor";
             this.cmbAuthor.Size = new System.Drawing.Size(177, 31);
-            this.cmbAuthor.TabIndex = 22;
+            this.cmbAuthor.TabIndex = 2;
             // 
-            // button5
+            // btnAddauthor
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(359, 135);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(33, 29);
-            this.button5.TabIndex = 23;
-            this.button5.Text = "+";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnAddauthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.btnAddauthor.FlatAppearance.BorderSize = 0;
+            this.btnAddauthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddauthor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddauthor.ForeColor = System.Drawing.Color.White;
+            this.btnAddauthor.Location = new System.Drawing.Point(359, 135);
+            this.btnAddauthor.Name = "btnAddauthor";
+            this.btnAddauthor.Size = new System.Drawing.Size(33, 29);
+            this.btnAddauthor.TabIndex = 23;
+            this.btnAddauthor.Text = "+";
+            this.btnAddauthor.UseVisualStyleBackColor = false;
+            this.btnAddauthor.Click += new System.EventHandler(this.button5_Click);
             // 
             // cmbPublisher
             // 
@@ -277,21 +278,22 @@
             this.cmbPublisher.Location = new System.Drawing.Point(176, 180);
             this.cmbPublisher.Name = "cmbPublisher";
             this.cmbPublisher.Size = new System.Drawing.Size(177, 31);
-            this.cmbPublisher.TabIndex = 24;
+            this.cmbPublisher.TabIndex = 3;
             // 
-            // button6
+            // btnAddpublisher
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(359, 180);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(33, 29);
-            this.button6.TabIndex = 25;
-            this.button6.Text = "+";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnAddpublisher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.btnAddpublisher.FlatAppearance.BorderSize = 0;
+            this.btnAddpublisher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddpublisher.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddpublisher.ForeColor = System.Drawing.Color.White;
+            this.btnAddpublisher.Location = new System.Drawing.Point(359, 180);
+            this.btnAddpublisher.Name = "btnAddpublisher";
+            this.btnAddpublisher.Size = new System.Drawing.Size(33, 29);
+            this.btnAddpublisher.TabIndex = 25;
+            this.btnAddpublisher.Text = "+";
+            this.btnAddpublisher.UseVisualStyleBackColor = false;
+            this.btnAddpublisher.Click += new System.EventHandler(this.btnAddpublisher_Click);
             // 
             // nudQuantity
             // 
@@ -308,7 +310,7 @@
             0});
             this.nudQuantity.Name = "nudQuantity";
             this.nudQuantity.Size = new System.Drawing.Size(234, 32);
-            this.nudQuantity.TabIndex = 33;
+            this.nudQuantity.TabIndex = 6;
             this.nudQuantity.Value = new decimal(new int[] {
             1,
             0,
@@ -330,7 +332,7 @@
             0});
             this.nudCostprice.Name = "nudCostprice";
             this.nudCostprice.Size = new System.Drawing.Size(234, 32);
-            this.nudCostprice.TabIndex = 34;
+            this.nudCostprice.TabIndex = 7;
             this.nudCostprice.Value = new decimal(new int[] {
             1000,
             0,
@@ -352,7 +354,7 @@
             0});
             this.nudSellingprice.Name = "nudSellingprice";
             this.nudSellingprice.Size = new System.Drawing.Size(234, 32);
-            this.nudSellingprice.TabIndex = 35;
+            this.nudSellingprice.TabIndex = 8;
             this.nudSellingprice.Value = new decimal(new int[] {
             1000,
             0,
@@ -369,10 +371,6 @@
             this.lblQuantity.TabIndex = 5;
             this.lblQuantity.Text = "Quantity:";
             // 
-            // dragControl1
-            // 
-            this.dragControl1.SelectControl = this;
-            // 
             // btnCancel
             // 
             this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -384,10 +382,14 @@
             this.btnCancel.Location = new System.Drawing.Point(400, 440);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(164, 38);
-            this.btnCancel.TabIndex = 36;
+            this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // dragControl1
+            // 
+            this.dragControl1.SelectControl = this;
             // 
             // frmAddNewBook
             // 
@@ -398,12 +400,12 @@
             this.Controls.Add(this.nudSellingprice);
             this.Controls.Add(this.nudCostprice);
             this.Controls.Add(this.nudQuantity);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnAddpublisher);
             this.Controls.Add(this.cmbPublisher);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnAddauthor);
             this.Controls.Add(this.cmbAuthor);
             this.Controls.Add(this.cmbCategory);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnAddcategory);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txbBooktitle);
@@ -453,12 +455,12 @@
         private System.Windows.Forms.Label lblPurchasebooks;
         private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.ComboBox cmbCategory;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAddcategory;
         private DragControlDemo.DragControl dragControl1;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnAddpublisher;
         private System.Windows.Forms.ComboBox cmbPublisher;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnAddauthor;
         private System.Windows.Forms.ComboBox cmbAuthor;
         private System.Windows.Forms.NumericUpDown nudSellingprice;
         private System.Windows.Forms.NumericUpDown nudCostprice;
