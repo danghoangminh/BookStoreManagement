@@ -1,5 +1,5 @@
 ﻿
-namespace BookStoreManagement.Forms
+namespace BookStoreManagement.View.Forms
 {
     partial class frmAddAuthor
     {
@@ -102,124 +102,124 @@ namespace BookStoreManagement.Forms
             // 
             this.lblAddauthor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAddauthor.AutoSize = true;
-            this.lblAddauthor.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddauthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddauthor.Location = new System.Drawing.Point(179, 30);
             this.lblAddauthor.Name = "lblAddauthor";
-            this.lblAddauthor.Size = new System.Drawing.Size(165, 32);
+            this.lblAddauthor.Size = new System.Drawing.Size(129, 25);
             this.lblAddauthor.TabIndex = 22;
             this.lblAddauthor.Text = "Add Author";
             // 
             // lblAuthorID
             // 
             this.lblAuthorID.AutoSize = true;
-            this.lblAuthorID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthorID.Location = new System.Drawing.Point(16, 94);
+            this.lblAuthorID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAuthorID.Location = new System.Drawing.Point(46, 88);
             this.lblAuthorID.Name = "lblAuthorID";
-            this.lblAuthorID.Size = new System.Drawing.Size(106, 23);
+            this.lblAuthorID.Size = new System.Drawing.Size(92, 20);
             this.lblAuthorID.TabIndex = 23;
             this.lblAuthorID.Text = "Author ID:";
             // 
             // txbAuthorID
             // 
-            this.txbAuthorID.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.txbAuthorID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txbAuthorID.Location = new System.Drawing.Point(185, 85);
             this.txbAuthorID.Name = "txbAuthorID";
             this.txbAuthorID.ReadOnly = true;
-            this.txbAuthorID.Size = new System.Drawing.Size(284, 32);
+            this.txbAuthorID.Size = new System.Drawing.Size(284, 26);
             this.txbAuthorID.TabIndex = 1;
             // 
             // lblFullname
             // 
             this.lblFullname.AutoSize = true;
-            this.lblFullname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullname.Location = new System.Drawing.Point(16, 154);
+            this.lblFullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullname.Location = new System.Drawing.Point(46, 142);
             this.lblFullname.Name = "lblFullname";
-            this.lblFullname.Size = new System.Drawing.Size(114, 23);
+            this.lblFullname.Size = new System.Drawing.Size(94, 20);
             this.lblFullname.TabIndex = 24;
             this.lblFullname.Text = "Full Name:";
             // 
             // txbFullname
             // 
-            this.txbFullname.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txbFullname.Location = new System.Drawing.Point(185, 145);
+            this.txbFullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txbFullname.Location = new System.Drawing.Point(185, 139);
             this.txbFullname.Name = "txbFullname";
-            this.txbFullname.Size = new System.Drawing.Size(284, 32);
+            this.txbFullname.Size = new System.Drawing.Size(284, 26);
             this.txbFullname.TabIndex = 2;
             // 
             // lblPlace
             // 
             this.lblPlace.AutoSize = true;
-            this.lblPlace.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlace.Location = new System.Drawing.Point(16, 217);
+            this.lblPlace.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlace.Location = new System.Drawing.Point(46, 196);
             this.lblPlace.Name = "lblPlace";
-            this.lblPlace.Size = new System.Drawing.Size(71, 23);
+            this.lblPlace.Size = new System.Drawing.Size(58, 20);
             this.lblPlace.TabIndex = 25;
             this.lblPlace.Text = "Place:";
             // 
             // txbPlace
             // 
-            this.txbPlace.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txbPlace.Location = new System.Drawing.Point(185, 208);
+            this.txbPlace.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txbPlace.Location = new System.Drawing.Point(185, 193);
             this.txbPlace.Name = "txbPlace";
-            this.txbPlace.Size = new System.Drawing.Size(284, 32);
+            this.txbPlace.Size = new System.Drawing.Size(284, 26);
             this.txbPlace.TabIndex = 3;
             // 
             // lblDateofbirth
             // 
             this.lblDateofbirth.AutoSize = true;
-            this.lblDateofbirth.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateofbirth.Location = new System.Drawing.Point(16, 278);
+            this.lblDateofbirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateofbirth.Location = new System.Drawing.Point(46, 250);
             this.lblDateofbirth.Name = "lblDateofbirth";
-            this.lblDateofbirth.Size = new System.Drawing.Size(135, 23);
+            this.lblDateofbirth.Size = new System.Drawing.Size(115, 20);
             this.lblDateofbirth.TabIndex = 26;
             this.lblDateofbirth.Text = "Date of birth:";
             // 
             // lblDateofdeath
             // 
             this.lblDateofdeath.AutoSize = true;
-            this.lblDateofdeath.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateofdeath.Location = new System.Drawing.Point(16, 368);
+            this.lblDateofdeath.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateofdeath.Location = new System.Drawing.Point(46, 349);
             this.lblDateofdeath.Name = "lblDateofdeath";
-            this.lblDateofdeath.Size = new System.Drawing.Size(150, 23);
+            this.lblDateofdeath.Size = new System.Drawing.Size(125, 20);
             this.lblDateofdeath.TabIndex = 27;
             this.lblDateofdeath.Text = "Date of death:";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(185, 269);
+            this.dateTimePicker1.Location = new System.Drawing.Point(185, 247);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(284, 32);
+            this.dateTimePicker1.Size = new System.Drawing.Size(284, 26);
             this.dateTimePicker1.TabIndex = 28;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.ForeColor = System.Drawing.Color.Black;
-            this.checkBox1.Location = new System.Drawing.Point(185, 317);
+            this.checkBox1.Location = new System.Drawing.Point(185, 301);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(88, 21);
+            this.checkBox1.Size = new System.Drawing.Size(72, 17);
             this.checkBox1.TabIndex = 29;
             this.checkBox1.Text = "Unknown";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(185, 359);
+            this.dateTimePicker2.Location = new System.Drawing.Point(185, 346);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(284, 32);
+            this.dateTimePicker2.Size = new System.Drawing.Size(284, 26);
             this.dateTimePicker2.TabIndex = 30;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.ForeColor = System.Drawing.Color.Black;
-            this.checkBox2.Location = new System.Drawing.Point(185, 409);
+            this.checkBox2.Location = new System.Drawing.Point(184, 400);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(88, 21);
+            this.checkBox2.Size = new System.Drawing.Size(72, 17);
             this.checkBox2.TabIndex = 31;
             this.checkBox2.Text = "Unknown";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -230,7 +230,7 @@ namespace BookStoreManagement.Forms
             this.btnCancel.BackColor = System.Drawing.Color.Red;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Location = new System.Drawing.Point(20, 480);
             this.btnCancel.Name = "btnCancel";
@@ -246,7 +246,7 @@ namespace BookStoreManagement.Forms
             this.btnSave.BackColor = System.Drawing.Color.SeaGreen;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(368, 480);
             this.btnSave.Name = "btnSave";

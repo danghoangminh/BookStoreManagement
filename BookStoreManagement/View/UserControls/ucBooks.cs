@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
-using BookStoreManagement.Forms;
+using BookStoreManagement.View.Forms;
 using BookStoreManagement.Model;
 
-namespace BookStoreManagement.UserControls
+namespace BookStoreManagement.View.UserControls
 {
     public partial class ucBooks : UserControl
     {

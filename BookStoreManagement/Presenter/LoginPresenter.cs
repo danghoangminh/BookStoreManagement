@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 using BookStoreManagement.Model;
-using BookStoreManagement.Forms;
+using BookStoreManagement.View.Forms;
 
 namespace BookStoreManagement.Presenter
 {

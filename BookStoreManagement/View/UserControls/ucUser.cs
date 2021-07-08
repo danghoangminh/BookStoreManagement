@@ -1,25 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using BookStoreManagement.Presenter;
 
-namespace BookStoreManagement.UserControls
+namespace BookStoreManagement.View.UserControls
 {
     public partial class ucUser : UserControl
     {
-        public ucUser()
+        UserPresenter presenter;
+
+        public ucUser(string username)
         {
             InitializeComponent();
+
+            string user = username;
+            presenter = new UserPresenter(user);
+
+            txbUsername.Text = user;
+            txbPassword.Text = presenter.pwd;
+            txbFirstname.Text = presenter.firstName;
+            txbLastname.Text = presenter.lastName;
+            txbEmail.Text = presenter.email;
+            txbPhone.Text = presenter.phone;
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-
+            if (txbPassword.Text == txbPasswordagain.Text && txbPassword.Text != null)
+            {
+                presenter.saveUserData(txbUsername.Text, txbPassword.Text, txbFirstname.Text, txbLastname.Text, txbEmail.Text, txbPhone.Text);
+            }
         }
     }
 }

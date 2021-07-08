@@ -1,4 +1,4 @@
-﻿namespace BookStoreManagement
+﻿namespace BookStoreManagement.View.Forms
 {
     partial class frmLogin
     {

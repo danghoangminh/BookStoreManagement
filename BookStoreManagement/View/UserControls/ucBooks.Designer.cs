@@ -1,4 +1,4 @@
-﻿namespace BookStoreManagement.UserControls
+﻿namespace BookStoreManagement.View.UserControls
 {
     partial class ucBooks
     {

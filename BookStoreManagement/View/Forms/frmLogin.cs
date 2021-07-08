@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using BookStoreManagement.Presenter;
 
-namespace BookStoreManagement
+namespace BookStoreManagement.View.Forms
 {
     public partial class frmLogin : Form
     {

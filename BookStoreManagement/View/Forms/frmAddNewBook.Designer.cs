@@ -1,4 +1,4 @@
-﻿namespace BookStoreManagement.Forms
+﻿namespace BookStoreManagement.View.Forms
 {
     partial class frmAddNewBook
     {

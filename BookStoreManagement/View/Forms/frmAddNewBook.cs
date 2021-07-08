@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace BookStoreManagement.Forms
+namespace BookStoreManagement.View.Forms
 {
     public partial class frmAddNewBook : Form
     {

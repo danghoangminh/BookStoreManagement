@@ -1,4 +1,4 @@
-﻿namespace BookStoreManagement.UserControls
+﻿namespace BookStoreManagement.View.UserControls
 {
     partial class ucUser
     {
@@ -51,9 +51,9 @@
             this.lblFirstname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFirstname.AutoSize = true;
             this.lblFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstname.Location = new System.Drawing.Point(80, 119);
+            this.lblFirstname.Location = new System.Drawing.Point(80, 122);
             this.lblFirstname.Name = "lblFirstname";
-            this.lblFirstname.Size = new System.Drawing.Size(123, 25);
+            this.lblFirstname.Size = new System.Drawing.Size(101, 20);
             this.lblFirstname.TabIndex = 0;
             this.lblFirstname.Text = "First Name:";
             // 
@@ -62,19 +62,18 @@
             this.lblAccountinformation.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAccountinformation.AutoSize = true;
             this.lblAccountinformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountinformation.Location = new System.Drawing.Point(359, 46);
+            this.lblAccountinformation.Location = new System.Drawing.Point(371, 46);
             this.lblAccountinformation.Name = "lblAccountinformation";
-            this.lblAccountinformation.Size = new System.Drawing.Size(300, 36);
+            this.lblAccountinformation.Size = new System.Drawing.Size(242, 29);
             this.lblAccountinformation.TabIndex = 0;
             this.lblAccountinformation.Text = "Account Information";
-            this.lblAccountinformation.Click += new System.EventHandler(this.label2_Click);
             // 
             // txbFirstname
             // 
             this.txbFirstname.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbFirstname.Location = new System.Drawing.Point(223, 116);
+            this.txbFirstname.Location = new System.Drawing.Point(223, 119);
             this.txbFirstname.Name = "txbFirstname";
-            this.txbFirstname.Size = new System.Drawing.Size(244, 30);
+            this.txbFirstname.Size = new System.Drawing.Size(244, 26);
             this.txbFirstname.TabIndex = 1;
             // 
             // lblLastname
@@ -82,9 +81,9 @@
             this.lblLastname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLastname.AutoSize = true;
             this.lblLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastname.Location = new System.Drawing.Point(81, 174);
+            this.lblLastname.Location = new System.Drawing.Point(81, 172);
             this.lblLastname.Name = "lblLastname";
-            this.lblLastname.Size = new System.Drawing.Size(122, 25);
+            this.lblLastname.Size = new System.Drawing.Size(100, 20);
             this.lblLastname.TabIndex = 0;
             this.lblLastname.Text = "Last Name:";
             // 
@@ -93,7 +92,7 @@
             this.txbLastname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txbLastname.Location = new System.Drawing.Point(223, 169);
             this.txbLastname.Name = "txbLastname";
-            this.txbLastname.Size = new System.Drawing.Size(244, 30);
+            this.txbLastname.Size = new System.Drawing.Size(244, 26);
             this.txbLastname.TabIndex = 2;
             // 
             // lblPhone
@@ -101,9 +100,9 @@
             this.lblPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(81, 278);
+            this.lblPhone.Location = new System.Drawing.Point(81, 276);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(81, 25);
+            this.lblPhone.Size = new System.Drawing.Size(65, 20);
             this.lblPhone.TabIndex = 0;
             this.lblPhone.Text = "Phone:";
             // 
@@ -112,7 +111,7 @@
             this.txbPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txbPassword.Location = new System.Drawing.Point(704, 169);
             this.txbPassword.Name = "txbPassword";
-            this.txbPassword.Size = new System.Drawing.Size(244, 30);
+            this.txbPassword.Size = new System.Drawing.Size(244, 26);
             this.txbPassword.TabIndex = 5;
             // 
             // lblEmail
@@ -120,9 +119,9 @@
             this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(81, 225);
+            this.lblEmail.Location = new System.Drawing.Point(81, 223);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(72, 25);
+            this.lblEmail.Size = new System.Drawing.Size(58, 20);
             this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Email:";
             // 
@@ -131,7 +130,7 @@
             this.txbEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txbEmail.Location = new System.Drawing.Point(223, 220);
             this.txbEmail.Name = "txbEmail";
-            this.txbEmail.Size = new System.Drawing.Size(244, 30);
+            this.txbEmail.Size = new System.Drawing.Size(244, 26);
             this.txbEmail.TabIndex = 3;
             // 
             // lblUsername
@@ -139,9 +138,9 @@
             this.lblUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(522, 124);
+            this.lblUsername.Location = new System.Drawing.Point(522, 122);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(126, 25);
+            this.lblUsername.Size = new System.Drawing.Size(103, 20);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "User Name:";
             // 
@@ -151,7 +150,7 @@
             this.txbUsername.Location = new System.Drawing.Point(704, 119);
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.ReadOnly = true;
-            this.txbUsername.Size = new System.Drawing.Size(244, 30);
+            this.txbUsername.Size = new System.Drawing.Size(244, 26);
             this.txbUsername.TabIndex = 23;
             // 
             // lblPassword
@@ -159,9 +158,9 @@
             this.lblPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(522, 174);
+            this.lblPassword.Location = new System.Drawing.Point(522, 172);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(113, 25);
+            this.lblPassword.Size = new System.Drawing.Size(91, 20);
             this.lblPassword.TabIndex = 0;
             this.lblPassword.Text = "Password:";
             // 
@@ -170,7 +169,7 @@
             this.txbPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txbPhone.Location = new System.Drawing.Point(223, 273);
             this.txbPhone.Name = "txbPhone";
-            this.txbPhone.Size = new System.Drawing.Size(244, 30);
+            this.txbPhone.Size = new System.Drawing.Size(244, 26);
             this.txbPhone.TabIndex = 4;
             // 
             // btnSave
@@ -187,15 +186,16 @@
             this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblPasswordagain
             // 
             this.lblPasswordagain.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPasswordagain.AutoSize = true;
             this.lblPasswordagain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPasswordagain.Location = new System.Drawing.Point(522, 225);
+            this.lblPasswordagain.Location = new System.Drawing.Point(522, 223);
             this.lblPasswordagain.Name = "lblPasswordagain";
-            this.lblPasswordagain.Size = new System.Drawing.Size(172, 25);
+            this.lblPasswordagain.Size = new System.Drawing.Size(140, 20);
             this.lblPasswordagain.TabIndex = 23;
             this.lblPasswordagain.Text = "Password again:";
             // 
@@ -204,7 +204,7 @@
             this.txbPasswordagain.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txbPasswordagain.Location = new System.Drawing.Point(704, 220);
             this.txbPasswordagain.Name = "txbPasswordagain";
-            this.txbPasswordagain.Size = new System.Drawing.Size(244, 30);
+            this.txbPasswordagain.Size = new System.Drawing.Size(244, 26);
             this.txbPasswordagain.TabIndex = 6;
             // 
             // ucUser
