@@ -25,5 +25,23 @@ namespace BookStoreManagement.UserControls
                 uf.ShowDialog();
             }
         }
+
+        private void ucSales_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddbill_Click(object sender, EventArgs e)
+        {
+            using (frmAddBillDetail addBillDetail = new frmAddBillDetail())
+            {
+                addBillDetail.ShowDialog();
+            }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

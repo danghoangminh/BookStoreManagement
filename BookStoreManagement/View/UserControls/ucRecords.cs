@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BookStoreManagement.Forms;
 
 namespace BookStoreManagement.UserControls
 {
@@ -15,6 +16,14 @@ namespace BookStoreManagement.UserControls
         public ucRecords()
         {
             InitializeComponent();
+        }
+
+        private void btnStatistic_Click(object sender, EventArgs e)
+        {
+            using (frmStatistic statistic = new frmStatistic())
+            {
+                statistic.ShowDialog();
+            }
         }
     }
 }

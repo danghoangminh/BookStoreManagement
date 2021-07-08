@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace BookStoreManagement.Forms
 {
-    public partial class frmAddAuthor : Form
+    public partial class frmStatistic : Form
     {
-        public frmAddAuthor()
+        public frmStatistic()
         {
             InitializeComponent();
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
         }
 
         private void btnExit_Click(object sender, EventArgs e)

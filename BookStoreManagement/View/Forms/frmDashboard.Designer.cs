@@ -157,7 +157,7 @@
             this.btnSales.Name = "btnSales";
             this.btnSales.Size = new System.Drawing.Size(203, 60);
             this.btnSales.TabIndex = 2;
-            this.btnSales.Text = "     Sales";
+            this.btnSales.Text = "     Bills";
             this.btnSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSales.UseVisualStyleBackColor = true;
             this.btnSales.Click += new System.EventHandler(this.btnSales_Click);
@@ -209,7 +209,7 @@
             this.lblNameStore.ForeColor = System.Drawing.Color.White;
             this.lblNameStore.Location = new System.Drawing.Point(6, 15);
             this.lblNameStore.Name = "lblNameStore";
-            this.lblNameStore.Size = new System.Drawing.Size(171, 25);
+            this.lblNameStore.Size = new System.Drawing.Size(214, 31);
             this.lblNameStore.TabIndex = 7;
             this.lblNameStore.Text = "UIT Book Store";
             // 
@@ -222,7 +222,7 @@
             this.lblUsername.ForeColor = System.Drawing.Color.White;
             this.lblUsername.Location = new System.Drawing.Point(546, 20);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(40, 20);
+            this.lblUsername.Size = new System.Drawing.Size(47, 25);
             this.lblUsername.TabIndex = 6;
             this.lblUsername.Text = "test";
             // 
@@ -235,7 +235,7 @@
             this.lblUser.ForeColor = System.Drawing.Color.White;
             this.lblUser.Location = new System.Drawing.Point(488, 20);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(52, 20);
+            this.lblUser.Size = new System.Drawing.Size(64, 25);
             this.lblUser.TabIndex = 3;
             this.lblUser.Text = "User:";
             // 
@@ -247,7 +247,7 @@
             this.lblTime.ForeColor = System.Drawing.Color.White;
             this.lblTime.Location = new System.Drawing.Point(679, 20);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(239, 20);
+            this.lblTime.Size = new System.Drawing.Size(294, 25);
             this.lblTime.TabIndex = 1;
             this.lblTime.Text = "DD/MM/YYYY      HH:MM:SS";
             // 

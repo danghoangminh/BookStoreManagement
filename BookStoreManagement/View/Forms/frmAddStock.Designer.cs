@@ -42,6 +42,7 @@
             this.nudQuantity = new System.Windows.Forms.NumericUpDown();
             this.lblBooktitle = new System.Windows.Forms.Label();
             this.txbBookID = new System.Windows.Forms.TextBox();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             this.SuspendLayout();
             // 
@@ -197,11 +198,27 @@
             this.txbBookID.Size = new System.Drawing.Size(213, 32);
             this.txbBookID.TabIndex = 36;
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExit.BackColor = System.Drawing.Color.White;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(346, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(57, 39);
+            this.btnExit.TabIndex = 37;
+            this.btnExit.Text = "X";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // frmAddStock
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(415, 411);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txbBookID);
             this.Controls.Add(this.lblBooktitle);
             this.Controls.Add(this.nudQuantity);
@@ -243,5 +260,6 @@
         private System.Windows.Forms.NumericUpDown nudQuantity;
         private System.Windows.Forms.Label lblBooktitle;
         private System.Windows.Forms.TextBox txbBookID;
+        private System.Windows.Forms.Button btnExit;
     }
 }

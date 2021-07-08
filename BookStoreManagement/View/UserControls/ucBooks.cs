@@ -15,17 +15,17 @@ namespace BookStoreManagement.UserControls
 
         private void btnAddNewBooks_Click(object sender, EventArgs e)
         {
-            using (frmAddNewBook abn = new frmAddNewBook())
+            using (frmAddNewBook AddNewBook = new frmAddNewBook())
             {
-                abn.ShowDialog();
+                AddNewBook.ShowDialog();
             }
         }
 
         private void btnAddStock_Click(object sender, EventArgs e)
         {
-            using (frmAddStock ads = new frmAddStock())
+            using (frmAddStock AddStock = new frmAddStock())
             {
-                ads.ShowDialog();
+                AddStock.ShowDialog();
             }
         }
 

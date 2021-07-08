@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BookStoreManagement.Forms
 {
-    public partial class frmAddAuthor : Form
+    public partial class frmAddBillDetail : Form
     {
-        public frmAddAuthor()
+        public frmAddBillDetail()
         {
             InitializeComponent();
         }
