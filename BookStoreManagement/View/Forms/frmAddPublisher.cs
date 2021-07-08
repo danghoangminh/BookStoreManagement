@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BookStoreManagement.Presenter;
+using System;
 using System.Windows.Forms;
 
-namespace BookStoreManagement.Forms
+namespace BookStoreManagement.View.Forms
 {
     public partial class frmAddPublisher : Form
     {
@@ -20,6 +14,12 @@ namespace BookStoreManagement.Forms
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            BookPresenter presenter = new BookPresenter();
+            presenter.addItem(txbPublishername.Text, "PUBLISHER");
         }
     }
 }

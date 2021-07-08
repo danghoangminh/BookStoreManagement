@@ -1,4 +1,4 @@
-﻿namespace BookStoreManagement.Forms
+﻿namespace BookStoreManagement.View.Forms
 {
     partial class frmAddNewBook
     {
@@ -34,7 +34,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             this.txbBooktitle = new System.Windows.Forms.TextBox();
-            this.txbBookID = new System.Windows.Forms.TextBox();
             this.lblSellingprice = new System.Windows.Forms.Label();
             this.lblBookID = new System.Windows.Forms.Label();
             this.lblPublisher = new System.Windows.Forms.Label();
@@ -43,12 +42,12 @@
             this.lblBooktitle = new System.Windows.Forms.Label();
             this.lblPurchasebooks = new System.Windows.Forms.Label();
             this.lblCategory = new System.Windows.Forms.Label();
-            this.cmbCategory = new System.Windows.Forms.ComboBox();
+            this.cboCategory = new System.Windows.Forms.ComboBox();
             this.btnAddcategory = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.cmbAuthor = new System.Windows.Forms.ComboBox();
+            this.cboAuthor = new System.Windows.Forms.ComboBox();
             this.btnAddauthor = new System.Windows.Forms.Button();
-            this.cmbPublisher = new System.Windows.Forms.ComboBox();
+            this.cboPublisher = new System.Windows.Forms.ComboBox();
             this.btnAddpublisher = new System.Windows.Forms.Button();
             this.nudQuantity = new System.Windows.Forms.NumericUpDown();
             this.nudCostprice = new System.Windows.Forms.NumericUpDown();
@@ -56,6 +55,7 @@
             this.lblQuantity = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.dragControl1 = new DragControlDemo.DragControl();
+            this.txbBookID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCostprice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSellingprice)).BeginInit();
@@ -103,87 +103,80 @@
             this.btnSave.BackColor = System.Drawing.Color.SeaGreen;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(570, 440);
+            this.btnSave.Location = new System.Drawing.Point(615, 440);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(164, 38);
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txbBooktitle
             // 
-            this.txbBooktitle.Location = new System.Drawing.Point(545, 88);
+            this.txbBooktitle.Location = new System.Drawing.Point(545, 89);
             this.txbBooktitle.Name = "txbBooktitle";
-            this.txbBooktitle.Size = new System.Drawing.Size(234, 32);
+            this.txbBooktitle.Size = new System.Drawing.Size(234, 26);
             this.txbBooktitle.TabIndex = 5;
-            // 
-            // txbBookID
-            // 
-            this.txbBookID.Location = new System.Drawing.Point(176, 88);
-            this.txbBookID.Name = "txbBookID";
-            this.txbBookID.ReadOnly = true;
-            this.txbBookID.Size = new System.Drawing.Size(177, 32);
-            this.txbBookID.TabIndex = 1;
             // 
             // lblSellingprice
             // 
             this.lblSellingprice.AutoSize = true;
-            this.lblSellingprice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSellingprice.Location = new System.Drawing.Point(412, 236);
+            this.lblSellingprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSellingprice.Location = new System.Drawing.Point(426, 307);
             this.lblSellingprice.Name = "lblSellingprice";
-            this.lblSellingprice.Size = new System.Drawing.Size(133, 23);
+            this.lblSellingprice.Size = new System.Drawing.Size(113, 20);
             this.lblSellingprice.TabIndex = 5;
             this.lblSellingprice.Text = "Selling Price:";
             // 
             // lblBookID
             // 
             this.lblBookID.AutoSize = true;
-            this.lblBookID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBookID.Location = new System.Drawing.Point(46, 97);
+            this.lblBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBookID.Location = new System.Drawing.Point(46, 92);
             this.lblBookID.Name = "lblBookID";
-            this.lblBookID.Size = new System.Drawing.Size(92, 23);
+            this.lblBookID.Size = new System.Drawing.Size(79, 20);
             this.lblBookID.TabIndex = 6;
             this.lblBookID.Text = "Book ID:";
             // 
             // lblPublisher
             // 
             this.lblPublisher.AutoSize = true;
-            this.lblPublisher.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPublisher.Location = new System.Drawing.Point(46, 188);
+            this.lblPublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPublisher.Location = new System.Drawing.Point(46, 235);
             this.lblPublisher.Name = "lblPublisher";
-            this.lblPublisher.Size = new System.Drawing.Size(102, 23);
+            this.lblPublisher.Size = new System.Drawing.Size(88, 20);
             this.lblPublisher.TabIndex = 7;
             this.lblPublisher.Text = "Publisher:";
             // 
             // lblCostprice
             // 
             this.lblCostprice.AutoSize = true;
-            this.lblCostprice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCostprice.Location = new System.Drawing.Point(412, 190);
+            this.lblCostprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCostprice.Location = new System.Drawing.Point(426, 235);
             this.lblCostprice.Name = "lblCostprice";
-            this.lblCostprice.Size = new System.Drawing.Size(114, 23);
+            this.lblCostprice.Size = new System.Drawing.Size(96, 20);
             this.lblCostprice.TabIndex = 8;
             this.lblCostprice.Text = "Cost Price:";
             // 
             // lblAuthor
             // 
             this.lblAuthor.AutoSize = true;
-            this.lblAuthor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthor.Location = new System.Drawing.Point(46, 143);
+            this.lblAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAuthor.Location = new System.Drawing.Point(46, 163);
             this.lblAuthor.Name = "lblAuthor";
-            this.lblAuthor.Size = new System.Drawing.Size(80, 23);
+            this.lblAuthor.Size = new System.Drawing.Size(68, 20);
             this.lblAuthor.TabIndex = 9;
             this.lblAuthor.Text = "Author:";
             // 
             // lblBooktitle
             // 
             this.lblBooktitle.AutoSize = true;
-            this.lblBooktitle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBooktitle.Location = new System.Drawing.Point(412, 97);
+            this.lblBooktitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBooktitle.Location = new System.Drawing.Point(426, 92);
             this.lblBooktitle.Name = "lblBooktitle";
-            this.lblBooktitle.Size = new System.Drawing.Size(109, 23);
+            this.lblBooktitle.Size = new System.Drawing.Size(94, 20);
             this.lblBooktitle.TabIndex = 10;
             this.lblBooktitle.Text = "Book Title:";
             // 
@@ -191,46 +184,46 @@
             // 
             this.lblPurchasebooks.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPurchasebooks.AutoSize = true;
-            this.lblPurchasebooks.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPurchasebooks.Location = new System.Drawing.Point(319, 30);
+            this.lblPurchasebooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPurchasebooks.Location = new System.Drawing.Point(354, 28);
             this.lblPurchasebooks.Name = "lblPurchasebooks";
-            this.lblPurchasebooks.Size = new System.Drawing.Size(221, 32);
+            this.lblPurchasebooks.Size = new System.Drawing.Size(125, 25);
             this.lblPurchasebooks.TabIndex = 11;
-            this.lblPurchasebooks.Text = "Purchase Books";
+            this.lblPurchasebooks.Text = "Add Books";
             // 
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
-            this.lblCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategory.Location = new System.Drawing.Point(46, 235);
+            this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategory.Location = new System.Drawing.Point(46, 307);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(108, 23);
+            this.lblCategory.Size = new System.Drawing.Size(86, 20);
             this.lblCategory.TabIndex = 9;
             this.lblCategory.Text = "Category:";
             // 
-            // cmbCategory
+            // cboCategory
             // 
-            this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(176, 227);
-            this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(177, 31);
-            this.cmbCategory.TabIndex = 4;
+            this.cboCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCategory.FormattingEnabled = true;
+            this.cboCategory.Location = new System.Drawing.Point(176, 303);
+            this.cboCategory.Name = "cboCategory";
+            this.cboCategory.Size = new System.Drawing.Size(177, 28);
+            this.cboCategory.TabIndex = 4;
             // 
             // btnAddcategory
             // 
             this.btnAddcategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.btnAddcategory.FlatAppearance.BorderSize = 0;
             this.btnAddcategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddcategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddcategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddcategory.ForeColor = System.Drawing.Color.White;
-            this.btnAddcategory.Location = new System.Drawing.Point(359, 227);
+            this.btnAddcategory.Location = new System.Drawing.Point(359, 303);
             this.btnAddcategory.Name = "btnAddcategory";
             this.btnAddcategory.Size = new System.Drawing.Size(33, 29);
             this.btnAddcategory.TabIndex = 20;
             this.btnAddcategory.Text = "+";
             this.btnAddcategory.UseVisualStyleBackColor = false;
-            this.btnAddcategory.Click += new System.EventHandler(this.button2_Click);
+            this.btnAddcategory.Click += new System.EventHandler(this.btnAddcategory_Click);
             // 
             // btnExit
             // 
@@ -245,49 +238,49 @@
             this.btnExit.TabIndex = 20;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.button4_Click);
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // cmbAuthor
+            // cboAuthor
             // 
-            this.cmbAuthor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbAuthor.FormattingEnabled = true;
-            this.cmbAuthor.Location = new System.Drawing.Point(176, 135);
-            this.cmbAuthor.Name = "cmbAuthor";
-            this.cmbAuthor.Size = new System.Drawing.Size(177, 31);
-            this.cmbAuthor.TabIndex = 2;
+            this.cboAuthor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAuthor.FormattingEnabled = true;
+            this.cboAuthor.Location = new System.Drawing.Point(176, 159);
+            this.cboAuthor.Name = "cboAuthor";
+            this.cboAuthor.Size = new System.Drawing.Size(177, 28);
+            this.cboAuthor.TabIndex = 2;
             // 
             // btnAddauthor
             // 
             this.btnAddauthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.btnAddauthor.FlatAppearance.BorderSize = 0;
             this.btnAddauthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddauthor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddauthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddauthor.ForeColor = System.Drawing.Color.White;
-            this.btnAddauthor.Location = new System.Drawing.Point(359, 135);
+            this.btnAddauthor.Location = new System.Drawing.Point(359, 159);
             this.btnAddauthor.Name = "btnAddauthor";
             this.btnAddauthor.Size = new System.Drawing.Size(33, 29);
             this.btnAddauthor.TabIndex = 23;
             this.btnAddauthor.Text = "+";
             this.btnAddauthor.UseVisualStyleBackColor = false;
-            this.btnAddauthor.Click += new System.EventHandler(this.button5_Click);
+            this.btnAddauthor.Click += new System.EventHandler(this.btnAddauthor_Click);
             // 
-            // cmbPublisher
+            // cboPublisher
             // 
-            this.cmbPublisher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPublisher.FormattingEnabled = true;
-            this.cmbPublisher.Location = new System.Drawing.Point(176, 180);
-            this.cmbPublisher.Name = "cmbPublisher";
-            this.cmbPublisher.Size = new System.Drawing.Size(177, 31);
-            this.cmbPublisher.TabIndex = 3;
+            this.cboPublisher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboPublisher.FormattingEnabled = true;
+            this.cboPublisher.Location = new System.Drawing.Point(176, 231);
+            this.cboPublisher.Name = "cboPublisher";
+            this.cboPublisher.Size = new System.Drawing.Size(177, 28);
+            this.cboPublisher.TabIndex = 3;
             // 
             // btnAddpublisher
             // 
             this.btnAddpublisher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.btnAddpublisher.FlatAppearance.BorderSize = 0;
             this.btnAddpublisher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddpublisher.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddpublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddpublisher.ForeColor = System.Drawing.Color.White;
-            this.btnAddpublisher.Location = new System.Drawing.Point(359, 180);
+            this.btnAddpublisher.Location = new System.Drawing.Point(359, 231);
             this.btnAddpublisher.Name = "btnAddpublisher";
             this.btnAddpublisher.Size = new System.Drawing.Size(33, 29);
             this.btnAddpublisher.TabIndex = 25;
@@ -297,7 +290,7 @@
             // 
             // nudQuantity
             // 
-            this.nudQuantity.Location = new System.Drawing.Point(545, 134);
+            this.nudQuantity.Location = new System.Drawing.Point(545, 160);
             this.nudQuantity.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -309,7 +302,7 @@
             0,
             0});
             this.nudQuantity.Name = "nudQuantity";
-            this.nudQuantity.Size = new System.Drawing.Size(234, 32);
+            this.nudQuantity.Size = new System.Drawing.Size(234, 26);
             this.nudQuantity.TabIndex = 6;
             this.nudQuantity.Value = new decimal(new int[] {
             1,
@@ -319,7 +312,12 @@
             // 
             // nudCostprice
             // 
-            this.nudCostprice.Location = new System.Drawing.Point(545, 181);
+            this.nudCostprice.Increment = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.nudCostprice.Location = new System.Drawing.Point(545, 232);
             this.nudCostprice.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -331,7 +329,7 @@
             0,
             0});
             this.nudCostprice.Name = "nudCostprice";
-            this.nudCostprice.Size = new System.Drawing.Size(234, 32);
+            this.nudCostprice.Size = new System.Drawing.Size(234, 26);
             this.nudCostprice.TabIndex = 7;
             this.nudCostprice.Value = new decimal(new int[] {
             1000,
@@ -341,7 +339,12 @@
             // 
             // nudSellingprice
             // 
-            this.nudSellingprice.Location = new System.Drawing.Point(545, 227);
+            this.nudSellingprice.Increment = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.nudSellingprice.Location = new System.Drawing.Point(545, 304);
             this.nudSellingprice.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -353,7 +356,7 @@
             0,
             0});
             this.nudSellingprice.Name = "nudSellingprice";
-            this.nudSellingprice.Size = new System.Drawing.Size(234, 32);
+            this.nudSellingprice.Size = new System.Drawing.Size(234, 26);
             this.nudSellingprice.TabIndex = 8;
             this.nudSellingprice.Value = new decimal(new int[] {
             1000,
@@ -364,10 +367,10 @@
             // lblQuantity
             // 
             this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantity.Location = new System.Drawing.Point(412, 143);
+            this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantity.Location = new System.Drawing.Point(426, 163);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(99, 23);
+            this.lblQuantity.Size = new System.Drawing.Size(81, 20);
             this.lblQuantity.TabIndex = 5;
             this.lblQuantity.Text = "Quantity:";
             // 
@@ -377,40 +380,51 @@
             this.btnCancel.BackColor = System.Drawing.Color.Red;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(400, 440);
+            this.btnCancel.Location = new System.Drawing.Point(387, 440);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(164, 38);
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // dragControl1
             // 
             this.dragControl1.SelectControl = this;
+            // 
+            // txbBookID
+            // 
+            this.txbBookID.Location = new System.Drawing.Point(176, 88);
+            this.txbBookID.MaxLength = 6;
+            this.txbBookID.Multiline = true;
+            this.txbBookID.Name = "txbBookID";
+            this.txbBookID.ReadOnly = true;
+            this.txbBookID.Size = new System.Drawing.Size(177, 28);
+            this.txbBookID.TabIndex = 26;
             // 
             // frmAddNewBook
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(814, 523);
+            this.Controls.Add(this.txbBookID);
+            this.Controls.Add(this.lblPurchasebooks);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.nudSellingprice);
             this.Controls.Add(this.nudCostprice);
             this.Controls.Add(this.nudQuantity);
             this.Controls.Add(this.btnAddpublisher);
-            this.Controls.Add(this.cmbPublisher);
+            this.Controls.Add(this.cboPublisher);
             this.Controls.Add(this.btnAddauthor);
-            this.Controls.Add(this.cmbAuthor);
-            this.Controls.Add(this.cmbCategory);
+            this.Controls.Add(this.cboAuthor);
+            this.Controls.Add(this.cboCategory);
             this.Controls.Add(this.btnAddcategory);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txbBooktitle);
             this.Controls.Add(this.lblQuantity);
-            this.Controls.Add(this.txbBookID);
             this.Controls.Add(this.lblSellingprice);
             this.Controls.Add(this.lblBookID);
             this.Controls.Add(this.lblPublisher);
@@ -418,12 +432,11 @@
             this.Controls.Add(this.lblCostprice);
             this.Controls.Add(this.lblAuthor);
             this.Controls.Add(this.lblBooktitle);
-            this.Controls.Add(this.lblPurchasebooks);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddNewBook";
@@ -445,7 +458,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox txbBooktitle;
-        private System.Windows.Forms.TextBox txbBookID;
         private System.Windows.Forms.Label lblSellingprice;
         private System.Windows.Forms.Label lblBookID;
         private System.Windows.Forms.Label lblPublisher;
@@ -454,18 +466,19 @@
         private System.Windows.Forms.Label lblBooktitle;
         private System.Windows.Forms.Label lblPurchasebooks;
         private System.Windows.Forms.Label lblCategory;
-        private System.Windows.Forms.ComboBox cmbCategory;
+        private System.Windows.Forms.ComboBox cboCategory;
         private System.Windows.Forms.Button btnAddcategory;
         private DragControlDemo.DragControl dragControl1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnAddpublisher;
-        private System.Windows.Forms.ComboBox cmbPublisher;
+        private System.Windows.Forms.ComboBox cboPublisher;
         private System.Windows.Forms.Button btnAddauthor;
-        private System.Windows.Forms.ComboBox cmbAuthor;
+        private System.Windows.Forms.ComboBox cboAuthor;
         private System.Windows.Forms.NumericUpDown nudSellingprice;
         private System.Windows.Forms.NumericUpDown nudCostprice;
         private System.Windows.Forms.NumericUpDown nudQuantity;
         private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox txbBookID;
     }
 }

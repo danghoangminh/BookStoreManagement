@@ -113,11 +113,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\AuthorModel.cs" />
     <Compile Include="Model\BookModel.cs" />
     <Compile Include="Model\DBAccess.cs" />
     <Compile Include="Model\LoginModel.cs" />
+    <Compile Include="Model\UserModel.cs" />
+    <Compile Include="Presenter\AuthorPresenter.cs" />
     <Compile Include="Presenter\BookPresenter.cs" />
     <Compile Include="Presenter\LoginPresenter.cs" />
+    <Compile Include="Presenter\UserPresenter.cs" />
     <Compile Include="View\CustomControls\DragControl.cs">
       <SubType>Component</SubType>
     </Compile>

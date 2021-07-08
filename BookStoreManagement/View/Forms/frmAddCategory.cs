@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using BookStoreManagement.Presenter;
 
-namespace BookStoreManagement.Forms
+namespace BookStoreManagement.View.Forms
 {
     public partial class frmAddCategory : Form
     {
@@ -10,14 +11,15 @@ namespace BookStoreManagement.Forms
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
 
-        private void frmAddCategory_Load(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-
+            BookPresenter presenter = new BookPresenter();
+            presenter.addItem(txbCategoryname.Text, "CATEGORY");
         }
 
         private void btnExit_Click(object sender, EventArgs e)

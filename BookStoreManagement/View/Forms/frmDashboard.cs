@@ -1,8 +1,8 @@
-﻿using BookStoreManagement.UserControls;
-using System;
+﻿using System;
 using System.Windows.Forms;
+using BookStoreManagement.View.UserControls;
 
-namespace BookStoreManagement.Forms
+namespace BookStoreManagement.View.Forms
 {
     public partial class frmDashboard : Form
     {
@@ -91,7 +91,7 @@ namespace BookStoreManagement.Forms
         private void btnUsers_Click(object sender, EventArgs e)
         {
             moveSidePanel(btnUsers);
-            ucUser ucUser = new ucUser();
+            ucUser ucUser = new ucUser(lblUsername.Text);
             AddControlsToPanel(ucUser);
         }
 
