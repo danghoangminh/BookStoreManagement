@@ -31,13 +31,14 @@ namespace BookStoreManagement.Presenter
 
         public void saveUserData(string username, string password, string firstName, string lastName, string email, string phone)
         {
-            if (username != null && password != null && firstName != null && lastName != null && email != null && phone != null)
+            if (username != "" && password != "" && firstName != "" && lastName != "" && email != "" && phone != "")
             {
                 userModel.updateUserInfo(username, password, firstName, lastName, email, phone);
+                MessageBox.Show("SAVE COMPLETE!", "NOTIFICATION");
             }
             else
             {
-                MessageBox.Show("CHƯA ĐIỀN ĐẦY ĐỦ THÔNG TIN!", "THÔNG BÁO");
+                MessageBox.Show("MISSING INFORMATION!", "NOTIFICATION");
             }
         }
     }

@@ -25,9 +25,17 @@ namespace BookStoreManagement.View.UserControls
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (txbPassword.Text == txbPasswordagain.Text && txbPassword.Text != null)
+            if (presenter.pwd == txbPassword.Text && txbPasswordagain.Text == "") 
             {
                 presenter.saveUserData(txbUsername.Text, txbPassword.Text, txbFirstname.Text, txbLastname.Text, txbEmail.Text, txbPhone.Text);
+            }
+            else if (presenter.pwd != txbPassword.Text && txbPassword.Text == txbPasswordagain.Text && txbPassword.Text != "")
+            {
+                presenter.saveUserData(txbUsername.Text, txbPasswordagain.Text, txbFirstname.Text, txbLastname.Text, txbEmail.Text, txbPhone.Text);
+            }
+            else if(txbPassword.Text == "" || txbPasswordagain.Text == "")
+            {
+                MessageBox.Show("PLEASE FILL PASSWORD!", "NOTIFICATION");
             }
         }
     }
