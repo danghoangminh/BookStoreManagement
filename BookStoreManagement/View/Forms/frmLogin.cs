@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using BookStoreManagement.Forms;
-using BookStoreManagement.Model;
+using BookStoreManagement.Presenter;
 
 namespace BookStoreManagement
 {
@@ -19,17 +18,7 @@ namespace BookStoreManagement
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            
-            if(login.isLogin(txbUser.Text, txbPassword.Text))
-            {
-                frmDashboard fd = new frmDashboard(txbUser.Text);
-                fd.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("SAI TÊN ĐĂNG NHẬP HOẶC MẬT KHẨU!", "THÔNG BÁO");
-            }
+            _ = new LoginPresenter(txbUser.Text, txbPassword.Text);
         }
     }
 }

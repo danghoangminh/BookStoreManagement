@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BookStoreManagement.Forms;
 using BookStoreManagement.Model;
-using System.Data.SqlClient;
 
 namespace BookStoreManagement.UserControls
 {
@@ -38,7 +31,7 @@ namespace BookStoreManagement.UserControls
 
         private void LoadBook(object sender, EventArgs e)
         {
-            Book book = new Book();
+            BookModel book = new BookModel();
             DataTable ds = book.LoadData();
 
             dgvListBook.DataSource = ds;

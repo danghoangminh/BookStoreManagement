@@ -1,7 +1,6 @@
-﻿using System.Linq;
+﻿using System.IO;
 using System.Data;
 using System.Data.SQLite;
-using System.Windows.Forms;
 
 namespace BookStoreManagement.Model
 {
