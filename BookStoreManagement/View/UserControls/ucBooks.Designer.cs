@@ -41,15 +41,6 @@
             this.btnAddNewBooks = new System.Windows.Forms.Button();
             this.pnlBook = new System.Windows.Forms.Panel();
             this.dgvListBook = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.author = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.publisher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.language = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sellprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantiny = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlFunction.SuspendLayout();
             this.pnlBook.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListBook)).BeginInit();
@@ -122,7 +113,7 @@
             this.lblSearch.ForeColor = System.Drawing.Color.White;
             this.lblSearch.Location = new System.Drawing.Point(585, 26);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(119, 25);
+            this.lblSearch.Size = new System.Drawing.Size(96, 20);
             this.lblSearch.TabIndex = 4;
             this.lblSearch.Text = "Search By:";
             // 
@@ -139,7 +130,7 @@
             "Publisher"});
             this.cboSearch.Location = new System.Drawing.Point(687, 23);
             this.cboSearch.Name = "cboSearch";
-            this.cboSearch.Size = new System.Drawing.Size(122, 33);
+            this.cboSearch.Size = new System.Drawing.Size(122, 28);
             this.cboSearch.TabIndex = 3;
             // 
             // btnAddStock
@@ -189,16 +180,6 @@
             this.dgvListBook.AllowUserToDeleteRows = false;
             this.dgvListBook.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgvListBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListBook.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.title,
-            this.author,
-            this.category,
-            this.publisher,
-            this.language,
-            this.costprice,
-            this.sellprice,
-            this.quantiny});
             this.dgvListBook.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvListBook.Location = new System.Drawing.Point(0, 0);
             this.dgvListBook.Name = "dgvListBook";
@@ -208,78 +189,6 @@
             this.dgvListBook.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListBook.Size = new System.Drawing.Size(965, 493);
             this.dgvListBook.TabIndex = 0;
-            // 
-            // id
-            // 
-            this.id.HeaderText = "Book ID";
-            this.id.MinimumWidth = 6;
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 120;
-            // 
-            // title
-            // 
-            this.title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.title.HeaderText = "Book Title";
-            this.title.MinimumWidth = 6;
-            this.title.Name = "title";
-            this.title.ReadOnly = true;
-            // 
-            // author
-            // 
-            this.author.HeaderText = "Author";
-            this.author.MinimumWidth = 6;
-            this.author.Name = "author";
-            this.author.ReadOnly = true;
-            this.author.Width = 150;
-            // 
-            // category
-            // 
-            this.category.HeaderText = "Category";
-            this.category.MinimumWidth = 6;
-            this.category.Name = "category";
-            this.category.ReadOnly = true;
-            this.category.Width = 125;
-            // 
-            // publisher
-            // 
-            this.publisher.HeaderText = "Publisher";
-            this.publisher.MinimumWidth = 6;
-            this.publisher.Name = "publisher";
-            this.publisher.ReadOnly = true;
-            this.publisher.Width = 125;
-            // 
-            // language
-            // 
-            this.language.HeaderText = "Quantity";
-            this.language.MinimumWidth = 6;
-            this.language.Name = "language";
-            this.language.ReadOnly = true;
-            this.language.Width = 125;
-            // 
-            // costprice
-            // 
-            this.costprice.HeaderText = "Cost Price";
-            this.costprice.MinimumWidth = 6;
-            this.costprice.Name = "costprice";
-            this.costprice.ReadOnly = true;
-            this.costprice.Width = 125;
-            // 
-            // sellprice
-            // 
-            this.sellprice.HeaderText = "Selling Price";
-            this.sellprice.MinimumWidth = 6;
-            this.sellprice.Name = "sellprice";
-            this.sellprice.ReadOnly = true;
-            this.sellprice.Width = 125;
-            // 
-            // quantiny
-            // 
-            this.quantiny.HeaderText = "Quantiny";
-            this.quantiny.MinimumWidth = 6;
-            this.quantiny.Name = "quantiny";
-            this.quantiny.ReadOnly = true;
-            this.quantiny.Width = 125;
             // 
             // ucBooks
             // 
@@ -317,14 +226,5 @@
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txbSearch;
         private System.Windows.Forms.DataGridView dgvListBook;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn title;
-        private System.Windows.Forms.DataGridViewTextBoxColumn author;
-        private System.Windows.Forms.DataGridViewTextBoxColumn category;
-        private System.Windows.Forms.DataGridViewTextBoxColumn publisher;
-        private System.Windows.Forms.DataGridViewTextBoxColumn language;
-        private System.Windows.Forms.DataGridViewTextBoxColumn costprice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sellprice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantiny;
     }
 }

@@ -17,7 +17,7 @@ namespace BookStoreManagement.Presenter
             }
             else
             {
-                MessageBox.Show("SAI TÊN ĐĂNG NHẬP HOẶC MẬT KHẨU!", "THÔNG BÁO");
+                MessageBox.Show("WRONG USERNAME OR PASSWORD!", "NOFICATION");
             }
         }
     }

@@ -46,10 +46,10 @@ namespace BookStoreManagement.View.Forms
             // 
             this.lblAddpublisher.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAddpublisher.AutoSize = true;
-            this.lblAddpublisher.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddpublisher.Location = new System.Drawing.Point(131, 29);
+            this.lblAddpublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddpublisher.Location = new System.Drawing.Point(156, 41);
             this.lblAddpublisher.Name = "lblAddpublisher";
-            this.lblAddpublisher.Size = new System.Drawing.Size(194, 32);
+            this.lblAddpublisher.Size = new System.Drawing.Size(159, 25);
             this.lblAddpublisher.TabIndex = 23;
             this.lblAddpublisher.Text = "Add Publisher";
             // 
@@ -78,14 +78,14 @@ namespace BookStoreManagement.View.Forms
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(452, 10);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 309);
+            this.panel2.Size = new System.Drawing.Size(10, 222);
             this.panel2.TabIndex = 25;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 309);
+            this.panel3.Location = new System.Drawing.Point(0, 222);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(452, 10);
             this.panel3.TabIndex = 26;
@@ -96,25 +96,25 @@ namespace BookStoreManagement.View.Forms
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel5.Location = new System.Drawing.Point(0, 10);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(10, 299);
+            this.panel5.Size = new System.Drawing.Size(10, 212);
             this.panel5.TabIndex = 27;
             // 
             // lblPublishername
             // 
             this.lblPublishername.AutoSize = true;
-            this.lblPublishername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPublishername.Location = new System.Drawing.Point(12, 144);
+            this.lblPublishername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPublishername.Location = new System.Drawing.Point(30, 106);
             this.lblPublishername.Name = "lblPublishername";
-            this.lblPublishername.Size = new System.Drawing.Size(168, 23);
+            this.lblPublishername.Size = new System.Drawing.Size(139, 20);
             this.lblPublishername.TabIndex = 28;
             this.lblPublishername.Text = "Publisher Name:";
             // 
             // txbPublishername
             // 
-            this.txbPublishername.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txbPublishername.Location = new System.Drawing.Point(186, 135);
+            this.txbPublishername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txbPublishername.Location = new System.Drawing.Point(175, 103);
             this.txbPublishername.Name = "txbPublishername";
-            this.txbPublishername.Size = new System.Drawing.Size(260, 32);
+            this.txbPublishername.Size = new System.Drawing.Size(260, 26);
             this.txbPublishername.TabIndex = 29;
             // 
             // btnCancel
@@ -123,9 +123,9 @@ namespace BookStoreManagement.View.Forms
             this.btnCancel.BackColor = System.Drawing.Color.Red;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(16, 265);
+            this.btnCancel.Location = new System.Drawing.Point(12, 182);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(112, 38);
             this.btnCancel.TabIndex = 30;
@@ -139,20 +139,21 @@ namespace BookStoreManagement.View.Forms
             this.btnSave.BackColor = System.Drawing.Color.SeaGreen;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(334, 265);
+            this.btnSave.Location = new System.Drawing.Point(338, 182);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(112, 38);
             this.btnSave.TabIndex = 31;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // frmAddPublisher
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(462, 319);
+            this.ClientSize = new System.Drawing.Size(462, 232);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txbPublishername);
