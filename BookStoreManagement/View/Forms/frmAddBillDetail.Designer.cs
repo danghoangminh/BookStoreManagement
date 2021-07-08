@@ -51,6 +51,7 @@ namespace BookStoreManagement.View.Forms
             this.btnAddbilldetail = new System.Windows.Forms.Button();
             this.btnDone = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBillDetail)).BeginInit();
@@ -106,10 +107,10 @@ namespace BookStoreManagement.View.Forms
             // 
             this.lblAddbilldetail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAddbilldetail.AutoSize = true;
-            this.lblAddbilldetail.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddbilldetail.Location = new System.Drawing.Point(664, 25);
+            this.lblAddbilldetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddbilldetail.Location = new System.Drawing.Point(186, 27);
             this.lblAddbilldetail.Name = "lblAddbilldetail";
-            this.lblAddbilldetail.Size = new System.Drawing.Size(195, 32);
+            this.lblAddbilldetail.Size = new System.Drawing.Size(161, 25);
             this.lblAddbilldetail.TabIndex = 25;
             this.lblAddbilldetail.Text = "Add Bill Detail";
             // 
@@ -117,79 +118,79 @@ namespace BookStoreManagement.View.Forms
             // 
             this.lblBillID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBillID.AutoSize = true;
-            this.lblBillID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBillID.Location = new System.Drawing.Point(67, 101);
+            this.lblBillID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBillID.Location = new System.Drawing.Point(55, 92);
             this.lblBillID.Name = "lblBillID";
-            this.lblBillID.Size = new System.Drawing.Size(69, 23);
+            this.lblBillID.Size = new System.Drawing.Size(62, 20);
             this.lblBillID.TabIndex = 26;
             this.lblBillID.Text = "Bill ID:";
             // 
             // txbBillID
             // 
             this.txbBillID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbBillID.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txbBillID.Location = new System.Drawing.Point(229, 92);
+            this.txbBillID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txbBillID.Location = new System.Drawing.Point(217, 89);
             this.txbBillID.Name = "txbBillID";
             this.txbBillID.ReadOnly = true;
-            this.txbBillID.Size = new System.Drawing.Size(274, 32);
+            this.txbBillID.Size = new System.Drawing.Size(274, 26);
             this.txbBillID.TabIndex = 27;
             // 
             // lblBookID
             // 
             this.lblBookID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBookID.AutoSize = true;
-            this.lblBookID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBookID.Location = new System.Drawing.Point(67, 218);
+            this.lblBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBookID.Location = new System.Drawing.Point(55, 210);
             this.lblBookID.Name = "lblBookID";
-            this.lblBookID.Size = new System.Drawing.Size(92, 23);
+            this.lblBookID.Size = new System.Drawing.Size(79, 20);
             this.lblBookID.TabIndex = 28;
             this.lblBookID.Text = "Book ID:";
             // 
             // cmbBooktitle
             // 
-            this.cmbBooktitle.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.cmbBooktitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbBooktitle.FormattingEnabled = true;
-            this.cmbBooktitle.Location = new System.Drawing.Point(229, 151);
+            this.cmbBooktitle.Location = new System.Drawing.Point(217, 146);
             this.cmbBooktitle.Name = "cmbBooktitle";
-            this.cmbBooktitle.Size = new System.Drawing.Size(274, 31);
+            this.cmbBooktitle.Size = new System.Drawing.Size(274, 28);
             this.cmbBooktitle.TabIndex = 29;
             // 
             // lblBooktitle
             // 
             this.lblBooktitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblBooktitle.AutoSize = true;
-            this.lblBooktitle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBooktitle.Location = new System.Drawing.Point(67, 159);
+            this.lblBooktitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBooktitle.Location = new System.Drawing.Point(55, 150);
             this.lblBooktitle.Name = "lblBooktitle";
-            this.lblBooktitle.Size = new System.Drawing.Size(109, 23);
+            this.lblBooktitle.Size = new System.Drawing.Size(94, 20);
             this.lblBooktitle.TabIndex = 30;
             this.lblBooktitle.Text = "Book Title:";
             // 
             // txbBookID
             // 
             this.txbBookID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbBookID.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txbBookID.Location = new System.Drawing.Point(229, 209);
+            this.txbBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txbBookID.Location = new System.Drawing.Point(217, 207);
             this.txbBookID.Name = "txbBookID";
             this.txbBookID.ReadOnly = true;
-            this.txbBookID.Size = new System.Drawing.Size(274, 32);
+            this.txbBookID.Size = new System.Drawing.Size(274, 26);
             this.txbBookID.TabIndex = 31;
             // 
             // lblQuantity
             // 
             this.lblQuantity.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantity.Location = new System.Drawing.Point(67, 277);
+            this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantity.Location = new System.Drawing.Point(55, 268);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(99, 23);
+            this.lblQuantity.Size = new System.Drawing.Size(81, 20);
             this.lblQuantity.TabIndex = 32;
             this.lblQuantity.Text = "Quantity:";
             // 
             // nudQuantity
             // 
-            this.nudQuantity.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.nudQuantity.Location = new System.Drawing.Point(229, 268);
+            this.nudQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nudQuantity.Location = new System.Drawing.Point(217, 265);
             this.nudQuantity.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -201,7 +202,7 @@ namespace BookStoreManagement.View.Forms
             0,
             0});
             this.nudQuantity.Name = "nudQuantity";
-            this.nudQuantity.Size = new System.Drawing.Size(274, 32);
+            this.nudQuantity.Size = new System.Drawing.Size(274, 26);
             this.nudQuantity.TabIndex = 33;
             this.nudQuantity.Value = new decimal(new int[] {
             1,
@@ -213,52 +214,52 @@ namespace BookStoreManagement.View.Forms
             // 
             this.lblSellPrice.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSellPrice.AutoSize = true;
-            this.lblSellPrice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSellPrice.Location = new System.Drawing.Point(67, 336);
+            this.lblSellPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSellPrice.Location = new System.Drawing.Point(55, 326);
             this.lblSellPrice.Name = "lblSellPrice";
-            this.lblSellPrice.Size = new System.Drawing.Size(103, 23);
+            this.lblSellPrice.Size = new System.Drawing.Size(89, 20);
             this.lblSellPrice.TabIndex = 34;
             this.lblSellPrice.Text = "Sell Price:";
             // 
             // txbSellprice
             // 
             this.txbSellprice.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbSellprice.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txbSellprice.Location = new System.Drawing.Point(229, 327);
+            this.txbSellprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txbSellprice.Location = new System.Drawing.Point(217, 323);
             this.txbSellprice.Name = "txbSellprice";
             this.txbSellprice.ReadOnly = true;
-            this.txbSellprice.Size = new System.Drawing.Size(274, 32);
+            this.txbSellprice.Size = new System.Drawing.Size(274, 26);
             this.txbSellprice.TabIndex = 35;
             // 
             // lblTotalprice
             // 
             this.lblTotalprice.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTotalprice.AutoSize = true;
-            this.lblTotalprice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalprice.Location = new System.Drawing.Point(67, 395);
+            this.lblTotalprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalprice.Location = new System.Drawing.Point(55, 384);
             this.lblTotalprice.Name = "lblTotalprice";
-            this.lblTotalprice.Size = new System.Drawing.Size(115, 23);
+            this.lblTotalprice.Size = new System.Drawing.Size(99, 20);
             this.lblTotalprice.TabIndex = 36;
             this.lblTotalprice.Text = "Total Price:";
             // 
             // txbTotalprice
             // 
             this.txbTotalprice.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txbTotalprice.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txbTotalprice.Location = new System.Drawing.Point(229, 386);
+            this.txbTotalprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txbTotalprice.Location = new System.Drawing.Point(217, 381);
             this.txbTotalprice.Name = "txbTotalprice";
             this.txbTotalprice.ReadOnly = true;
-            this.txbTotalprice.Size = new System.Drawing.Size(274, 32);
+            this.txbTotalprice.Size = new System.Drawing.Size(274, 26);
             this.txbTotalprice.TabIndex = 37;
             // 
             // dgvBillDetail
             // 
             this.dgvBillDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBillDetail.Location = new System.Drawing.Point(572, 92);
+            this.dgvBillDetail.Location = new System.Drawing.Point(620, 48);
             this.dgvBillDetail.Name = "dgvBillDetail";
             this.dgvBillDetail.RowHeadersWidth = 51;
             this.dgvBillDetail.RowTemplate.Height = 24;
-            this.dgvBillDetail.Size = new System.Drawing.Size(915, 426);
+            this.dgvBillDetail.Size = new System.Drawing.Size(831, 467);
             this.dgvBillDetail.TabIndex = 38;
             // 
             // btnAddbilldetail
@@ -267,9 +268,9 @@ namespace BookStoreManagement.View.Forms
             this.btnAddbilldetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.btnAddbilldetail.FlatAppearance.BorderSize = 0;
             this.btnAddbilldetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddbilldetail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddbilldetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddbilldetail.ForeColor = System.Drawing.Color.White;
-            this.btnAddbilldetail.Location = new System.Drawing.Point(28, 480);
+            this.btnAddbilldetail.Location = new System.Drawing.Point(59, 477);
             this.btnAddbilldetail.Name = "btnAddbilldetail";
             this.btnAddbilldetail.Size = new System.Drawing.Size(138, 38);
             this.btnAddbilldetail.TabIndex = 39;
@@ -282,9 +283,9 @@ namespace BookStoreManagement.View.Forms
             this.btnDone.BackColor = System.Drawing.Color.Green;
             this.btnDone.FlatAppearance.BorderSize = 0;
             this.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDone.ForeColor = System.Drawing.Color.White;
-            this.btnDone.Location = new System.Drawing.Point(428, 480);
+            this.btnDone.Location = new System.Drawing.Point(353, 477);
             this.btnDone.Name = "btnDone";
             this.btnDone.Size = new System.Drawing.Size(138, 38);
             this.btnDone.TabIndex = 41;
@@ -306,11 +307,23 @@ namespace BookStoreManagement.View.Forms
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(989, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 25);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Bill Detail";
+            // 
             // frmAddBillDetail
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1526, 534);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDone);
             this.Controls.Add(this.btnAddbilldetail);
@@ -369,5 +382,6 @@ namespace BookStoreManagement.View.Forms
         private System.Windows.Forms.Button btnAddbilldetail;
         private System.Windows.Forms.Button btnDone;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label1;
     }
 }

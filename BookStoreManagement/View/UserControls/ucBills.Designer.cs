@@ -46,14 +46,13 @@
             // 
             // btnAddbill
             // 
-            this.btnAddbill.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddbill.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnAddbill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.btnAddbill.FlatAppearance.BorderSize = 0;
             this.btnAddbill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddbill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddbill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddbill.ForeColor = System.Drawing.Color.White;
-            this.btnAddbill.Location = new System.Drawing.Point(335, 314);
+            this.btnAddbill.Location = new System.Drawing.Point(363, 314);
             this.btnAddbill.Name = "btnAddbill";
             this.btnAddbill.Size = new System.Drawing.Size(138, 38);
             this.btnAddbill.TabIndex = 2;
@@ -65,10 +64,10 @@
             // 
             this.lblBill.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblBill.AutoSize = true;
-            this.lblBill.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBill.Location = new System.Drawing.Point(300, 11);
+            this.lblBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBill.Location = new System.Drawing.Point(341, 13);
             this.lblBill.Name = "lblBill";
-            this.lblBill.Size = new System.Drawing.Size(234, 32);
+            this.lblBill.Size = new System.Drawing.Size(187, 25);
             this.lblBill.TabIndex = 0;
             this.lblBill.Text = "Bill Management";
             // 
@@ -76,38 +75,38 @@
             // 
             this.lblBillID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblBillID.AutoSize = true;
-            this.lblBillID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBillID.Location = new System.Drawing.Point(83, 99);
+            this.lblBillID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBillID.Location = new System.Drawing.Point(137, 97);
             this.lblBillID.Name = "lblBillID";
-            this.lblBillID.Size = new System.Drawing.Size(69, 23);
+            this.lblBillID.Size = new System.Drawing.Size(62, 20);
             this.lblBillID.TabIndex = 0;
             this.lblBillID.Text = "Bill ID:";
             // 
             // txbCustomername
             // 
             this.txbCustomername.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txbCustomername.Location = new System.Drawing.Point(292, 152);
+            this.txbCustomername.Location = new System.Drawing.Point(346, 156);
             this.txbCustomername.Name = "txbCustomername";
-            this.txbCustomername.Size = new System.Drawing.Size(380, 32);
+            this.txbCustomername.Size = new System.Drawing.Size(380, 26);
             this.txbCustomername.TabIndex = 1;
             // 
             // txbBillID
             // 
             this.txbBillID.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txbBillID.Location = new System.Drawing.Point(292, 90);
+            this.txbBillID.Location = new System.Drawing.Point(346, 94);
             this.txbBillID.Name = "txbBillID";
             this.txbBillID.ReadOnly = true;
-            this.txbBillID.Size = new System.Drawing.Size(380, 32);
+            this.txbBillID.Size = new System.Drawing.Size(380, 26);
             this.txbBillID.TabIndex = 1;
             // 
             // lblCustomername
             // 
             this.lblCustomername.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCustomername.AutoSize = true;
-            this.lblCustomername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomername.Location = new System.Drawing.Point(83, 160);
+            this.lblCustomername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomername.Location = new System.Drawing.Point(137, 159);
             this.lblCustomername.Name = "lblCustomername";
-            this.lblCustomername.Size = new System.Drawing.Size(176, 23);
+            this.lblCustomername.Size = new System.Drawing.Size(142, 20);
             this.lblCustomername.TabIndex = 0;
             this.lblCustomername.Text = "Customer Name:";
             // 
@@ -115,10 +114,10 @@
             // 
             this.lblDate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(83, 221);
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(137, 221);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(62, 23);
+            this.lblDate.Size = new System.Drawing.Size(53, 20);
             this.lblDate.TabIndex = 0;
             this.lblDate.Text = "Date:";
             // 
@@ -126,21 +125,20 @@
             // 
             this.dtpDate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDate.Location = new System.Drawing.Point(292, 214);
+            this.dtpDate.Location = new System.Drawing.Point(346, 218);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(380, 32);
+            this.dtpDate.Size = new System.Drawing.Size(380, 26);
             this.dtpDate.TabIndex = 4;
             // 
             // dgvBill
             // 
-            this.dgvBill.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvBill.BackgroundColor = System.Drawing.Color.White;
             this.dgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBill.Location = new System.Drawing.Point(23, 383);
+            this.dgvBill.Location = new System.Drawing.Point(16, 382);
             this.dgvBill.Name = "dgvBill";
             this.dgvBill.RowHeadersWidth = 51;
             this.dgvBill.RowTemplate.Height = 24;
-            this.dgvBill.Size = new System.Drawing.Size(801, 228);
+            this.dgvBill.Size = new System.Drawing.Size(821, 251);
             this.dgvBill.TabIndex = 5;
             // 
             // panel3
@@ -197,7 +195,7 @@
             this.Controls.Add(this.lblBillID);
             this.Controls.Add(this.lblCustomername);
             this.Controls.Add(this.lblBill);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.Name = "ucSales";
             this.Size = new System.Drawing.Size(853, 649);

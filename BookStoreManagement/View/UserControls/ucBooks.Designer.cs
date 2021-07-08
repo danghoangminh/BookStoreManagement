@@ -104,6 +104,7 @@
             this.txbSearch.Name = "txbSearch";
             this.txbSearch.Size = new System.Drawing.Size(144, 28);
             this.txbSearch.TabIndex = 5;
+            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
             // 
             // lblSearch
             // 
@@ -123,15 +124,16 @@
             this.cboSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSearch.FormattingEnabled = true;
             this.cboSearch.Items.AddRange(new object[] {
-            "Tracking ID",
-            "Book Title",
-            "Author",
-            "Category",
-            "Publisher"});
+            "ID",
+            "TITLE",
+            "AUTHOR",
+            "CATEGORY",
+            "PUBLISHER"});
             this.cboSearch.Location = new System.Drawing.Point(687, 23);
             this.cboSearch.Name = "cboSearch";
             this.cboSearch.Size = new System.Drawing.Size(122, 28);
             this.cboSearch.TabIndex = 3;
+            this.cboSearch.SelectedIndexChanged += new System.EventHandler(this.cboSearch_SelectedIndexChanged);
             // 
             // btnAddStock
             // 

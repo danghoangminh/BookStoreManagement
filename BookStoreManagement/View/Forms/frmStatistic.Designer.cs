@@ -108,13 +108,13 @@ namespace BookStoreManagement.View.Forms
             // 
             // lblStatistic
             // 
-            this.lblStatistic.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.lblStatistic.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStatistic.AutoSize = true;
-            this.lblStatistic.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatistic.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatistic.Location = new System.Drawing.Point(343, 28);
             this.lblStatistic.Name = "lblStatistic";
-            this.lblStatistic.Size = new System.Drawing.Size(112, 32);
+            this.lblStatistic.Size = new System.Drawing.Size(97, 25);
             this.lblStatistic.TabIndex = 26;
             this.lblStatistic.Text = "Statistic";
             // 
@@ -122,38 +122,38 @@ namespace BookStoreManagement.View.Forms
             // 
             this.lblStartday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblStartday.AutoSize = true;
-            this.lblStartday.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStartday.Location = new System.Drawing.Point(16, 352);
+            this.lblStartday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStartday.Location = new System.Drawing.Point(42, 351);
             this.lblStartday.Name = "lblStartday";
-            this.lblStartday.Size = new System.Drawing.Size(64, 23);
+            this.lblStartday.Size = new System.Drawing.Size(55, 20);
             this.lblStartday.TabIndex = 28;
             this.lblStartday.Text = "From:";
             // 
             // dtpStartday
             // 
             this.dtpStartday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpStartday.Location = new System.Drawing.Point(86, 352);
+            this.dtpStartday.Location = new System.Drawing.Point(112, 351);
             this.dtpStartday.Name = "dtpStartday";
-            this.dtpStartday.Size = new System.Drawing.Size(200, 22);
+            this.dtpStartday.Size = new System.Drawing.Size(200, 20);
             this.dtpStartday.TabIndex = 29;
             // 
             // lblEndday
             // 
             this.lblEndday.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEndday.AutoSize = true;
-            this.lblEndday.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEndday.Location = new System.Drawing.Point(323, 352);
+            this.lblEndday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndday.Location = new System.Drawing.Point(349, 351);
             this.lblEndday.Name = "lblEndday";
-            this.lblEndday.Size = new System.Drawing.Size(37, 23);
+            this.lblEndday.Size = new System.Drawing.Size(34, 20);
             this.lblEndday.TabIndex = 30;
             this.lblEndday.Text = "To:";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(366, 351);
+            this.dateTimePicker1.Location = new System.Drawing.Point(392, 351);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 31;
             // 
             // btnExport
@@ -161,9 +161,9 @@ namespace BookStoreManagement.View.Forms
             this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.btnExport.FlatAppearance.BorderSize = 0;
             this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExport.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExport.ForeColor = System.Drawing.Color.White;
-            this.btnExport.Location = new System.Drawing.Point(20, 417);
+            this.btnExport.Location = new System.Drawing.Point(46, 414);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(546, 38);
             this.btnExport.TabIndex = 40;
@@ -176,7 +176,7 @@ namespace BookStoreManagement.View.Forms
             this.btnSearch.BackColor = System.Drawing.Color.Green;
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Location = new System.Drawing.Point(646, 343);
             this.btnSearch.Name = "btnSearch";

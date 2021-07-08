@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucRecords));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvRecord = new System.Windows.Forms.DataGridView();
@@ -76,7 +74,6 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.panel5.Controls.Add(this.button1);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(10, 10);
@@ -84,32 +81,15 @@
             this.panel5.Size = new System.Drawing.Size(965, 67);
             this.panel5.TabIndex = 13;
             // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 67);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "   Refresh";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(426, 16);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 32);
+            this.label5.Size = new System.Drawing.Size(87, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Record";
             // 
@@ -137,22 +117,22 @@
             // lblTotalrevenue
             // 
             this.lblTotalrevenue.AutoSize = true;
-            this.lblTotalrevenue.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalrevenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalrevenue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lblTotalrevenue.Location = new System.Drawing.Point(16, 470);
+            this.lblTotalrevenue.Location = new System.Drawing.Point(54, 464);
             this.lblTotalrevenue.Name = "lblTotalrevenue";
-            this.lblTotalrevenue.Size = new System.Drawing.Size(153, 23);
+            this.lblTotalrevenue.Size = new System.Drawing.Size(130, 20);
             this.lblTotalrevenue.TabIndex = 26;
             this.lblTotalrevenue.Text = "Total Revenue:";
             // 
             // lblProfit
             // 
             this.lblProfit.AutoSize = true;
-            this.lblProfit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lblProfit.Location = new System.Drawing.Point(16, 525);
+            this.lblProfit.Location = new System.Drawing.Point(54, 519);
             this.lblProfit.Name = "lblProfit";
-            this.lblProfit.Size = new System.Drawing.Size(63, 23);
+            this.lblProfit.Size = new System.Drawing.Size(57, 20);
             this.lblProfit.TabIndex = 27;
             this.lblProfit.Text = "Profit:";
             // 
@@ -161,7 +141,7 @@
             this.txbTotalrevenue.Location = new System.Drawing.Point(190, 461);
             this.txbTotalrevenue.Name = "txbTotalrevenue";
             this.txbTotalrevenue.ReadOnly = true;
-            this.txbTotalrevenue.Size = new System.Drawing.Size(234, 32);
+            this.txbTotalrevenue.Size = new System.Drawing.Size(234, 26);
             this.txbTotalrevenue.TabIndex = 28;
             // 
             // txbProfit
@@ -169,7 +149,7 @@
             this.txbProfit.Location = new System.Drawing.Point(190, 516);
             this.txbProfit.Name = "txbProfit";
             this.txbProfit.ReadOnly = true;
-            this.txbProfit.Size = new System.Drawing.Size(234, 32);
+            this.txbProfit.Size = new System.Drawing.Size(234, 26);
             this.txbProfit.TabIndex = 29;
             // 
             // btnStatistic
@@ -178,7 +158,7 @@
             this.btnStatistic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.btnStatistic.FlatAppearance.BorderSize = 0;
             this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatistic.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatistic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStatistic.ForeColor = System.Drawing.Color.White;
             this.btnStatistic.Location = new System.Drawing.Point(539, 485);
             this.btnStatistic.Name = "btnStatistic";
@@ -203,7 +183,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ucRecords";
             this.Size = new System.Drawing.Size(985, 574);
             this.panel5.ResumeLayout(false);
@@ -220,7 +200,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvRecord;
