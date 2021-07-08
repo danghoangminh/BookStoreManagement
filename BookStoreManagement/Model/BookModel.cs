@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookStoreManagement.Model
 {
-    public class Book
+    public class BookModel
     {
         public DataTable LoadData()
         {

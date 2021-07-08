@@ -38,7 +38,7 @@ namespace BookStoreManagement.UserControls
 
         private void LoadBook(object sender, EventArgs e)
         {
-            Book book = new Book();
+            BookModel book = new BookModel();
             DataTable ds = book.LoadData();
 
             dgvListBook.DataSource = ds;

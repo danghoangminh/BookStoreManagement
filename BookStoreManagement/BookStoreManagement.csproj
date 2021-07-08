@@ -113,9 +113,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Book.cs" />
+    <Compile Include="Model\BookModel.cs" />
     <Compile Include="Model\DBAccess.cs" />
-    <Compile Include="Model\Login.cs" />
+    <Compile Include="Model\LoginModel.cs" />
+    <Compile Include="Presenter\LoginPresenter.cs" />
     <Compile Include="View\CustomControls\DragControl.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -281,9 +282,7 @@
   <ItemGroup>
     <None Include="Resources\record.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Presenter\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\logout.png" />
   </ItemGroup>
