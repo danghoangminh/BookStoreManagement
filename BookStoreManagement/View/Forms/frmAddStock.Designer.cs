@@ -1,4 +1,4 @@
-﻿namespace BookStoreManagement.Forms
+﻿namespace BookStoreManagement.View.Forms
 {
     partial class frmAddStock
     {
@@ -36,13 +36,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.dragControl1 = new DragControlDemo.DragControl();
             this.cboBookTittle = new System.Windows.Forms.ComboBox();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.nudQuantity = new System.Windows.Forms.NumericUpDown();
             this.lblBooktitle = new System.Windows.Forms.Label();
             this.txbBookID = new System.Windows.Forms.TextBox();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.dragControl1 = new DragControlDemo.DragControl();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,10 +85,10 @@
             // lblBookID
             // 
             this.lblBookID.AutoSize = true;
-            this.lblBookID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBookID.Location = new System.Drawing.Point(40, 183);
+            this.lblBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBookID.Location = new System.Drawing.Point(40, 177);
             this.lblBookID.Name = "lblBookID";
-            this.lblBookID.Size = new System.Drawing.Size(92, 23);
+            this.lblBookID.Size = new System.Drawing.Size(79, 20);
             this.lblBookID.TabIndex = 18;
             this.lblBookID.Text = "Book ID:";
             // 
@@ -97,10 +96,10 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(140, 32);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(151, 50);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(151, 32);
+            this.label4.Size = new System.Drawing.Size(119, 25);
             this.label4.TabIndex = 19;
             this.label4.Text = "Add Stock";
             // 
@@ -110,7 +109,7 @@
             this.btnClose.BackColor = System.Drawing.Color.Red;
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Location = new System.Drawing.Point(28, 341);
             this.btnClose.Name = "btnClose";
@@ -118,7 +117,7 @@
             this.btnClose.TabIndex = 4;
             this.btnClose.Text = "Cancel";
             this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.button3_Click);
+            this.btnClose.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -126,7 +125,7 @@
             this.btnSave.BackColor = System.Drawing.Color.SeaGreen;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(286, 341);
             this.btnSave.Name = "btnSave";
@@ -134,27 +133,25 @@
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
-            // 
-            // dragControl1
-            // 
-            this.dragControl1.SelectControl = this;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // cboBookTittle
             // 
             this.cboBookTittle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBookTittle.FormattingEnabled = true;
-            this.cboBookTittle.Location = new System.Drawing.Point(156, 117);
+            this.cboBookTittle.Location = new System.Drawing.Point(156, 121);
             this.cboBookTittle.Name = "cboBookTittle";
-            this.cboBookTittle.Size = new System.Drawing.Size(213, 31);
+            this.cboBookTittle.Size = new System.Drawing.Size(213, 28);
             this.cboBookTittle.TabIndex = 1;
+            this.cboBookTittle.SelectedIndexChanged += new System.EventHandler(this.cboBookTittle_SelectedIndexChanged);
             // 
             // lblQuantity
             // 
             this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantity.Location = new System.Drawing.Point(40, 241);
+            this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantity.Location = new System.Drawing.Point(40, 235);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(99, 23);
+            this.lblQuantity.Size = new System.Drawing.Size(81, 20);
             this.lblQuantity.TabIndex = 27;
             this.lblQuantity.Text = "Quantity:";
             // 
@@ -172,7 +169,7 @@
             0,
             0});
             this.nudQuantity.Name = "nudQuantity";
-            this.nudQuantity.Size = new System.Drawing.Size(213, 32);
+            this.nudQuantity.Size = new System.Drawing.Size(213, 26);
             this.nudQuantity.TabIndex = 2;
             this.nudQuantity.Value = new decimal(new int[] {
             1,
@@ -183,10 +180,10 @@
             // lblBooktitle
             // 
             this.lblBooktitle.AutoSize = true;
-            this.lblBooktitle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBooktitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBooktitle.Location = new System.Drawing.Point(40, 125);
             this.lblBooktitle.Name = "lblBooktitle";
-            this.lblBooktitle.Size = new System.Drawing.Size(109, 23);
+            this.lblBooktitle.Size = new System.Drawing.Size(94, 20);
             this.lblBooktitle.TabIndex = 35;
             this.lblBooktitle.Text = "Book Title:";
             // 
@@ -195,23 +192,12 @@
             this.txbBookID.Location = new System.Drawing.Point(156, 174);
             this.txbBookID.Name = "txbBookID";
             this.txbBookID.ReadOnly = true;
-            this.txbBookID.Size = new System.Drawing.Size(213, 32);
+            this.txbBookID.Size = new System.Drawing.Size(213, 26);
             this.txbBookID.TabIndex = 36;
             // 
-            // btnExit
+            // dragControl1
             // 
-            this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExit.BackColor = System.Drawing.Color.White;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(346, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(57, 39);
-            this.btnExit.TabIndex = 37;
-            this.btnExit.Text = "X";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.dragControl1.SelectControl = this;
             // 
             // frmAddStock
             // 
@@ -232,7 +218,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddStock";
