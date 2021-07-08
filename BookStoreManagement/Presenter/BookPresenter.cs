@@ -58,5 +58,19 @@ namespace BookStoreManagement.Presenter
                 MessageBox.Show($"ADD {column} FAILURE!!", "NOFICATION");
             }
         }
+
+        public void addQty(string table, string column, int value, string idCol, string id)
+        {
+            if (value > 0)
+            {
+                int total = int.Parse(book.LoadItem(column, table, idCol, id)) + value;
+                book.AddQty(table, column, total, idCol, id);
+                MessageBox.Show($"ADD {column} COMPLETE!", "NOFICATION");
+            }
+            else
+            {
+                MessageBox.Show($"ADD {column} FAILURE!!", "NOFICATION");
+            }
+        }
     }
 }

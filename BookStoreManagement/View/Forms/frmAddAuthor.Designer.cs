@@ -35,8 +35,6 @@ namespace BookStoreManagement.View.Forms
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblAddauthor = new System.Windows.Forms.Label();
-            this.lblAuthorID = new System.Windows.Forms.Label();
-            this.txbAuthorID = new System.Windows.Forms.TextBox();
             this.lblFullname = new System.Windows.Forms.Label();
             this.txbFullname = new System.Windows.Forms.TextBox();
             this.lblPlace = new System.Windows.Forms.Label();
@@ -109,30 +107,11 @@ namespace BookStoreManagement.View.Forms
             this.lblAddauthor.TabIndex = 22;
             this.lblAddauthor.Text = "Add Author";
             // 
-            // lblAuthorID
-            // 
-            this.lblAuthorID.AutoSize = true;
-            this.lblAuthorID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthorID.Location = new System.Drawing.Point(46, 88);
-            this.lblAuthorID.Name = "lblAuthorID";
-            this.lblAuthorID.Size = new System.Drawing.Size(92, 20);
-            this.lblAuthorID.TabIndex = 23;
-            this.lblAuthorID.Text = "Author ID:";
-            // 
-            // txbAuthorID
-            // 
-            this.txbAuthorID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txbAuthorID.Location = new System.Drawing.Point(185, 85);
-            this.txbAuthorID.Name = "txbAuthorID";
-            this.txbAuthorID.ReadOnly = true;
-            this.txbAuthorID.Size = new System.Drawing.Size(284, 26);
-            this.txbAuthorID.TabIndex = 1;
-            // 
             // lblFullname
             // 
             this.lblFullname.AutoSize = true;
             this.lblFullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullname.Location = new System.Drawing.Point(46, 142);
+            this.lblFullname.Location = new System.Drawing.Point(45, 106);
             this.lblFullname.Name = "lblFullname";
             this.lblFullname.Size = new System.Drawing.Size(94, 20);
             this.lblFullname.TabIndex = 24;
@@ -141,7 +120,7 @@ namespace BookStoreManagement.View.Forms
             // txbFullname
             // 
             this.txbFullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txbFullname.Location = new System.Drawing.Point(185, 139);
+            this.txbFullname.Location = new System.Drawing.Point(184, 103);
             this.txbFullname.Name = "txbFullname";
             this.txbFullname.Size = new System.Drawing.Size(284, 26);
             this.txbFullname.TabIndex = 2;
@@ -150,7 +129,7 @@ namespace BookStoreManagement.View.Forms
             // 
             this.lblPlace.AutoSize = true;
             this.lblPlace.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlace.Location = new System.Drawing.Point(46, 196);
+            this.lblPlace.Location = new System.Drawing.Point(45, 164);
             this.lblPlace.Name = "lblPlace";
             this.lblPlace.Size = new System.Drawing.Size(58, 20);
             this.lblPlace.TabIndex = 25;
@@ -159,7 +138,7 @@ namespace BookStoreManagement.View.Forms
             // txbPlace
             // 
             this.txbPlace.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txbPlace.Location = new System.Drawing.Point(185, 193);
+            this.txbPlace.Location = new System.Drawing.Point(184, 161);
             this.txbPlace.Name = "txbPlace";
             this.txbPlace.Size = new System.Drawing.Size(284, 26);
             this.txbPlace.TabIndex = 3;
@@ -168,7 +147,7 @@ namespace BookStoreManagement.View.Forms
             // 
             this.lblDateofbirth.AutoSize = true;
             this.lblDateofbirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateofbirth.Location = new System.Drawing.Point(46, 250);
+            this.lblDateofbirth.Location = new System.Drawing.Point(45, 222);
             this.lblDateofbirth.Name = "lblDateofbirth";
             this.lblDateofbirth.Size = new System.Drawing.Size(115, 20);
             this.lblDateofbirth.TabIndex = 26;
@@ -178,7 +157,7 @@ namespace BookStoreManagement.View.Forms
             // 
             this.lblDateofdeath.AutoSize = true;
             this.lblDateofdeath.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateofdeath.Location = new System.Drawing.Point(46, 349);
+            this.lblDateofdeath.Location = new System.Drawing.Point(45, 329);
             this.lblDateofdeath.Name = "lblDateofdeath";
             this.lblDateofdeath.Size = new System.Drawing.Size(125, 20);
             this.lblDateofdeath.TabIndex = 27;
@@ -187,28 +166,30 @@ namespace BookStoreManagement.View.Forms
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(185, 247);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(184, 219);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(284, 26);
             this.dateTimePicker1.TabIndex = 28;
+            this.dateTimePicker1.Value = new System.DateTime(2021, 7, 9, 0, 44, 5, 0);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.ForeColor = System.Drawing.Color.Black;
-            this.checkBox1.Location = new System.Drawing.Point(185, 301);
+            this.checkBox1.Location = new System.Drawing.Point(184, 277);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(72, 17);
             this.checkBox1.TabIndex = 29;
             this.checkBox1.Text = "Unknown";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(185, 346);
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(184, 326);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(284, 26);
             this.dateTimePicker2.TabIndex = 30;
@@ -217,12 +198,13 @@ namespace BookStoreManagement.View.Forms
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.ForeColor = System.Drawing.Color.Black;
-            this.checkBox2.Location = new System.Drawing.Point(184, 400);
+            this.checkBox2.Location = new System.Drawing.Point(184, 384);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(72, 17);
             this.checkBox2.TabIndex = 31;
             this.checkBox2.Text = "Unknown";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // btnCancel
             // 
@@ -254,6 +236,7 @@ namespace BookStoreManagement.View.Forms
             this.btnSave.TabIndex = 33;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // frmAddAuthor
             // 
@@ -272,8 +255,6 @@ namespace BookStoreManagement.View.Forms
             this.Controls.Add(this.lblPlace);
             this.Controls.Add(this.txbFullname);
             this.Controls.Add(this.lblFullname);
-            this.Controls.Add(this.txbAuthorID);
-            this.Controls.Add(this.lblAuthorID);
             this.Controls.Add(this.lblAddauthor);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -297,8 +278,6 @@ namespace BookStoreManagement.View.Forms
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lblAddauthor;
-        private System.Windows.Forms.Label lblAuthorID;
-        private System.Windows.Forms.TextBox txbAuthorID;
         private System.Windows.Forms.Label lblFullname;
         private System.Windows.Forms.TextBox txbFullname;
         private System.Windows.Forms.Label lblPlace;

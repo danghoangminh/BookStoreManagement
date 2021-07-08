@@ -17,9 +17,9 @@ namespace BookStoreManagement.Model
             DBAccess.Instance.ExecuteNonQuery(query);
         }
 
-        public void AddItem(string item, string column)
+        public void AddItem(string item, string table)
         {
-            string query = $"INSERT INTO {column} VALUES ('{item}')";
+            string query = $"INSERT INTO {table} VALUES ('{item}')";
             DBAccess.Instance.ExecuteNonQuery(query);
         }
 
@@ -28,6 +28,27 @@ namespace BookStoreManagement.Model
             string query = $"SELECT {column} AS {table} FROM {table}";
             DataTable data = DBAccess.Instance.ExecuteQuery(query);
             return data;
+        }
+
+        public string LoadItem(string column, string table, string name, string id)
+        {
+            string query = $"SELECT {column} FROM {table} WHERE {name} = '{id}';";
+            var data = DBAccess.Instance.ExecuteQuery(query);
+
+            if (data.Rows.Count > 0)
+            {
+                return data.Rows[0][column].ToString();
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+        public void AddQty(string table, string column, int value, string idCol, string id)
+        {
+            string query = $"UPDATE {table} SET {column} = {value} WHERE {idCol} = '{id}'";
+            DBAccess.Instance.ExecuteNonQuery(query);
         }
     }
 }

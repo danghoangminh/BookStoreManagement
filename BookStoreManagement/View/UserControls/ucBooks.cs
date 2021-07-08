@@ -27,6 +27,7 @@ namespace BookStoreManagement.View.UserControls
             {
                 addStock.ShowDialog();
             }
+            loadDGV();
         }
 
         protected void loadDGV()

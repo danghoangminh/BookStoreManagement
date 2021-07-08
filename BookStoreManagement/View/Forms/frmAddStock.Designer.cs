@@ -36,12 +36,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.dragControl1 = new DragControlDemo.DragControl();
             this.cboBookTittle = new System.Windows.Forms.ComboBox();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.nudQuantity = new System.Windows.Forms.NumericUpDown();
             this.lblBooktitle = new System.Windows.Forms.Label();
             this.txbBookID = new System.Windows.Forms.TextBox();
+            this.dragControl1 = new DragControlDemo.DragControl();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,7 +117,7 @@
             this.btnClose.TabIndex = 4;
             this.btnClose.Text = "Cancel";
             this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.button3_Click);
+            this.btnClose.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -133,10 +133,7 @@
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
-            // 
-            // dragControl1
-            // 
-            this.dragControl1.SelectControl = this;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // cboBookTittle
             // 
@@ -146,6 +143,7 @@
             this.cboBookTittle.Name = "cboBookTittle";
             this.cboBookTittle.Size = new System.Drawing.Size(213, 28);
             this.cboBookTittle.TabIndex = 1;
+            this.cboBookTittle.SelectedIndexChanged += new System.EventHandler(this.cboBookTittle_SelectedIndexChanged);
             // 
             // lblQuantity
             // 
@@ -196,6 +194,10 @@
             this.txbBookID.ReadOnly = true;
             this.txbBookID.Size = new System.Drawing.Size(213, 26);
             this.txbBookID.TabIndex = 36;
+            // 
+            // dragControl1
+            // 
+            this.dragControl1.SelectControl = this;
             // 
             // frmAddStock
             // 
