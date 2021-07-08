@@ -10,5 +10,13 @@ namespace BookStoreManagement.View.UserControls
         {
             InitializeComponent();
         }
+
+        private void btnStatistic_Click(object sender, EventArgs e)
+        {
+            using (frmStatistic statistic = new frmStatistic())
+            {
+                statistic.ShowDialog();
+            }
+        }
     }
 }
