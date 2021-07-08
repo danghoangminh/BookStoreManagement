@@ -27,6 +27,7 @@ namespace BookStoreManagement.View.Forms
         private void btnSave_Click(object sender, EventArgs e)
         {
             presenter.addQty("BOOK", "QUANTITY", ((int)nudQuantity.Value), "BOOKID", txbBookID.Text);
+            this.Dispose();
         }
 
         private void cboBookTittle_SelectedIndexChanged(object sender, EventArgs e)

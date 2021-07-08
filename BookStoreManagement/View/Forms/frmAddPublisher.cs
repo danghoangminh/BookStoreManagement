@@ -20,6 +20,7 @@ namespace BookStoreManagement.View.Forms
         {
             BookPresenter presenter = new BookPresenter();
             presenter.addItem(txbPublishername.Text, "PUBLISHER");
+            this.Dispose();
         }
     }
 }

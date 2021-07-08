@@ -34,7 +34,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblBookID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.cboBookTittle = new System.Windows.Forms.ComboBox();
             this.lblQuantity = new System.Windows.Forms.Label();
@@ -103,21 +103,21 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Add Stock";
             // 
-            // btnClose
+            // btnCancel
             // 
-            this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnClose.BackColor = System.Drawing.Color.Red;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(28, 341);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(104, 38);
-            this.btnClose.TabIndex = 4;
-            this.btnClose.Text = "Cancel";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnCancel_Click);
+            this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancel.BackColor = System.Drawing.Color.Red;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(28, 341);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(104, 38);
+            this.btnCancel.TabIndex = 4;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -209,7 +209,7 @@
             this.Controls.Add(this.nudQuantity);
             this.Controls.Add(this.lblQuantity);
             this.Controls.Add(this.cboBookTittle);
-            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblBookID);
             this.Controls.Add(this.label4);
@@ -237,7 +237,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblBookID;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
         private DragControlDemo.DragControl dragControl1;
         private System.Windows.Forms.ComboBox cboBookTittle;

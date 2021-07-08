@@ -42,6 +42,7 @@ namespace BookStoreManagement.View.Forms
             {
                 presenter.addAuthor(txbFullname.Text, txbPlace.Text, dateTimePicker1.Text, dateTimePicker2.Text);
             }
+            this.Dispose();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

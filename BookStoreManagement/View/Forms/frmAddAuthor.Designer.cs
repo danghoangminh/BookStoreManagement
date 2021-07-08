@@ -238,6 +238,23 @@ namespace BookStoreManagement.View.Forms
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+<<<<<<< Updated upstream
+=======
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.White;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(429, 10);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(57, 39);
+            this.btnExit.TabIndex = 34;
+            this.btnExit.Text = "X";
+            this.btnExit.UseVisualStyleBackColor = false;
+            // 
+>>>>>>> Stashed changes
             // frmAddAuthor
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;

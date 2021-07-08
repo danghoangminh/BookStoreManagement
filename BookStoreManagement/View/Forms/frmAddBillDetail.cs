@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
-using BookStoreManagement.Presenter;
 
 namespace BookStoreManagement.View.Forms
 {
-    public partial class frmAddCategory : Form
+    public partial class frmAddBillDetail : Form
     {
-        public frmAddCategory()
+        public frmAddBillDetail()
         {
             InitializeComponent();
         }
@@ -16,10 +15,8 @@ namespace BookStoreManagement.View.Forms
             this.Dispose();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
-            BookPresenter presenter = new BookPresenter();
-            presenter.addItem(txbCategoryname.Text, "CATEGORY");
             this.Dispose();
         }
     }

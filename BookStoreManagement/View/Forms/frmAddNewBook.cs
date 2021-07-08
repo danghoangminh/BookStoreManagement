@@ -72,6 +72,7 @@ namespace BookStoreManagement.View.Forms
         private void btnSave_Click(object sender, EventArgs e)
         {
             presenter.addBook(txbBookID.Text, txbBooktitle.Text, cboAuthor.Text, cboCategory.Text, cboPublisher.Text, ((int)nudCostprice.Value), ((int)nudSellingprice.Value), ((int)nudQuantity.Value));
+            this.Dispose();
         }
     }
 }
