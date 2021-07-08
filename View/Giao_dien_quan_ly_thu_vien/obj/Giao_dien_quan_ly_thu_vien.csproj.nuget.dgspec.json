@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\LENOVO\\Desktop\\PJQLNS-main (1)\\PJQLNS-main\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\LENOVO\\Desktop\\PJQLNS-main (1)\\PJQLNS-main\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\PJQLNS-main (1)\\PJQLNS-main\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj",
+        "projectName": "Giao_dien_quan_ly_thu_vien",
+        "projectPath": "C:\\Users\\LENOVO\\Desktop\\PJQLNS-main (1)\\PJQLNS-main\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO\\Desktop\\PJQLNS-main (1)\\PJQLNS-main\\View\\Giao_dien_quan_ly_thu_vien\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "ControlzEx": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
