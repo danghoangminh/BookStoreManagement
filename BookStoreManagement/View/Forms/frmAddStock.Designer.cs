@@ -97,7 +97,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(140, 32);
+            this.label4.Location = new System.Drawing.Point(151, 50);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(119, 25);
             this.label4.TabIndex = 19;
