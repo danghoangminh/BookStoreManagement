@@ -18,7 +18,7 @@ namespace BookStoreManagement
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            LoginPresenter login = new LoginPresenter(txbUser.Text, txbPassword.Text);
+            _ = new LoginPresenter(txbUser.Text, txbPassword.Text);
         }
     }
 }

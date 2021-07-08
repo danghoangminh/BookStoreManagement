@@ -11,7 +11,7 @@ namespace BookStoreManagement.Model
     {
         public DataTable LoadData()
         {
-            string query = "SELECT BOOKID AS [Book ID], BOOKTITLE AS [Book Title], AUTHOR AS [Author], CATEGORY AS [Category], PUBLISHER AS [Publisher], COSTPRICE AS [Cost Price], SELLPRICE AS [Selling Price], QUANTITY AS [Quantity] FROM BOOK";
+            string query = "SELECT * FROM BOOK";
             DataTable data = DBAccess.Instance.ExecuteQuery(query);
             return data;
         }

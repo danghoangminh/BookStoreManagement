@@ -116,6 +116,7 @@
     <Compile Include="Model\BookModel.cs" />
     <Compile Include="Model\DBAccess.cs" />
     <Compile Include="Model\LoginModel.cs" />
+    <Compile Include="Presenter\BookPresenter.cs" />
     <Compile Include="Presenter\LoginPresenter.cs" />
     <Compile Include="View\CustomControls\DragControl.cs">
       <SubType>Component</SubType>
@@ -222,7 +223,9 @@
     <EmbeddedResource Include="View\UserControls\ucRecords.resx">
       <DependentUpon>ucRecords.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Model\database.sqlite" />
+    <None Include="Model\database.sqlite">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\BookStoreManagement.Forms.frmAddCategory.datasource" />
     <None Include="Properties\DataSources\BookStoreManagement.Forms.frmAddNewBook.datasource" />
