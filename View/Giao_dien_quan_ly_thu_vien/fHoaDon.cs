@@ -1,4 +1,4 @@
-﻿using Giao_dien_quan_ly_thu_vien.DAO;
+using Giao_dien_quan_ly_thu_vien.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -84,7 +84,8 @@ namespace Giao_dien_quan_ly_thu_vien
         {
             if (bChonHD == 1)
             {
-                string query = "UPDATE HOADON SET TENKHACHHANG = '" + txbTenKH_Sua.Text + "', NGAYLAP = '" + dateTimePicker_Sua.Text + "' Where MAHOADON = '" + mahd + "'";
+                DateTime ngaysua = dateTimePicker_Sua.Value;
+                string query = "UPDATE HOADON SET TENKHACHHANG = '" + txbTenKH_Sua.Text + "', NGAYLAP = '" + ngaysua.ToString("yyyy-MM-dd") + "' Where MAHOADON = '" + mahd + "'";
                 DataTable data = DataProvider.Instance.ExecuteQuery(query);
                 txbTenKH_Sua.Text = "";
                 dateTimePicker_Sua.Text = DateTime.Now.ToString();
@@ -236,24 +237,40 @@ namespace Giao_dien_quan_ly_thu_vien
                     {
                         if (item.Checked == true)
                         {
-                            hientai = Convert.ToInt32(item.SubItems[2].Text) * Convert.ToInt32(numericUpDownSoLuong.Value);
-                            try
+                            string query4 = "Select SOLUONG From KHO where MASACH = '" + item.SubItems[0].Text + "'";
+                            object data4 = DataProvider.Instance.ExecuteScalar(query4);
+                            int hieu;
+                            hieu = Convert.ToInt32(data4) - Convert.ToInt32(numericUpDownSoLuong.Value);
+                            if (hieu >= Convert.ToInt32(numericUpDownSoLuong.Value))
                             {
-                                string query1 = "Insert into HOADON values ('" + txbMaHD.Text + "', '" + txbTenKH.Text + "', '" +
-                                    dateTimePicker_NgayLap.Text + "', " + hientai + ")";
-                                DataTable data1 = DataProvider.Instance.ExecuteQuery(query1);
-                                tong = tong + hientai;
+                                hientai = Convert.ToInt32(item.SubItems[2].Text) * Convert.ToInt32(numericUpDownSoLuong.Value);
+                                try
+                                {
+                                    DateTime ngaylap = dateTimePicker_NgayLap.Value;
+                                    string query1 = "Insert into HOADON values ('" + txbMaHD.Text + "', '" + txbTenKH.Text + "', '" +
+                                        ngaylap.ToString("yyyy-MM-dd") + "', " + hientai + ")";
+                                    DataTable data1 = DataProvider.Instance.ExecuteQuery(query1);
+                                    tong = tong + hientai;
+                                }
+                                catch
+                                {
+                                    tong = tong + hientai;
+                                    string query2 = "Update HOADON set TONGTIEN = " + tong + " where MAHOADON = '" + txbMaHD.Text + "'";
+                                    DataTable data2 = DataProvider.Instance.ExecuteQuery(query2);
+                                }
+
+                                string query3 = "Insert into CHITIETHOADON values ('" + txbMaHD.Text + "', '" + item.SubItems[0].Text + "', '"
+                                    + numericUpDownSoLuong.Value + "', '" + item.SubItems[2].Text + "', " + hientai + ")";
+                                DataTable data3 = DataProvider.Instance.ExecuteQuery(query3);
+
+                                string query5 = "UPDATE KHO SET SOLUONG = " + hieu + " Where MASACH = '" + item.SubItems[0].Text + "'";
+                                DataTable data5 = DataProvider.Instance.ExecuteQuery(query5);
+                                MessageBox.Show("ĐÃ THÊM!", "THÔNG BÁO");
                             }
-                            catch
+                            else
                             {
-                                tong = tong + hientai;
-                                string query2 = "Update HOADON set TONGTIEN = " + tong + " where MAHOADON = '" + txbMaHD.Text + "'";
-                                DataTable data2 = DataProvider.Instance.ExecuteQuery(query2);
+                                MessageBox.Show("KHÔNG CÒN SÁCH '" + item.SubItems[1].Text + "' TRONG KHO", "THÔNG BÁO");
                             }
-                            MessageBox.Show("ĐÃ THÊM!", "THÔNG BÁO");
-                            string query3 = "Insert into CHITIETHOADON values ('" + txbMaHD.Text + "', '" + item.SubItems[0].Text + "', '"
-                                + numericUpDownSoLuong.Value + "', '" + item.SubItems[2].Text + "', " + hientai + ")";
-                            DataTable data3 = DataProvider.Instance.ExecuteQuery(query3);
                             listView1_SelectedIndexChanged();
                         }
                     }
@@ -307,18 +324,14 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private void bThemHD_Click(object sender, EventArgs e)
         {
-                listView1_SelectedIndexChanged();
-                listView3_SelectedIndexChanged();
-                txbMaHD_TextChanged();
-                txbTenKH.Text = "";
-                dateTimePicker_NgayLap.Text = DateTime.Now.ToString();
-                tong = 0;
-                txbTenKH.ReadOnly = false;
-            if (txbTenKH.Text != "")
-            {
-                MessageBox.Show("HOÀN THÀNH HÓA ĐƠN!", "THÔNG BÁO");
-            }
-            else { }
+            MessageBox.Show("HOÀN THÀNH HÓA ĐƠN!", "THÔNG BÁO");
+            listView1_SelectedIndexChanged();
+            listView3_SelectedIndexChanged();
+            txbMaHD_TextChanged();
+            txbTenKH.Text = "";
+            dateTimePicker_NgayLap.Text = DateTime.Now.ToString();
+            tong = 0;
+            txbTenKH.ReadOnly = false;
         }
 
         private void fThoat_Click(object sender, EventArgs e)
