@@ -62,8 +62,8 @@
   - [6.4. Quy định phân bố mã nguồn](#64-quy-định-phân-bố-mã-nguồn)
 - [7. Kết quả thực hiện](#7-kết-quả-thực-hiện)
   - [7.1. Môi trường phát triển và Môi trường triển khai](#71-môi-trường-phát-triển-và-môi-trường-triển-khai)
-  - [7.2. Kết quả đạt được:](#72-kết-quả-đạt-được)
-  - [7.3. Hướng phát triển:](#73-hướng-phát-triển)
+  - [7.2. Kết quả đạt được](#72-kết-quả-đạt-được)
+  - [7.3. Hướng phát triển](#73-hướng-phát-triển)
 # 1. Xác định bài toán
 - Khảo sát hiện trạng:
   - Nhu cầu: Các cửa hàng sách cần 1 giải pháp giúp họ có thể quản lý các đầu sách và bán sách cho khách hàng.
@@ -384,9 +384,9 @@ Bắt buộc đặt tên cho tất cả các control có tham gia xử lý dư�
   - Hệ điều hành: Microsoft Windows
   - Cần cài đặt .Net Framework 4.0 hoặc cao hơn
   - Để chương trình hoạt động cần có đủ các dll trong folder dll
-## 7.2. Kết quả đạt được:
+## 7.2. Kết quả đạt được
 - Chương trình đã được hoàn thiện hầu hết các chức năng, nhưng vẫn có những chức năng chưa được hoàn thiện như: Thêm tài khoản, Xuất file báo cáo dạng PDF hoặc Excel.
-## 7.3. Hướng phát triển:
+## 7.3. Hướng phát triển
 - Hoàn thiện các chức năng và giao diện chưa hoàn tất.
 - Cải thiện hiệu năng của chương trình để phù hợp với thực tiễn.
 - Bổ sung các chức năng liên quan đến CSDL: backup/restore.
