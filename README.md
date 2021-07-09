@@ -147,42 +147,55 @@ Kế hoạch gồm 5 giai đoạn:
 ## 4.2. Mô tả chi tiết mỗi màn hình
 ### 4.2.1. Màn hình fDangNhap
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/DangNhap.png)
+
 Người dùng điền thông tin Username/Password để đăng nhập. Nếu đăng nhập thất bại quá 3 lần sẽ tự tắt chương trình.
 ### 4.2.2. Màn hình fViewTong
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/Quanlynhasach.png)
+
 Hiển thị những đầu sách có trong database, doanh thu và số lượng khách trong ngày hôm đó. Menu ở trên chứa các chức năng của chương trình.
 ### 4.2.3. Màn hình fTaiKhoan
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/ThayDoiThongTinAcc.png)
+
 Cho phép thay đổi mật khẩu của tài khoản, yêu cầu nhập đúng mật khẩu cũ khi muốn thay đổi mật khẩu mới.
 ### 4.2.4. Màn hình fThemSach
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/ThemSach.png)
+
 Cho phép thêm đầu sách mới vào database. Yêu cầu nhập đầy đủ thông tin, nếu không sẽ báo lỗi nhập thiếu và yêu cầu bổ sung.
 ### 4.2.5. Màn hình fSuaSach
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/SuaSach.png)
+
 Cho phép sửa thông tin sách trong database. Yêu cầu nhập đầy đủ thông tin, nếu không sẽ báo lỗi nhập thiếu và yêu cầu bổ sung.
 ### 4.2.6. Màn hình fXoaSach
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/XoaSach.png)
+
 Cho phép xóa sách trong database. Chọn sách cần xóa trong list sách hiển thị.
 ### 4.2.7. Màn hình fThemTacGia
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/ThemTG.png)
+
 Cho phép thêm tác giả mới vào database. Yêu cầu nhập tên tác giả, nếu không sẽ báo lỗi nhập thiếu và yêu cầu bổ sung. Đối với ô Quê Quán, Năm Sinh, Năm Mất nếu không có thì phải chọn nút 'CHƯA RÕ' không sẽ báo lỗi thiếu thông tin.
 ### 4.2.8. Màn hình fSuaTacGia
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/SuaTG.png)
+
 Cho phép sửa thông tin tác giả trong database. Yêu cầu nhập tên tác giả, nếu không sẽ báo lỗi nhập thiếu và yêu cầu bổ sung. Đối với ô Quê Quán, Năm Sinh, Năm Mất nếu không có thì phải chọn nút 'CHƯA RÕ' không sẽ báo lỗi thiếu thông tin.
 ### 4.2.9. Màn hình fXoaTacGia
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/XoaTG.png)
+
 Cho phép xóa tác giả trong database. Chọn tác giả cần xóa trong list sách hiển thị.
 ### 4.2.10. Màn hình fLinhVuc
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/LinhVuc.png)
+
 Cho phép thêm lĩnh vực mới vào database. Nếu muốn xóa thì chọn lĩnh vực cần xóa ở menu bên dưới và bấm nút xóa.
 ### 4.2.11. Màn hình fLoaiSach
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/LoaiSach.png)
+
 Cho phép thêm loại sách mới vào database. Nếu muốn xóa thì chọn loại sách cần xóa ở menu bên dưới và bấm nút xóa.
 ### 4.2.12. Màn hình fNhaXuatBan
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/NXB.png)
+
 Cho phép thêm nhà xuất bản mới vào database. Nếu muốn xóa thì chọn nhà xuất bản cần xóa ở menu bên dưới và bấm nút xóa.
 ### 4.2.13. Màn hình fKho
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/Kho.png)
+
 Gồm 2 phần:
 - Phần trên: cho phép sửa số lượng sách có trong kho hoặc xóa luôn sách.
 - Phần dưới: thêm số lượng cho đầu sách có trong kho.
