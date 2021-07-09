@@ -306,7 +306,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.Name = "frmViewTong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÍ NHÀ SÁCH";
-            this.Load += new System.EventHandler(this.fViewTong_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

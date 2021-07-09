@@ -226,10 +226,5 @@ namespace Giao_dien_quan_ly_thu_vien
             object data3 = DataProvider.Instance.ExecuteScalar(query3);
             txbSLKhach.Text = data3.ToString() + " người";
         }
-
-        private void fViewTong_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
