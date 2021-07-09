@@ -210,54 +210,20 @@ Chọn khoảng ngày cần thống kê bán hàng, phần mềm sẽ hiển th�
 ### 4.2.16. Màn hình fBaoCao
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/BaoCao.png)
 Xuất báo cáo chi tiết về số lượng bán đượccác loại sách, doanh thu và lợi nhuận trong khoảng ngày đã chọn ở màn hình fThongKe.
-# 5. Thiết kế xử lý
-## 5.1. Màn hình fDangNhap
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/DangNhap.png)
-## 5.2. Màn hình fViewTong
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/Quanlynhasach.png)
-## 5.3. Màn hình fTaiKhoan
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/ThayDoiThongTinAcc.png)
-## 5.4. Màn hình fThemSach
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/ThemSach.png)
-## 5.5. Màn hình fSuaSach
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/SuaSach.png)
-## 5.6. Màn hình fXoaSach
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/XoaSach.png)
-## 5.7. Màn hình fThemTacGia
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/ThemTG.png)
-## 5.8. Màn hình fSuaTacGia
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/SuaTG.png)
-## 5.9. Màn hình fXoaTacGia
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/XoaTG.png)
-## 5.10. Màn hình fLinhVuc
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/LinhVuc.png)
-## 5.11. Màn hình fLoaiSach
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/LoaiSach.png)
-## 5.12. Màn hình fNhaXuatBan
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/NXB.png)
-## 5.13. Màn hình fKho
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/Kho.png)
-## 5.14. Màn hình fHoaDon
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/HoaDon.png)
-## 5.15. Màn hình fThongKe
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/ThongKe.png)
-## 5.16. Màn hình fBaoCao
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/BaoCao.png)
-
-# 6. Thiết kế kiến trúc
-## 6.1. Kiến trúc hệ thống
+# 5. Thiết kế kiến trúc
+## 5.1. Kiến trúc hệ thống
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/layer.png)
 | Thành phần | Diễn giải                         |
 |------------|-----------------------------------|
 | Client     | Ứng dụng tương tác với người dùng |
 | Data       | Nơi chứa dữ liệu của hệ thống     |
-## 6.2. Mô tả chi tiết kiến trúc hệ thống
+## 5.2. Mô tả chi tiết kiến trúc hệ thống
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/folderview.png)
 - Ứng dụng được thiết kế theo mô hình 2 lớp (được viết chung trong 1 project) gồm:
   - View xử lý giao diện và xử lí tác vụ.
   - DAO gọi các truy xuất từ csdl (SQL).
-# 7. Kết quả thực hiện
-## 7.1. Môi trường phát triển và Môi trường triển khai
+# 6. Kết quả thực hiện
+## 6.1. Môi trường phát triển và Môi trường triển khai
 - Môi trường phát triển ứng dụng:
   - Hệ điều hành: Microsoft Windows 10
   - Hệ quản trị cơ sở dữ liệu: Microsoft SQL Server
@@ -267,9 +233,9 @@ Xuất báo cáo chi tiết về số lượng bán đượccác loại sách, d
   - Hệ điều hành: Microsoft Windows
   - Cần cài đặt .Net Framework 4.0 hoặc cao hơn
   - Để chương trình hoạt động cần có đủ các dll trong folder dll
-## 7.2. Kết quả đạt được:
+## 6.2. Kết quả đạt được:
 - Chương trình đã được hoàn thiện hầu hết các chức năng, nhưng vẫn có những chức năng chưa được hoàn thiện như: Thêm tài khoản, Xuất file báo cáo dạng PDF hoặc Excel.
-## 7.3. Hướng phát triển:
+## 6.3. Hướng phát triển:
 - Hoàn thiện các chức năng và giao diện chưa hoàn tất.
 - Cải thiện hiệu năng của chương trình để phù hợp với thực tiễn.
 - Bổ sung các chức năng liên quan đến CSDL: backup/restore.
