@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Drawing.Imaging;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
@@ -67,6 +68,16 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private void bThoat_Click(object sender, EventArgs e)
         {
+            Rectangle bounds = this.Bounds;
+            using (Bitmap bitmap = new Bitmap(bounds.Width, bounds.Height))
+            {
+                using (Graphics g = Graphics.FromImage(bitmap))
+                {
+                    g.CopyFromScreen(new Point(bounds.Left, bounds.Top), Point.Empty, bounds.Size);
+                }
+                bitmap.Save(@"C:\Quanlinhasach\BAOCAO.jpg", ImageFormat.Jpeg);
+            }
+            MessageBox.Show(@"LƯU ẢNH TẠI C:\Quanlinhasach\", "THÔNG BÁO");
             this.Close();
         }
     }
