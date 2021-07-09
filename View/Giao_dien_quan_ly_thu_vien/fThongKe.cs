@@ -1,4 +1,4 @@
-﻿using Giao_dien_quan_ly_thu_vien.DAO;
+using Giao_dien_quan_ly_thu_vien.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,8 +31,10 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private void listView1_SelectedIndexChanged()
         {
+            DateTime tungay = dateTimePicker_TuNgay.Value;
+            DateTime denngay = dateTimePicker_DenNgay.Value;
             string query = "Select MAHOADON, TENKHACHHANG, NGAYLAP, TONGTIEN from HOADON where NGAYLAP between '" + 
-                dateTimePicker_TuNgay.Text + "' and '" + dateTimePicker_DenNgay.Text + "'";
+                tungay.ToString("yyyy/MM/dd") + "' and '" + denngay.ToString("yyyy/MM/dd") + "'";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             this.dgvThongKe.Clear();
