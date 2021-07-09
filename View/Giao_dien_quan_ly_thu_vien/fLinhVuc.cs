@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fLinhVuc : Form
+    public partial class frmLinhVuc : Form
     {
-        public fLinhVuc()
+        public frmLinhVuc()
         {
             InitializeComponent();
             listView1_SelectedIndexChanged();
@@ -26,7 +26,7 @@ namespace Giao_dien_quan_ly_thu_vien
             {
                 try
                 {
-                    string query = "Delete From LINHVUC Where TENLINHVUC = '" + cbXoaLinhVuc.Text.ToString() + "'";
+                    string query = "Delete From LINHVUC Where TENLINHVUC = '" + cboXoaLinhVuc.Text.ToString() + "'";
                     DataTable data = DataProvider.Instance.ExecuteQuery(query);
                     listView1_SelectedIndexChanged();
                     cbXoaLinhVuc_SelectedIndexChanged();
@@ -73,17 +73,17 @@ namespace Giao_dien_quan_ly_thu_vien
             string query = "Select TENLINHVUC From LINHVUC";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
-            this.listView1.Clear();
-            this.listView1.Items.Clear();
-            this.listView1.View = View.Details;
-            this.listView1.Columns.Add("DANH SÁCH CÁC TÊN LĨNH VỰC HIỆN CÓ", 610);
-            this.listView1.GridLines = true;
-            this.listView1.FullRowSelect = true;
+            this.dgvLinhVuc.Clear();
+            this.dgvLinhVuc.Items.Clear();
+            this.dgvLinhVuc.View = View.Details;
+            this.dgvLinhVuc.Columns.Add("DANH SÁCH CÁC TÊN LĨNH VỰC HIỆN CÓ", 610);
+            this.dgvLinhVuc.GridLines = true;
+            this.dgvLinhVuc.FullRowSelect = true;
 
             int i = 0;
             foreach (DataRow row in data.Rows)
             {
-                this.listView1.Items.Add(row["TENLINHVUC"].ToString());
+                this.dgvLinhVuc.Items.Add(row["TENLINHVUC"].ToString());
                 i++;
             }
         }
@@ -92,10 +92,10 @@ namespace Giao_dien_quan_ly_thu_vien
         {
             string query = "Select TENLINHVUC From LINHVUC";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            cbXoaLinhVuc.DataSource = data;
-            cbXoaLinhVuc.ValueMember = "TENLINHVUC";
-            cbXoaLinhVuc.DisplayMember = "TENLINHVUC";
-            cbXoaLinhVuc.Text = null;
+            cboXoaLinhVuc.DataSource = data;
+            cboXoaLinhVuc.ValueMember = "TENLINHVUC";
+            cboXoaLinhVuc.DisplayMember = "TENLINHVUC";
+            cboXoaLinhVuc.Text = null;
         }
     }
 }

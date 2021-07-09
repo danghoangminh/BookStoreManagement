@@ -17,7 +17,7 @@ namespace Giao_dien_quan_ly_thu_vien
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fDangNhap());
+            Application.Run(new frmDangNhap());
         }
     }
 }

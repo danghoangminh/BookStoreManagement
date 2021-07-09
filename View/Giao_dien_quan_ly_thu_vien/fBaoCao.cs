@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fBaoCao : Form
+    public partial class frmBaoCao : Form
     {
-        public fBaoCao()
+        public frmBaoCao()
         {
             InitializeComponent();
             listView1_SelectedIndexChanged();

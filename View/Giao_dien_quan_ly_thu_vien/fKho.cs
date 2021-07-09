@@ -9,11 +9,11 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fKho : Form
+    public partial class frmKho : Form
     {
         int bSua = 0;
         int bThem = 0;
-        public fKho()
+        public frmKho()
         {
             InitializeComponent();
             listView1_SelectedIndexChanged();
@@ -140,36 +140,36 @@ namespace Giao_dien_quan_ly_thu_vien
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
-            this.listView2.Clear();
-            this.listView2.Items.Clear();
-            this.listView2.View = View.Details;
-            this.listView2.Columns.Add("MÃ SÁCH", 150);
-            this.listView2.Columns.Add("TÊN SÁCH", 270);
-            this.listView2.Columns.Add("TÁC GIẢ", 200);
-            this.listView2.Columns.Add("LĨNH VỰC", 100);
-            this.listView2.Columns.Add("LOẠI SÁCH", 150);
-            this.listView2.Columns.Add("GIÁ MUA", 100);
-            this.listView2.Columns.Add("GIÁ BÌA", 100);
-            this.listView2.Columns.Add("LẦN TÁI BẢN", 100);
-            this.listView2.Columns.Add("TÊN NXB", 160);
-            this.listView2.Columns.Add("NĂM XUẤT BẢN", 200);
-            this.listView2.GridLines = true;
-            this.listView2.FullRowSelect = true;
-            this.listView2.CheckBoxes = true;
+            this.dgvChonSach.Clear();
+            this.dgvChonSach.Items.Clear();
+            this.dgvChonSach.View = View.Details;
+            this.dgvChonSach.Columns.Add("MÃ SÁCH", 150);
+            this.dgvChonSach.Columns.Add("TÊN SÁCH", 270);
+            this.dgvChonSach.Columns.Add("TÁC GIẢ", 200);
+            this.dgvChonSach.Columns.Add("LĨNH VỰC", 100);
+            this.dgvChonSach.Columns.Add("LOẠI SÁCH", 150);
+            this.dgvChonSach.Columns.Add("GIÁ MUA", 100);
+            this.dgvChonSach.Columns.Add("GIÁ BÌA", 100);
+            this.dgvChonSach.Columns.Add("LẦN TÁI BẢN", 100);
+            this.dgvChonSach.Columns.Add("TÊN NXB", 160);
+            this.dgvChonSach.Columns.Add("NĂM XUẤT BẢN", 200);
+            this.dgvChonSach.GridLines = true;
+            this.dgvChonSach.FullRowSelect = true;
+            this.dgvChonSach.CheckBoxes = true;
 
             int i = 0;
             foreach (DataRow row in data.Rows)
             {
-                this.listView2.Items.Add(row["MASACH"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["TENSACH"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["TENTG"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["TENLINHVUC"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["TENLOAISACH"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["GIAMUA"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["GIABIA"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["LANTAIBAN"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["TENNHAXUATBAN"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["NAMXUATBAN"].ToString());
+                this.dgvChonSach.Items.Add(row["MASACH"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["TENSACH"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["TENTG"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["TENLINHVUC"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["TENLOAISACH"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["GIAMUA"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["GIABIA"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["LANTAIBAN"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["TENNHAXUATBAN"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["NAMXUATBAN"].ToString());
                 i++;
             }
         }
@@ -196,7 +196,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void bChonThem_Click(object sender, EventArgs e)
         {
             int count = 0;
-            foreach (ListViewItem item in this.listView2.Items)
+            foreach (ListViewItem item in this.dgvChonSach.Items)
             {
                 if (item.Checked)
                     count++;
@@ -205,7 +205,7 @@ namespace Giao_dien_quan_ly_thu_vien
             if (count == 1)
             {
                 bThem = 1;
-                foreach (ListViewItem item in this.listView2.Items)
+                foreach (ListViewItem item in this.dgvChonSach.Items)
                 {
                     if (item.Checked == true)
                     {

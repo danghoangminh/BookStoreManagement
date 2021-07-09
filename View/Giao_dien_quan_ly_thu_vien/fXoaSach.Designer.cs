@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    partial class fXoaSach
+    partial class frmXoaSach
     {
         /// <summary>
         /// Required designer variable.
@@ -31,22 +31,22 @@ namespace Giao_dien_quan_ly_thu_vien
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             ""}, -1, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point));
-            this.bXoa = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.fThoat = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.dgvXoaSach = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // bXoa
+            // btnXoa
             // 
-            this.bXoa.Location = new System.Drawing.Point(7, 389);
-            this.bXoa.Name = "bXoa";
-            this.bXoa.Size = new System.Drawing.Size(183, 29);
-            this.bXoa.TabIndex = 13;
-            this.bXoa.Text = "XÓA SÁCH";
-            this.bXoa.UseVisualStyleBackColor = true;
-            this.bXoa.Click += new System.EventHandler(this.bXoa_Click);
+            this.btnXoa.Location = new System.Drawing.Point(7, 389);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(183, 29);
+            this.btnXoa.TabIndex = 13;
+            this.btnXoa.Text = "XÓA SÁCH";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.bXoa_Click);
             // 
             // fThoat
             // 
@@ -58,30 +58,30 @@ namespace Giao_dien_quan_ly_thu_vien
             this.fThoat.UseVisualStyleBackColor = true;
             this.fThoat.Click += new System.EventHandler(this.fThoat_Click);
             // 
-            // listView1
+            // dgvXoaSach
             // 
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
-            this.listView1.Location = new System.Drawing.Point(7, 4);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(754, 379);
-            this.listView1.TabIndex = 15;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.dgvXoaSach.FullRowSelect = true;
+            this.dgvXoaSach.GridLines = true;
+            this.dgvXoaSach.HideSelection = false;
+            this.dgvXoaSach.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem2});
+            this.dgvXoaSach.Location = new System.Drawing.Point(7, 4);
+            this.dgvXoaSach.Name = "dgvXoaSach";
+            this.dgvXoaSach.Size = new System.Drawing.Size(754, 379);
+            this.dgvXoaSach.TabIndex = 15;
+            this.dgvXoaSach.UseCompatibleStateImageBehavior = false;
+            this.dgvXoaSach.View = System.Windows.Forms.View.Details;
             // 
-            // fXoaSach
+            // frmXoaSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(766, 428);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.dgvXoaSach);
             this.Controls.Add(this.fThoat);
-            this.Controls.Add(this.bXoa);
+            this.Controls.Add(this.btnXoa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "fXoaSach";
+            this.Name = "frmXoaSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "XÓA SÁCH";
             this.ResumeLayout(false);
@@ -89,9 +89,9 @@ namespace Giao_dien_quan_ly_thu_vien
         }
 
         #endregion
-        private System.Windows.Forms.Button bXoa;
+        private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button fThoat;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView dgvXoaSach;
 
 
     }

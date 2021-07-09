@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fXoaTacGia : Form
+    public partial class frmXoaTacGia : Form
     {
-        public fXoaTacGia()
+        public frmXoaTacGia()
         {
             InitializeComponent();
             listView1_SelectedIndexChanged();
@@ -27,26 +27,26 @@ namespace Giao_dien_quan_ly_thu_vien
             string query = "Select MATG, TENTG, NAMSINH, NAMMAT, QUEQUAN From TACGIA";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
-            this.listView1.Clear();
-            this.listView1.Items.Clear();
-            this.listView1.View = View.Details;
-            this.listView1.Columns.Add("MÃ TÁC GIẢ", 100);
-            this.listView1.Columns.Add("TÊN TÁC GIẢ", 180);
-            this.listView1.Columns.Add("NĂM SINH", 100);
-            this.listView1.Columns.Add("NĂM MẤT", 100);
-            this.listView1.Columns.Add("QUÊ QUÁN", 200);
-            this.listView1.GridLines = true;
-            this.listView1.FullRowSelect = true;
-            this.listView1.CheckBoxes = true;
+            this.dgvXoaTacGia.Clear();
+            this.dgvXoaTacGia.Items.Clear();
+            this.dgvXoaTacGia.View = View.Details;
+            this.dgvXoaTacGia.Columns.Add("MÃ TÁC GIẢ", 100);
+            this.dgvXoaTacGia.Columns.Add("TÊN TÁC GIẢ", 180);
+            this.dgvXoaTacGia.Columns.Add("NĂM SINH", 100);
+            this.dgvXoaTacGia.Columns.Add("NĂM MẤT", 100);
+            this.dgvXoaTacGia.Columns.Add("QUÊ QUÁN", 200);
+            this.dgvXoaTacGia.GridLines = true;
+            this.dgvXoaTacGia.FullRowSelect = true;
+            this.dgvXoaTacGia.CheckBoxes = true;
 
             int i = 0;
             foreach (DataRow row in data.Rows)
             {
-                this.listView1.Items.Add(row["MATG"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENTG"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["NAMSINH"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["NAMMAT"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["QUEQUAN"].ToString());
+                this.dgvXoaTacGia.Items.Add(row["MATG"].ToString());
+                this.dgvXoaTacGia.Items[i].SubItems.Add(row["TENTG"].ToString());
+                this.dgvXoaTacGia.Items[i].SubItems.Add(row["NAMSINH"].ToString());
+                this.dgvXoaTacGia.Items[i].SubItems.Add(row["NAMMAT"].ToString());
+                this.dgvXoaTacGia.Items[i].SubItems.Add(row["QUEQUAN"].ToString());
                 i++;
             }
         }
@@ -54,7 +54,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void bXoaTG_Click(object sender, EventArgs e)
         {
             int count0 = 0;
-            foreach (ListViewItem item in this.listView1.Items)
+            foreach (ListViewItem item in this.dgvXoaTacGia.Items)
             {
                 if (item.Checked)
                     count0++;
@@ -66,7 +66,7 @@ namespace Giao_dien_quan_ly_thu_vien
                 d = MessageBox.Show("BẠN CÓ CHẮC CHẮN MUỐN XÓA?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (d == DialogResult.Yes)
                 {
-                    foreach (ListViewItem item in this.listView1.Items)
+                    foreach (ListViewItem item in this.dgvXoaTacGia.Items)
                     {
                         if (item.Checked == true)
                         {

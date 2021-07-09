@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fSuaTacGia : Form
+    public partial class frmSuaTacGia : Form
     {
         int bChonTG = 0;
-        public fSuaTacGia()
+        public frmSuaTacGia()
         {
             InitializeComponent();
             listView1_SelectedIndexChanged();
@@ -23,26 +23,26 @@ namespace Giao_dien_quan_ly_thu_vien
             string query = "Select MATG, TENTG, NAMSINH, NAMMAT, QUEQUAN From TACGIA";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
-            this.listView1.Clear();
-            this.listView1.Items.Clear();
-            this.listView1.View = View.Details;
-            this.listView1.Columns.Add("MÃ TÁC GIẢ", 100);
-            this.listView1.Columns.Add("TÊN TÁC GIẢ", 180);
-            this.listView1.Columns.Add("NĂM SINH", 100);
-            this.listView1.Columns.Add("NĂM MẤT", 100);
-            this.listView1.Columns.Add("QUÊ QUÁN", 200);
-            this.listView1.GridLines = true;
-            this.listView1.FullRowSelect = true;
-            this.listView1.CheckBoxes = true;
+            this.dgvTacGia.Clear();
+            this.dgvTacGia.Items.Clear();
+            this.dgvTacGia.View = View.Details;
+            this.dgvTacGia.Columns.Add("MÃ TÁC GIẢ", 100);
+            this.dgvTacGia.Columns.Add("TÊN TÁC GIẢ", 180);
+            this.dgvTacGia.Columns.Add("NĂM SINH", 100);
+            this.dgvTacGia.Columns.Add("NĂM MẤT", 100);
+            this.dgvTacGia.Columns.Add("QUÊ QUÁN", 200);
+            this.dgvTacGia.GridLines = true;
+            this.dgvTacGia.FullRowSelect = true;
+            this.dgvTacGia.CheckBoxes = true;
 
             int i = 0;
             foreach (DataRow row in data.Rows)
             {
-                this.listView1.Items.Add(row["MATG"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENTG"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["NAMSINH"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["NAMMAT"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["QUEQUAN"].ToString());
+                this.dgvTacGia.Items.Add(row["MATG"].ToString());
+                this.dgvTacGia.Items[i].SubItems.Add(row["TENTG"].ToString());
+                this.dgvTacGia.Items[i].SubItems.Add(row["NAMSINH"].ToString());
+                this.dgvTacGia.Items[i].SubItems.Add(row["NAMMAT"].ToString());
+                this.dgvTacGia.Items[i].SubItems.Add(row["QUEQUAN"].ToString());
                 i++;
             }
         }
@@ -50,7 +50,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void bChon_Click(object sender, EventArgs e)
         {
             int count = 0;
-            foreach (ListViewItem item in this.listView1.Items)
+            foreach (ListViewItem item in this.dgvTacGia.Items)
             {
                 if (item.Checked)
                     count++;
@@ -64,7 +64,7 @@ namespace Giao_dien_quan_ly_thu_vien
             else if (count == 1)
             {
                 bChonTG = 1;
-                foreach (ListViewItem item in this.listView1.Items)
+                foreach (ListViewItem item in this.dgvTacGia.Items)
                 {
                     if (item.Checked == true)
                     {
@@ -75,19 +75,19 @@ namespace Giao_dien_quan_ly_thu_vien
                         dateTimePicker_NgayMat.Text = item.SubItems[3].Text;
                         if (dateTimePicker_NgaySinh.Text == DateTime.MinValue.ToString())
                         {
-                            checkBox_NgaySinh.Checked = true;
+                            chkNgaySinh.Checked = true;
                         }
                         else
                         {
-                            checkBox_NgaySinh.Checked = false;
+                            chkNgaySinh.Checked = false;
                         }
                         if (dateTimePicker_NgayMat.Text == DateTime.MaxValue.ToString())
                         {
-                            checkBox_NgayMat.Checked = true;
+                            chkNgayMat.Checked = true;
                         }
                         else
                         {
-                            checkBox_NgayMat.Checked = false;
+                            chkNgayMat.Checked = false;
                         }
                     }
 
@@ -102,7 +102,7 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private void checkBox_NgaySinh_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox_NgaySinh.Checked)
+            if (chkNgaySinh.Checked)
             {
                 dateTimePicker_NgaySinh.Text = DateTime.MinValue.ToString();
             }
@@ -114,7 +114,7 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private void checkBox_NgayMat_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox_NgayMat.Checked)
+            if (chkNgayMat.Checked)
             {
                 dateTimePicker_NgayMat.Text = DateTime.MaxValue.ToString();
             }
@@ -126,15 +126,15 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private void checkBox_QueQuan_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox_QueQuan.Checked)
+            if (chkQueQuan.Checked)
             {
-                checkBox_QueQuan.Text = "(Không có thông tin)";
+                chkQueQuan.Text = "(Không có thông tin)";
                 txbQueQuan.Text = "(Không có thông tin)";
                 txbQueQuan.ReadOnly = true;
             }
             else
             {
-                checkBox_QueQuan.Text = "CHƯA RÕ";
+                chkQueQuan.Text = "CHƯA RÕ";
                 txbQueQuan.Text = "";
                 txbQueQuan.ReadOnly = false;
             }
@@ -152,9 +152,9 @@ namespace Giao_dien_quan_ly_thu_vien
                 txbMaTacGia.Text = "";
                 txbTenTacGia.Text = "";
                 txbQueQuan.Text = "";
-                checkBox_QueQuan.Checked = false;
-                checkBox_NgaySinh.Checked = false;
-                checkBox_NgayMat.Checked = false;
+                chkQueQuan.Checked = false;
+                chkNgaySinh.Checked = false;
+                chkNgayMat.Checked = false;
                 dateTimePicker_NgaySinh.Text = DateTime.Now.ToString();
                 dateTimePicker_NgayMat.Text = DateTime.Now.ToString();
                 listView1_SelectedIndexChanged();

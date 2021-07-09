@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fSuaSach : Form
+    public partial class frmSuaSach : Form
     {
         int bChon = 0;
-        public fSuaSach()
+        public frmSuaSach()
         {
             InitializeComponent();
             listView1_SelectedIndexChanged();
@@ -28,10 +28,10 @@ namespace Giao_dien_quan_ly_thu_vien
             if (bChon == 1)
             {
                 string query = "UPDATE SACH" +
-                    " SET TENSACH = '" + txbTenSach.Text + "', MATG = (Select MATG From TACGIA Where TENTG = '" + cbTenTacGia.Text.ToString() + "'), " +
-                    "TENLINHVUC = '" + cbTenLinhVuc.Text.ToString() + "', TENLOAISACH = '" + cbTenLoaiSach.Text.ToString() + "', GIAMUA = " +
+                    " SET TENSACH = '" + txbTenSach.Text + "', MATG = (Select MATG From TACGIA Where TENTG = '" + cboTenTacGia.Text.ToString() + "'), " +
+                    "TENLINHVUC = '" + cboTenLinhVuc.Text.ToString() + "', TENLOAISACH = '" + cboTenLoaiSach.Text.ToString() + "', GIAMUA = " +
                     numericUpDownGiaMua.Value + ", GIABIA = " + numericUpDownGiaBia.Value + ", LANTAIBAN = " + numericUpDownLanTaiBan.Value +
-                    ", TENNHAXUATBAN = '" + cbTenNXB.Text.ToString() + "', NAMXUATBAN = '" + dateTimePicker_NamXuatBan.Text + "' WHERE MASACH = '" + txbMaSach.Text + "'";
+                    ", TENNHAXUATBAN = '" + cboTenNXB.Text.ToString() + "', NAMXUATBAN = '" + dateTimePicker_NamXuatBan.Text + "' WHERE MASACH = '" + txbMaSach.Text + "'";
                 DataTable data = DataProvider.Instance.ExecuteQuery(query);
                 MessageBox.Show("ĐÃ CẬP NHẬP!", "THÔNG BÁO");
                 txbMaSach.Text = "";
@@ -57,36 +57,36 @@ namespace Giao_dien_quan_ly_thu_vien
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
-            this.listView1.Clear();
-            this.listView1.Items.Clear();
-            this.listView1.View = View.Details;
-            this.listView1.Columns.Add("MÃ SÁCH", 150);
-            this.listView1.Columns.Add("TÊN SÁCH", 270);
-            this.listView1.Columns.Add("TÁC GIẢ", 200);
-            this.listView1.Columns.Add("LĨNH VỰC", 100);
-            this.listView1.Columns.Add("LOẠI SÁCH", 150);
-            this.listView1.Columns.Add("GIÁ MUA", 100);
-            this.listView1.Columns.Add("GIÁ BÌA", 100);
-            this.listView1.Columns.Add("LẦN TÁI BẢN", 100);
-            this.listView1.Columns.Add("TÊN NXB", 160);
-            this.listView1.Columns.Add("NĂM XUẤT BẢN", 200);
-            this.listView1.GridLines = true;
-            this.listView1.FullRowSelect = true;
-            this.listView1.CheckBoxes = true;
+            this.dgvSuaSach.Clear();
+            this.dgvSuaSach.Items.Clear();
+            this.dgvSuaSach.View = View.Details;
+            this.dgvSuaSach.Columns.Add("MÃ SÁCH", 150);
+            this.dgvSuaSach.Columns.Add("TÊN SÁCH", 270);
+            this.dgvSuaSach.Columns.Add("TÁC GIẢ", 200);
+            this.dgvSuaSach.Columns.Add("LĨNH VỰC", 100);
+            this.dgvSuaSach.Columns.Add("LOẠI SÁCH", 150);
+            this.dgvSuaSach.Columns.Add("GIÁ MUA", 100);
+            this.dgvSuaSach.Columns.Add("GIÁ BÌA", 100);
+            this.dgvSuaSach.Columns.Add("LẦN TÁI BẢN", 100);
+            this.dgvSuaSach.Columns.Add("TÊN NXB", 160);
+            this.dgvSuaSach.Columns.Add("NĂM XUẤT BẢN", 200);
+            this.dgvSuaSach.GridLines = true;
+            this.dgvSuaSach.FullRowSelect = true;
+            this.dgvSuaSach.CheckBoxes = true;
 
             int i = 0;
             foreach (DataRow row in data.Rows)
             {
-                this.listView1.Items.Add(row["MASACH"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENSACH"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENTG"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENLINHVUC"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENLOAISACH"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["GIAMUA"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["GIABIA"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["LANTAIBAN"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENNHAXUATBAN"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["NAMXUATBAN"].ToString());
+                this.dgvSuaSach.Items.Add(row["MASACH"].ToString());
+                this.dgvSuaSach.Items[i].SubItems.Add(row["TENSACH"].ToString());
+                this.dgvSuaSach.Items[i].SubItems.Add(row["TENTG"].ToString());
+                this.dgvSuaSach.Items[i].SubItems.Add(row["TENLINHVUC"].ToString());
+                this.dgvSuaSach.Items[i].SubItems.Add(row["TENLOAISACH"].ToString());
+                this.dgvSuaSach.Items[i].SubItems.Add(row["GIAMUA"].ToString());
+                this.dgvSuaSach.Items[i].SubItems.Add(row["GIABIA"].ToString());
+                this.dgvSuaSach.Items[i].SubItems.Add(row["LANTAIBAN"].ToString());
+                this.dgvSuaSach.Items[i].SubItems.Add(row["TENNHAXUATBAN"].ToString());
+                this.dgvSuaSach.Items[i].SubItems.Add(row["NAMXUATBAN"].ToString());
                 i++;
             }
         }
@@ -95,35 +95,35 @@ namespace Giao_dien_quan_ly_thu_vien
         {
             string query = "Select TENTG from TACGIA";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            cbTenTacGia.DataSource = data;
-            cbTenTacGia.DisplayMember = "TENTG";
+            cboTenTacGia.DataSource = data;
+            cboTenTacGia.DisplayMember = "TENTG";
         }
         private void Load_ComboBox_TenNXB()
         {
             string query0 = "Select TENNHAXUATBAN from NHAXUATBAN";
             DataTable data0 = DataProvider.Instance.ExecuteQuery(query0);
-            cbTenNXB.DataSource = data0;
-            cbTenNXB.DisplayMember = "TENNHAXUATBAN";
+            cboTenNXB.DataSource = data0;
+            cboTenNXB.DisplayMember = "TENNHAXUATBAN";
         }
         private void Load_ComboBox_TenLinhVuc()
         {
             string query1 = "Select TENLINHVUC from LINHVUC";
             DataTable data1 = DataProvider.Instance.ExecuteQuery(query1);
-            cbTenLinhVuc.DataSource = data1;
-            cbTenLinhVuc.DisplayMember = "TENLINHVUC";
+            cboTenLinhVuc.DataSource = data1;
+            cboTenLinhVuc.DisplayMember = "TENLINHVUC";
         }
         private void Load_ComboBox_TenLoaiSach()
         {
             string query2 = "Select TENLOAISACH from LOAISACH";
             DataTable data2 = DataProvider.Instance.ExecuteQuery(query2);
-            cbTenLoaiSach.DataSource = data2;
-            cbTenLoaiSach.DisplayMember = "TENLOAISACH";
+            cboTenLoaiSach.DataSource = data2;
+            cboTenLoaiSach.DisplayMember = "TENLOAISACH";
         }
 
         private void bbChon_Click(object sender, EventArgs e)
         {
             int count = 0;
-            foreach (ListViewItem item in this.listView1.Items)
+            foreach (ListViewItem item in this.dgvSuaSach.Items)
             {
                 if (item.Checked)
                     count++;
@@ -137,20 +137,20 @@ namespace Giao_dien_quan_ly_thu_vien
             else if (count == 1)
             {
                 bChon = 1;
-                foreach (ListViewItem item in this.listView1.Items)
+                foreach (ListViewItem item in this.dgvSuaSach.Items)
                 {
                     if (item.Checked == true)
                     {
                         txbMaSach.Text = item.SubItems[0].Text;
                         txbTenSach.Text = item.SubItems[1].Text;
                         Load_ComboBox_TenTG();
-                        cbTenTacGia.Text = item.SubItems[2].Text;
+                        cboTenTacGia.Text = item.SubItems[2].Text;
                         Load_ComboBox_TenNXB();
-                        cbTenNXB.Text = item.SubItems[8].Text;
+                        cboTenNXB.Text = item.SubItems[8].Text;
                         Load_ComboBox_TenLinhVuc();
-                        cbTenLinhVuc.Text = item.SubItems[3].Text;
+                        cboTenLinhVuc.Text = item.SubItems[3].Text;
                         Load_ComboBox_TenLoaiSach();
-                        cbTenLoaiSach.Text = item.SubItems[4].Text;
+                        cboTenLoaiSach.Text = item.SubItems[4].Text;
                         numericUpDownGiaMua.Text = item.SubItems[5].Text;
                         numericUpDownGiaBia.Text = item.SubItems[6].Text;
                         numericUpDownLanTaiBan.Text = item.SubItems[7].Text;

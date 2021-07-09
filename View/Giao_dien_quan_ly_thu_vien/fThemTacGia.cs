@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fThemTacGia : Form
+    public partial class frmThemTacGia : Form
     {
-        public fThemTacGia()
+        public frmThemTacGia()
         {
             InitializeComponent();
             txbMaTacGia_TextChanged();
@@ -37,17 +37,17 @@ namespace Giao_dien_quan_ly_thu_vien
             else
             {
                 string query;
-                if (checkBox_NgaySinh.Checked == true && checkBox_NgayMat.Checked == false)
+                if (chkNgaySinh.Checked  && !chkNgayMat.Checked )
                 {
                     query = "Insert into TACGIA VALUES ('" + txbMaTacGia.Text + "', '" + txbTenTacGia.Text + "', '" +
                            null + "', '" + dateTimePicker_NgayMat.Text + "', '" + txbQueQuan.Text + "')";      
                 }
-                else if (checkBox_NgaySinh.Checked == false && checkBox_NgayMat.Checked == true)
+                else if (!chkNgaySinh.Checked && chkNgayMat.Checked)
                 {
                      query = "Insert into TACGIA VALUES ('" + txbMaTacGia.Text + "', '" + txbTenTacGia.Text + "', '" +
                            dateTimePicker_NgaySinh + "', '" + null + "', '" + txbQueQuan.Text + "')";      
                 }
-                else if (checkBox_NgaySinh.Checked == true && checkBox_NgayMat.Checked == true)
+                else if (chkNgaySinh.Checked  && chkNgayMat.Checked )
                 {
                     query = "Insert into TACGIA VALUES ('" + txbMaTacGia.Text + "', '" + txbTenTacGia.Text + "', '" +
                            null + "', '" + null + "', '" + txbQueQuan.Text + "')";    
@@ -62,9 +62,9 @@ namespace Giao_dien_quan_ly_thu_vien
                 txbMaTacGia_TextChanged();
                 txbTenTacGia.Text = "";
                 txbQueQuan.Text = "";
-                checkBox_QueQuan.Checked = false;
-                checkBox_NgaySinh.Checked = false;
-                checkBox_NgayMat.Checked = false;
+                chkQueQuan.Checked = false;
+                chkNgaySinh.Checked = false;
+                chkNgayMat.Checked = false;
                 dateTimePicker_NgaySinh.Text = DateTime.Now.ToString();
                 dateTimePicker_NgayMat.Text = DateTime.Now.ToString();
             }
@@ -72,15 +72,15 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private void checkBox_QueQuan_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox_QueQuan.Checked)
+            if (chkQueQuan.Checked)
             {
-                checkBox_QueQuan.Text = "(Không có thông tin)";
+                chkQueQuan.Text = "(Không có thông tin)";
                 txbQueQuan.Text = "(Không có thông tin)";
                 txbQueQuan.ReadOnly = true;
             }
             else
             {
-                checkBox_QueQuan.Text = "CHƯA RÕ";
+                chkQueQuan.Text = "CHƯA RÕ";
                 txbQueQuan.Text = "";
                 txbQueQuan.ReadOnly = false;
             }

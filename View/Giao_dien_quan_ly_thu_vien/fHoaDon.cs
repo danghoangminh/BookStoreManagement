@@ -9,11 +9,11 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fHoaDon : Form
+    public partial class frmHoaDon : Form
     {
         int bChonHD = 0;
         string mahd;
-        public fHoaDon()
+        public frmHoaDon()
         {
             InitializeComponent();
             listView1_SelectedIndexChanged();
@@ -26,31 +26,31 @@ namespace Giao_dien_quan_ly_thu_vien
             string query = "Select MAHOADON, TENKHACHHANG, NGAYLAP, TONGTIEN From HOADON";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
-            this.listView1.Clear();
-            this.listView1.Items.Clear();
-            this.listView1.View = View.Details;
-            this.listView1.Columns.Add("MÃ HÓA ĐƠN", 110);
-            this.listView1.Columns.Add("TÊN KHÁCH HÀNG", 190);
-            this.listView1.Columns.Add("NGÀY LẬP", 200);
-            this.listView1.Columns.Add("TỔNG TIỀN", 100);
-            this.listView1.GridLines = true;
-            this.listView1.FullRowSelect = true;
-            this.listView1.CheckBoxes = true;
+            this.dgvHoaDon.Clear();
+            this.dgvHoaDon.Items.Clear();
+            this.dgvHoaDon.View = View.Details;
+            this.dgvHoaDon.Columns.Add("MÃ HÓA ĐƠN", 110);
+            this.dgvHoaDon.Columns.Add("TÊN KHÁCH HÀNG", 190);
+            this.dgvHoaDon.Columns.Add("NGÀY LẬP", 200);
+            this.dgvHoaDon.Columns.Add("TỔNG TIỀN", 100);
+            this.dgvHoaDon.GridLines = true;
+            this.dgvHoaDon.FullRowSelect = true;
+            this.dgvHoaDon.CheckBoxes = true;
 
             int i = 0;
             foreach (DataRow row in data.Rows)
             {
-                this.listView1.Items.Add(row["MAHOADON"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENKHACHHANG"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["NGAYLAP"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TONGTIEN"].ToString());
+                this.dgvHoaDon.Items.Add(row["MAHOADON"].ToString());
+                this.dgvHoaDon.Items[i].SubItems.Add(row["TENKHACHHANG"].ToString());
+                this.dgvHoaDon.Items[i].SubItems.Add(row["NGAYLAP"].ToString());
+                this.dgvHoaDon.Items[i].SubItems.Add(row["TONGTIEN"].ToString());
                 i++;
             }
         }
         private void bChonSua_Click(object sender, EventArgs e)
         {
             int count = 0;
-            foreach (ListViewItem item in this.listView1.Items)
+            foreach (ListViewItem item in this.dgvHoaDon.Items)
             {
                 if (item.Checked)
                     count++;
@@ -59,7 +59,7 @@ namespace Giao_dien_quan_ly_thu_vien
             if (count == 1)
             {
                 bChonHD = 1;
-                foreach (ListViewItem item in this.listView1.Items)
+                foreach (ListViewItem item in this.dgvHoaDon.Items)
                 {
                     if (item.Checked == true)
                     {
@@ -101,7 +101,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void bCTHD_Click(object sender, EventArgs e)
         {
             int count = 0;
-            foreach (ListViewItem item in this.listView1.Items)
+            foreach (ListViewItem item in this.dgvHoaDon.Items)
             {
                 if (item.Checked)
                 {
@@ -113,7 +113,7 @@ namespace Giao_dien_quan_ly_thu_vien
             if (count == 1)
             {
                 bChonHD = 1;
-                foreach (ListViewItem item in this.listView1.Items)
+                foreach (ListViewItem item in this.dgvHoaDon.Items)
                 {
                     if (item.Checked == true)
                     {
@@ -140,27 +140,27 @@ namespace Giao_dien_quan_ly_thu_vien
                 "From CHITIETHOADON LEFT JOIN SACH ON CHITIETHOADON.MASACH = SACH. MASACH Where MAHOADON = '" + mahd + "'";
             DataTable data2 = DataProvider.Instance.ExecuteQuery(query2);
 
-            this.listView2.Clear();
-            this.listView2.Items.Clear();
-            this.listView2.View = View.Details;
-            this.listView2.Columns.Add("MÃ HÓA ĐƠN", 110);
-            this.listView2.Columns.Add("MÃ SÁCH", 110);
-            this.listView2.Columns.Add("TÊN SÁCH", 190);
-            this.listView2.Columns.Add("SỐ LƯỢNG", 110);
-            this.listView2.Columns.Add("GIÁ TIỀN", 150);
-            this.listView2.Columns.Add("THÀNH TIỀN", 190);
-            this.listView2.GridLines = true;
-            this.listView2.FullRowSelect = true;
+            this.dgvChiTietHoaDon.Clear();
+            this.dgvChiTietHoaDon.Items.Clear();
+            this.dgvChiTietHoaDon.View = View.Details;
+            this.dgvChiTietHoaDon.Columns.Add("MÃ HÓA ĐƠN", 110);
+            this.dgvChiTietHoaDon.Columns.Add("MÃ SÁCH", 110);
+            this.dgvChiTietHoaDon.Columns.Add("TÊN SÁCH", 190);
+            this.dgvChiTietHoaDon.Columns.Add("SỐ LƯỢNG", 110);
+            this.dgvChiTietHoaDon.Columns.Add("GIÁ TIỀN", 150);
+            this.dgvChiTietHoaDon.Columns.Add("THÀNH TIỀN", 190);
+            this.dgvChiTietHoaDon.GridLines = true;
+            this.dgvChiTietHoaDon.FullRowSelect = true;
 
             int i = 0;
             foreach (DataRow row in data2.Rows)
             {
-                this.listView2.Items.Add(row["MAHOADON"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["MASACH"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["TENSACH"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["SOLUONG"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["GIATIEN"].ToString());
-                this.listView2.Items[i].SubItems.Add(row["THANHTIEN"].ToString());
+                this.dgvChiTietHoaDon.Items.Add(row["MAHOADON"].ToString());
+                this.dgvChiTietHoaDon.Items[i].SubItems.Add(row["MASACH"].ToString());
+                this.dgvChiTietHoaDon.Items[i].SubItems.Add(row["TENSACH"].ToString());
+                this.dgvChiTietHoaDon.Items[i].SubItems.Add(row["SOLUONG"].ToString());
+                this.dgvChiTietHoaDon.Items[i].SubItems.Add(row["GIATIEN"].ToString());
+                this.dgvChiTietHoaDon.Items[i].SubItems.Add(row["THANHTIEN"].ToString());
                 i++;
             }
         }
@@ -168,7 +168,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void bXoaHD_Click(object sender, EventArgs e)
         {
             int count0 = 0;
-            foreach (ListViewItem item in this.listView1.Items)
+            foreach (ListViewItem item in this.dgvHoaDon.Items)
             {
                 if (item.Checked)
                     count0++;
@@ -180,7 +180,7 @@ namespace Giao_dien_quan_ly_thu_vien
                 if (d == DialogResult.Yes)
                 {
                     int count = 0;
-                    foreach (ListViewItem item in this.listView1.Items)
+                    foreach (ListViewItem item in this.dgvHoaDon.Items)
                     {
                         if (item.Checked == true)
                         {
@@ -221,7 +221,7 @@ namespace Giao_dien_quan_ly_thu_vien
             {
                 txbTenKH.ReadOnly = true;
                 int dem = 0;
-                foreach (ListViewItem item in this.listView3.Items)
+                foreach (ListViewItem item in this.dgvChonSach.Items)
                 {
                     if (item.Checked)
                     {
@@ -232,7 +232,7 @@ namespace Giao_dien_quan_ly_thu_vien
                 if (dem == 1)
                 {
                     int hientai = 0;
-                    foreach (ListViewItem item in this.listView3.Items)
+                    foreach (ListViewItem item in this.dgvChonSach.Items)
                     {
                         if (item.Checked == true)
                         {
@@ -277,30 +277,30 @@ namespace Giao_dien_quan_ly_thu_vien
                 "ON SACH.MATG = TACGIA.MATG";
             DataTable data3 = DataProvider.Instance.ExecuteQuery(query3);
 
-            this.listView3.Clear();
-            this.listView3.Items.Clear();
-            this.listView3.View = View.Details;
-            this.listView3.Columns.Add("MÃ SÁCH", 100);
-            this.listView3.Columns.Add("TÊN SÁCH", 240);
-            this.listView3.Columns.Add("GIÁ BÌA", 150);
-            this.listView3.Columns.Add("MÃ TÁC GIẢ", 100);
-            this.listView3.Columns.Add("TÊN TÁC GIẢ", 180);
-            this.listView3.Columns.Add("TÊN LĨNH VỰC", 150);
-            this.listView3.Columns.Add("TÊN LOẠI SÁCH", 150);
-            this.listView3.GridLines = true;
-            this.listView3.FullRowSelect = true;
-            this.listView3.CheckBoxes = true;
+            this.dgvChonSach.Clear();
+            this.dgvChonSach.Items.Clear();
+            this.dgvChonSach.View = View.Details;
+            this.dgvChonSach.Columns.Add("MÃ SÁCH", 100);
+            this.dgvChonSach.Columns.Add("TÊN SÁCH", 240);
+            this.dgvChonSach.Columns.Add("GIÁ BÌA", 150);
+            this.dgvChonSach.Columns.Add("MÃ TÁC GIẢ", 100);
+            this.dgvChonSach.Columns.Add("TÊN TÁC GIẢ", 180);
+            this.dgvChonSach.Columns.Add("TÊN LĨNH VỰC", 150);
+            this.dgvChonSach.Columns.Add("TÊN LOẠI SÁCH", 150);
+            this.dgvChonSach.GridLines = true;
+            this.dgvChonSach.FullRowSelect = true;
+            this.dgvChonSach.CheckBoxes = true;
 
             int i = 0;
             foreach (DataRow row in data3.Rows)
             {
-                this.listView3.Items.Add(row["MASACH"].ToString());
-                this.listView3.Items[i].SubItems.Add(row["TENSACH"].ToString());
-                this.listView3.Items[i].SubItems.Add(row["GIABIA"].ToString());
-                this.listView3.Items[i].SubItems.Add(row["MATG"].ToString());
-                this.listView3.Items[i].SubItems.Add(row["TENTG"].ToString());
-                this.listView3.Items[i].SubItems.Add(row["TENLINHVUC"].ToString());
-                this.listView3.Items[i].SubItems.Add(row["TENLOAISACH"].ToString());
+                this.dgvChonSach.Items.Add(row["MASACH"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["TENSACH"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["GIABIA"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["MATG"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["TENTG"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["TENLINHVUC"].ToString());
+                this.dgvChonSach.Items[i].SubItems.Add(row["TENLOAISACH"].ToString());
                 i++;
             }
         }

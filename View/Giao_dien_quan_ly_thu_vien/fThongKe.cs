@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fThongKe : Form
+    public partial class frmThongKe : Form
     {
-        public fThongKe()
+        public frmThongKe()
         {
             InitializeComponent();
         }
@@ -23,7 +23,7 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private void bXuatBC_Click(object sender, EventArgs e)
         {
-            fBaoCao f = new fBaoCao();
+            frmBaoCao f = new frmBaoCao();
             this.Hide();
             f.ShowDialog();
             this.Show();
@@ -32,26 +32,26 @@ namespace Giao_dien_quan_ly_thu_vien
         private void listView1_SelectedIndexChanged()
         {
             string query = "Select MAHOADON, TENKHACHHANG, NGAYLAP, TONGTIEN from HOADON where NGAYLAP between '" + 
-                dateTimePicker_TuNgay.Text + "' and '" + dateTimePicker_Den.Text + "'";
+                dateTimePicker_TuNgay.Text + "' and '" + dateTimePicker_DenNgay.Text + "'";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
-            this.listView1.Clear();
-            this.listView1.Items.Clear();
-            this.listView1.View = View.Details;
-            this.listView1.Columns.Add("MÃ HÓA ĐƠN", 150);
-            this.listView1.Columns.Add("TÊN KHÁCH HÀNG", 250);
-            this.listView1.Columns.Add("NGÀY LẬP", 200);
-            this.listView1.Columns.Add("TỔNG TIỀN", 200);
-            this.listView1.GridLines = true;
-            this.listView1.FullRowSelect = true;
+            this.dgvThongKe.Clear();
+            this.dgvThongKe.Items.Clear();
+            this.dgvThongKe.View = View.Details;
+            this.dgvThongKe.Columns.Add("MÃ HÓA ĐƠN", 150);
+            this.dgvThongKe.Columns.Add("TÊN KHÁCH HÀNG", 250);
+            this.dgvThongKe.Columns.Add("NGÀY LẬP", 200);
+            this.dgvThongKe.Columns.Add("TỔNG TIỀN", 200);
+            this.dgvThongKe.GridLines = true;
+            this.dgvThongKe.FullRowSelect = true;
 
             int i = 0;
             foreach (DataRow row in data.Rows)
             {
-                this.listView1.Items.Add(row["MAHOADON"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENKHACHHANG"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["NGAYLAP"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TONGTIEN"].ToString());
+                this.dgvThongKe.Items.Add(row["MAHOADON"].ToString());
+                this.dgvThongKe.Items[i].SubItems.Add(row["TENKHACHHANG"].ToString());
+                this.dgvThongKe.Items[i].SubItems.Add(row["NGAYLAP"].ToString());
+                this.dgvThongKe.Items[i].SubItems.Add(row["TONGTIEN"].ToString());
                 i++;
             }
         }

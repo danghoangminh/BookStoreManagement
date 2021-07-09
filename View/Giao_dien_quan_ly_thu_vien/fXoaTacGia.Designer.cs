@@ -1,7 +1,7 @@
 ﻿
 namespace Giao_dien_quan_ly_thu_vien
 {
-    partial class fXoaTacGia
+    partial class frmXoaTacGia
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,8 @@ namespace Giao_dien_quan_ly_thu_vien
         private void InitializeComponent()
         {
             this.fThoat = new System.Windows.Forms.Button();
-            this.bXoaTG = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.btnXoaTacGia = new System.Windows.Forms.Button();
+            this.dgvXoaTacGia = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // fThoat
@@ -44,35 +44,35 @@ namespace Giao_dien_quan_ly_thu_vien
             this.fThoat.UseVisualStyleBackColor = true;
             this.fThoat.Click += new System.EventHandler(this.fThoat_Click_1);
             // 
-            // bXoaTG
+            // btnXoaTacGia
             // 
-            this.bXoaTG.Location = new System.Drawing.Point(12, 383);
-            this.bXoaTG.Name = "bXoaTG";
-            this.bXoaTG.Size = new System.Drawing.Size(213, 29);
-            this.bXoaTG.TabIndex = 20;
-            this.bXoaTG.Text = "XÓA TÁC GIẢ";
-            this.bXoaTG.UseVisualStyleBackColor = true;
-            this.bXoaTG.Click += new System.EventHandler(this.bXoaTG_Click);
+            this.btnXoaTacGia.Location = new System.Drawing.Point(12, 383);
+            this.btnXoaTacGia.Name = "btnXoaTacGia";
+            this.btnXoaTacGia.Size = new System.Drawing.Size(213, 29);
+            this.btnXoaTacGia.TabIndex = 20;
+            this.btnXoaTacGia.Text = "XÓA TÁC GIẢ";
+            this.btnXoaTacGia.UseVisualStyleBackColor = true;
+            this.btnXoaTacGia.Click += new System.EventHandler(this.bXoaTG_Click);
             // 
-            // listView1
+            // dgvXoaTacGia
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 12);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(732, 365);
-            this.listView1.TabIndex = 19;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.dgvXoaTacGia.HideSelection = false;
+            this.dgvXoaTacGia.Location = new System.Drawing.Point(12, 12);
+            this.dgvXoaTacGia.Name = "dgvXoaTacGia";
+            this.dgvXoaTacGia.Size = new System.Drawing.Size(732, 365);
+            this.dgvXoaTacGia.TabIndex = 19;
+            this.dgvXoaTacGia.UseCompatibleStateImageBehavior = false;
             // 
-            // fXoaTacGia
+            // frmXoaTacGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(757, 424);
-            this.Controls.Add(this.bXoaTG);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.btnXoaTacGia);
+            this.Controls.Add(this.dgvXoaTacGia);
             this.Controls.Add(this.fThoat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "fXoaTacGia";
+            this.Name = "frmXoaTacGia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " XÓA TÁC GIẢ";
             this.ResumeLayout(false);
@@ -81,7 +81,7 @@ namespace Giao_dien_quan_ly_thu_vien
 
         #endregion
         private System.Windows.Forms.Button fThoat;
-        private System.Windows.Forms.Button bXoaTG;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button btnXoaTacGia;
+        private System.Windows.Forms.ListView dgvXoaTacGia;
     }
 }

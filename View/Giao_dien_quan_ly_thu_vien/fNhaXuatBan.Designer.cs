@@ -1,7 +1,7 @@
 ﻿
 namespace Giao_dien_quan_ly_thu_vien
 {
-    partial class fNhaXuatBan
+    partial class frmNhaXuatBan
     {
         /// <summary>
         /// Required designer variable.
@@ -29,34 +29,34 @@ namespace Giao_dien_quan_ly_thu_vien
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.dgvNhaXuatBan = new System.Windows.Forms.ListView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbThemNXB = new System.Windows.Forms.TextBox();
-            this.txThemNXB = new System.Windows.Forms.Label();
-            this.bThemNXB = new System.Windows.Forms.Button();
+            this.lblThemNXB = new System.Windows.Forms.Label();
+            this.btnThemNXB = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cbXoaNXB = new System.Windows.Forms.ComboBox();
-            this.txXoaNXB = new System.Windows.Forms.Label();
-            this.bXoaNXB = new System.Windows.Forms.Button();
+            this.cboXoaNXB = new System.Windows.Forms.ComboBox();
+            this.lblXoaNXB = new System.Windows.Forms.Label();
+            this.btnXoaNXB = new System.Windows.Forms.Button();
             this.fThoat = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listView1
+            // dgvNhaXuatBan
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(11, 12);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(640, 203);
-            this.listView1.TabIndex = 17;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.dgvNhaXuatBan.HideSelection = false;
+            this.dgvNhaXuatBan.Location = new System.Drawing.Point(11, 12);
+            this.dgvNhaXuatBan.Name = "dgvNhaXuatBan";
+            this.dgvNhaXuatBan.Size = new System.Drawing.Size(640, 203);
+            this.dgvNhaXuatBan.TabIndex = 17;
+            this.dgvNhaXuatBan.UseCompatibleStateImageBehavior = false;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.txbThemNXB);
-            this.panel1.Controls.Add(this.txThemNXB);
-            this.panel1.Controls.Add(this.bThemNXB);
+            this.panel1.Controls.Add(this.lblThemNXB);
+            this.panel1.Controls.Add(this.btnThemNXB);
             this.panel1.Location = new System.Drawing.Point(11, 237);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(639, 69);
@@ -69,64 +69,64 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbThemNXB.Size = new System.Drawing.Size(323, 27);
             this.txbThemNXB.TabIndex = 1;
             // 
-            // txThemNXB
+            // lblThemNXB
             // 
-            this.txThemNXB.AutoSize = true;
-            this.txThemNXB.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txThemNXB.Location = new System.Drawing.Point(-1, 15);
-            this.txThemNXB.Name = "txThemNXB";
-            this.txThemNXB.Size = new System.Drawing.Size(110, 23);
-            this.txThemNXB.TabIndex = 0;
-            this.txThemNXB.Text = "THÊM NXB";
+            this.lblThemNXB.AutoSize = true;
+            this.lblThemNXB.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblThemNXB.Location = new System.Drawing.Point(-1, 15);
+            this.lblThemNXB.Name = "lblThemNXB";
+            this.lblThemNXB.Size = new System.Drawing.Size(110, 23);
+            this.lblThemNXB.TabIndex = 0;
+            this.lblThemNXB.Text = "THÊM NXB";
             // 
-            // bThemNXB
+            // btnThemNXB
             // 
-            this.bThemNXB.Location = new System.Drawing.Point(498, 9);
-            this.bThemNXB.Name = "bThemNXB";
-            this.bThemNXB.Size = new System.Drawing.Size(121, 29);
-            this.bThemNXB.TabIndex = 13;
-            this.bThemNXB.Text = "THÊM";
-            this.bThemNXB.UseVisualStyleBackColor = true;
-            this.bThemNXB.Click += new System.EventHandler(this.bThemNXB_Click);
+            this.btnThemNXB.Location = new System.Drawing.Point(498, 9);
+            this.btnThemNXB.Name = "btnThemNXB";
+            this.btnThemNXB.Size = new System.Drawing.Size(121, 29);
+            this.btnThemNXB.TabIndex = 13;
+            this.btnThemNXB.Text = "THÊM";
+            this.btnThemNXB.UseVisualStyleBackColor = true;
+            this.btnThemNXB.Click += new System.EventHandler(this.bThemNXB_Click);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.cbXoaNXB);
-            this.panel2.Controls.Add(this.txXoaNXB);
-            this.panel2.Controls.Add(this.bXoaNXB);
+            this.panel2.Controls.Add(this.cboXoaNXB);
+            this.panel2.Controls.Add(this.lblXoaNXB);
+            this.panel2.Controls.Add(this.btnXoaNXB);
             this.panel2.Location = new System.Drawing.Point(11, 312);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(639, 69);
             this.panel2.TabIndex = 19;
             // 
-            // cbXoaNXB
+            // cboXoaNXB
             // 
-            this.cbXoaNXB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbXoaNXB.FormattingEnabled = true;
-            this.cbXoaNXB.Location = new System.Drawing.Point(153, 10);
-            this.cbXoaNXB.Name = "cbXoaNXB";
-            this.cbXoaNXB.Size = new System.Drawing.Size(324, 28);
-            this.cbXoaNXB.TabIndex = 15;
+            this.cboXoaNXB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboXoaNXB.FormattingEnabled = true;
+            this.cboXoaNXB.Location = new System.Drawing.Point(153, 10);
+            this.cboXoaNXB.Name = "cboXoaNXB";
+            this.cboXoaNXB.Size = new System.Drawing.Size(324, 28);
+            this.cboXoaNXB.TabIndex = 15;
             // 
-            // txXoaNXB
+            // lblXoaNXB
             // 
-            this.txXoaNXB.AutoSize = true;
-            this.txXoaNXB.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txXoaNXB.Location = new System.Drawing.Point(-1, 15);
-            this.txXoaNXB.Name = "txXoaNXB";
-            this.txXoaNXB.Size = new System.Drawing.Size(96, 23);
-            this.txXoaNXB.TabIndex = 0;
-            this.txXoaNXB.Text = "XÓA NXB";
+            this.lblXoaNXB.AutoSize = true;
+            this.lblXoaNXB.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblXoaNXB.Location = new System.Drawing.Point(-1, 15);
+            this.lblXoaNXB.Name = "lblXoaNXB";
+            this.lblXoaNXB.Size = new System.Drawing.Size(96, 23);
+            this.lblXoaNXB.TabIndex = 0;
+            this.lblXoaNXB.Text = "XÓA NXB";
             // 
-            // bXoaNXB
+            // btnXoaNXB
             // 
-            this.bXoaNXB.Location = new System.Drawing.Point(499, 9);
-            this.bXoaNXB.Name = "bXoaNXB";
-            this.bXoaNXB.Size = new System.Drawing.Size(121, 29);
-            this.bXoaNXB.TabIndex = 14;
-            this.bXoaNXB.Text = "XÓA";
-            this.bXoaNXB.UseVisualStyleBackColor = true;
-            this.bXoaNXB.Click += new System.EventHandler(this.bXoaNXB_Click);
+            this.btnXoaNXB.Location = new System.Drawing.Point(499, 9);
+            this.btnXoaNXB.Name = "btnXoaNXB";
+            this.btnXoaNXB.Size = new System.Drawing.Size(121, 29);
+            this.btnXoaNXB.TabIndex = 14;
+            this.btnXoaNXB.Text = "XÓA";
+            this.btnXoaNXB.UseVisualStyleBackColor = true;
+            this.btnXoaNXB.Click += new System.EventHandler(this.bXoaNXB_Click);
             // 
             // fThoat
             // 
@@ -138,7 +138,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.fThoat.UseVisualStyleBackColor = true;
             this.fThoat.Click += new System.EventHandler(this.fThoat_Click);
             // 
-            // fNhaXuatBan
+            // frmNhaXuatBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -146,9 +146,9 @@ namespace Giao_dien_quan_ly_thu_vien
             this.Controls.Add(this.fThoat);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.dgvNhaXuatBan);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "fNhaXuatBan";
+            this.Name = "frmNhaXuatBan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NHÀ XUẤT BẢN";
             this.panel1.ResumeLayout(false);
@@ -161,15 +161,15 @@ namespace Giao_dien_quan_ly_thu_vien
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView dgvNhaXuatBan;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txbThemNXB;
-        private System.Windows.Forms.Label txThemNXB;
-        private System.Windows.Forms.Button bThemNXB;
+        private System.Windows.Forms.Label lblThemNXB;
+        private System.Windows.Forms.Button btnThemNXB;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cbXoaNXB;
-        private System.Windows.Forms.Label txXoaNXB;
-        private System.Windows.Forms.Button bXoaNXB;
+        private System.Windows.Forms.ComboBox cboXoaNXB;
+        private System.Windows.Forms.Label lblXoaNXB;
+        private System.Windows.Forms.Button btnXoaNXB;
         private System.Windows.Forms.Button fThoat;
     }
 }

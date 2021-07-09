@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fDangNhap : Form
+    public partial class frmDangNhap : Form
     {
-        public fDangNhap()
+        public frmDangNhap()
         {
             InitializeComponent();
         }
@@ -26,7 +26,7 @@ namespace Giao_dien_quan_ly_thu_vien
 
             if (Login(username, password))
             {
-                fViewTong f = new fViewTong(txbTenDangNhap.Text);
+                frmViewTong f = new frmViewTong(txbTenDangNhap.Text);
                 this.Hide(); 
                 f.ShowDialog();
                 this.Show();
@@ -72,6 +72,11 @@ namespace Giao_dien_quan_ly_thu_vien
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txbMatKhau_TextChanged(object sender, EventArgs e)
         {
 
         }

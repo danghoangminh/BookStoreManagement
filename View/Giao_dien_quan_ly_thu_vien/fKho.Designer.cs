@@ -1,7 +1,7 @@
 ﻿
 namespace Giao_dien_quan_ly_thu_vien
 {
-    partial class fKho
+    partial class frmKho
     {
         /// <summary>
         /// Required designer variable.
@@ -33,21 +33,21 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbMaSachThem = new System.Windows.Forms.TextBox();
             this.Nhap_numericUpDownSoLuong = new System.Windows.Forms.NumericUpDown();
-            this.txSoLuong = new System.Windows.Forms.Label();
+            this.lblSoLuongThem = new System.Windows.Forms.Label();
             this.bThemKho = new System.Windows.Forms.Button();
-            this.txMaSach = new System.Windows.Forms.Label();
-            this.bXoaSach = new System.Windows.Forms.Button();
+            this.txMaSach_Them = new System.Windows.Forms.Label();
+            this.btnXoaSach = new System.Windows.Forms.Button();
             this.fThoat = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txbMaSachSua = new System.Windows.Forms.TextBox();
             this.Sua_numericUpDownSoLuong = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.bLuu = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.bChonSua = new System.Windows.Forms.Button();
-            this.bChonThem = new System.Windows.Forms.Button();
+            this.lblSoLuongSua = new System.Windows.Forms.Label();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.lblMaSach_Sua = new System.Windows.Forms.Label();
+            this.dgvChonSach = new System.Windows.Forms.ListView();
+            this.lblChonSach = new System.Windows.Forms.Label();
+            this.btnChonSua = new System.Windows.Forms.Button();
+            this.btnChonThem = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Nhap_numericUpDownSoLuong)).BeginInit();
             this.panel3.SuspendLayout();
@@ -68,9 +68,9 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel1.Controls.Add(this.txbMaSachThem);
             this.panel1.Controls.Add(this.Nhap_numericUpDownSoLuong);
-            this.panel1.Controls.Add(this.txSoLuong);
+            this.panel1.Controls.Add(this.lblSoLuongThem);
             this.panel1.Controls.Add(this.bThemKho);
-            this.panel1.Controls.Add(this.txMaSach);
+            this.panel1.Controls.Add(this.txMaSach_Them);
             this.panel1.Location = new System.Drawing.Point(12, 603);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(483, 92);
@@ -106,15 +106,15 @@ namespace Giao_dien_quan_ly_thu_vien
             0,
             0});
             // 
-            // txSoLuong
+            // lblSoLuongThem
             // 
-            this.txSoLuong.AutoSize = true;
-            this.txSoLuong.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txSoLuong.Location = new System.Drawing.Point(0, 52);
-            this.txSoLuong.Name = "txSoLuong";
-            this.txSoLuong.Size = new System.Drawing.Size(91, 23);
-            this.txSoLuong.TabIndex = 17;
-            this.txSoLuong.Text = "Số lượng";
+            this.lblSoLuongThem.AutoSize = true;
+            this.lblSoLuongThem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSoLuongThem.Location = new System.Drawing.Point(0, 52);
+            this.lblSoLuongThem.Name = "lblSoLuongThem";
+            this.lblSoLuongThem.Size = new System.Drawing.Size(91, 23);
+            this.lblSoLuongThem.TabIndex = 17;
+            this.lblSoLuongThem.Text = "Số lượng";
             // 
             // bThemKho
             // 
@@ -126,25 +126,25 @@ namespace Giao_dien_quan_ly_thu_vien
             this.bThemKho.UseVisualStyleBackColor = true;
             this.bThemKho.Click += new System.EventHandler(this.bThemKho_Click);
             // 
-            // txMaSach
+            // txMaSach_Them
             // 
-            this.txMaSach.AutoSize = true;
-            this.txMaSach.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txMaSach.Location = new System.Drawing.Point(-1, 15);
-            this.txMaSach.Name = "txMaSach";
-            this.txMaSach.Size = new System.Drawing.Size(85, 23);
-            this.txMaSach.TabIndex = 0;
-            this.txMaSach.Text = "Mã sách";
+            this.txMaSach_Them.AutoSize = true;
+            this.txMaSach_Them.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txMaSach_Them.Location = new System.Drawing.Point(-1, 15);
+            this.txMaSach_Them.Name = "txMaSach_Them";
+            this.txMaSach_Them.Size = new System.Drawing.Size(85, 23);
+            this.txMaSach_Them.TabIndex = 0;
+            this.txMaSach_Them.Text = "Mã sách";
             // 
-            // bXoaSach
+            // btnXoaSach
             // 
-            this.bXoaSach.Location = new System.Drawing.Point(548, 225);
-            this.bXoaSach.Name = "bXoaSach";
-            this.bXoaSach.Size = new System.Drawing.Size(226, 29);
-            this.bXoaSach.TabIndex = 14;
-            this.bXoaSach.Text = "XÓA SÁCH ";
-            this.bXoaSach.UseVisualStyleBackColor = true;
-            this.bXoaSach.Click += new System.EventHandler(this.bXoaSach_Click);
+            this.btnXoaSach.Location = new System.Drawing.Point(548, 225);
+            this.btnXoaSach.Name = "btnXoaSach";
+            this.btnXoaSach.Size = new System.Drawing.Size(226, 29);
+            this.btnXoaSach.TabIndex = 14;
+            this.btnXoaSach.Text = "XÓA SÁCH ";
+            this.btnXoaSach.UseVisualStyleBackColor = true;
+            this.btnXoaSach.Click += new System.EventHandler(this.bXoaSach_Click);
             // 
             // fThoat
             // 
@@ -160,9 +160,9 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.panel3.Controls.Add(this.txbMaSachSua);
             this.panel3.Controls.Add(this.Sua_numericUpDownSoLuong);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.bLuu);
-            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.lblSoLuongSua);
+            this.panel3.Controls.Add(this.btnLuu);
+            this.panel3.Controls.Add(this.lblMaSach_Sua);
             this.panel3.Location = new System.Drawing.Point(11, 260);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(487, 94);
@@ -198,94 +198,94 @@ namespace Giao_dien_quan_ly_thu_vien
             0,
             0});
             // 
-            // label1
+            // lblSoLuongSua
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(-1, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 23);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Số lượng";
+            this.lblSoLuongSua.AutoSize = true;
+            this.lblSoLuongSua.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSoLuongSua.Location = new System.Drawing.Point(-1, 49);
+            this.lblSoLuongSua.Name = "lblSoLuongSua";
+            this.lblSoLuongSua.Size = new System.Drawing.Size(91, 23);
+            this.lblSoLuongSua.TabIndex = 17;
+            this.lblSoLuongSua.Text = "Số lượng";
             // 
-            // bLuu
+            // btnLuu
             // 
-            this.bLuu.Location = new System.Drawing.Point(321, 45);
-            this.bLuu.Name = "bLuu";
-            this.bLuu.Size = new System.Drawing.Size(163, 26);
-            this.bLuu.TabIndex = 13;
-            this.bLuu.Text = "LƯU";
-            this.bLuu.UseVisualStyleBackColor = true;
-            this.bLuu.Click += new System.EventHandler(this.bLuu_Click);
+            this.btnLuu.Location = new System.Drawing.Point(321, 45);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(163, 26);
+            this.btnLuu.TabIndex = 13;
+            this.btnLuu.Text = "LƯU";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.bLuu_Click);
             // 
-            // label2
+            // lblMaSach_Sua
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(-1, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Mã sách";
+            this.lblMaSach_Sua.AutoSize = true;
+            this.lblMaSach_Sua.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMaSach_Sua.Location = new System.Drawing.Point(-1, 15);
+            this.lblMaSach_Sua.Name = "lblMaSach_Sua";
+            this.lblMaSach_Sua.Size = new System.Drawing.Size(85, 23);
+            this.lblMaSach_Sua.TabIndex = 0;
+            this.lblMaSach_Sua.Text = "Mã sách";
             // 
-            // listView2
+            // dgvChonSach
             // 
-            this.listView2.BackColor = System.Drawing.SystemColors.Info;
-            this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(11, 397);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(766, 165);
-            this.listView2.TabIndex = 23;
-            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.dgvChonSach.BackColor = System.Drawing.SystemColors.Info;
+            this.dgvChonSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dgvChonSach.HideSelection = false;
+            this.dgvChonSach.Location = new System.Drawing.Point(11, 397);
+            this.dgvChonSach.Name = "dgvChonSach";
+            this.dgvChonSach.Size = new System.Drawing.Size(766, 165);
+            this.dgvChonSach.TabIndex = 23;
+            this.dgvChonSach.UseCompatibleStateImageBehavior = false;
             // 
-            // label3
+            // lblChonSach
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label3.Location = new System.Drawing.Point(12, 380);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 24);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Chọn Sách";
+            this.lblChonSach.AutoSize = true;
+            this.lblChonSach.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblChonSach.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.lblChonSach.Location = new System.Drawing.Point(12, 380);
+            this.lblChonSach.Name = "lblChonSach";
+            this.lblChonSach.Size = new System.Drawing.Size(113, 24);
+            this.lblChonSach.TabIndex = 24;
+            this.lblChonSach.Text = "Chọn Sách";
             // 
-            // bChonSua
+            // btnChonSua
             // 
-            this.bChonSua.Location = new System.Drawing.Point(11, 225);
-            this.bChonSua.Name = "bChonSua";
-            this.bChonSua.Size = new System.Drawing.Size(121, 29);
-            this.bChonSua.TabIndex = 25;
-            this.bChonSua.Text = "CHỌN SỬA";
-            this.bChonSua.UseVisualStyleBackColor = true;
-            this.bChonSua.Click += new System.EventHandler(this.bChon_Click);
+            this.btnChonSua.Location = new System.Drawing.Point(11, 225);
+            this.btnChonSua.Name = "btnChonSua";
+            this.btnChonSua.Size = new System.Drawing.Size(121, 29);
+            this.btnChonSua.TabIndex = 25;
+            this.btnChonSua.Text = "CHỌN SỬA";
+            this.btnChonSua.UseVisualStyleBackColor = true;
+            this.btnChonSua.Click += new System.EventHandler(this.bChon_Click);
             // 
-            // bChonThem
+            // btnChonThem
             // 
-            this.bChonThem.Location = new System.Drawing.Point(11, 568);
-            this.bChonThem.Name = "bChonThem";
-            this.bChonThem.Size = new System.Drawing.Size(121, 29);
-            this.bChonThem.TabIndex = 26;
-            this.bChonThem.Text = "CHỌN THÊM";
-            this.bChonThem.UseVisualStyleBackColor = true;
-            this.bChonThem.Click += new System.EventHandler(this.bChonThem_Click);
+            this.btnChonThem.Location = new System.Drawing.Point(11, 568);
+            this.btnChonThem.Name = "btnChonThem";
+            this.btnChonThem.Size = new System.Drawing.Size(121, 29);
+            this.btnChonThem.TabIndex = 26;
+            this.btnChonThem.Text = "CHỌN THÊM";
+            this.btnChonThem.UseVisualStyleBackColor = true;
+            this.btnChonThem.Click += new System.EventHandler(this.bChonThem_Click);
             // 
-            // fKho
+            // frmKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 727);
-            this.Controls.Add(this.bChonThem);
-            this.Controls.Add(this.bChonSua);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.listView2);
+            this.Controls.Add(this.btnChonThem);
+            this.Controls.Add(this.btnChonSua);
+            this.Controls.Add(this.lblChonSach);
+            this.Controls.Add(this.dgvChonSach);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.bXoaSach);
+            this.Controls.Add(this.btnXoaSach);
             this.Controls.Add(this.fThoat);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "fKho";
+            this.Name = "frmKho";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KHO";
             this.panel1.ResumeLayout(false);
@@ -303,22 +303,22 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label txMaSach;
+        private System.Windows.Forms.Label txMaSach_Them;
         private System.Windows.Forms.Button bThemKho;
-        private System.Windows.Forms.Button bXoaSach;
+        private System.Windows.Forms.Button btnXoaSach;
         private System.Windows.Forms.Button fThoat;
-        private System.Windows.Forms.Label txSoLuong;
+        private System.Windows.Forms.Label lblSoLuongThem;
         private System.Windows.Forms.NumericUpDown Nhap_numericUpDownSoLuong;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.NumericUpDown Sua_numericUpDownSoLuong;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button bLuu;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button bChonSua;
+        private System.Windows.Forms.Label lblSoLuongSua;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Label lblMaSach_Sua;
+        private System.Windows.Forms.ListView dgvChonSach;
+        private System.Windows.Forms.Label lblChonSach;
+        private System.Windows.Forms.Button btnChonSua;
         private System.Windows.Forms.TextBox txbMaSachSua;
-        private System.Windows.Forms.Button bChonThem;
+        private System.Windows.Forms.Button btnChonThem;
         private System.Windows.Forms.TextBox txbMaSachThem;
     }
 }

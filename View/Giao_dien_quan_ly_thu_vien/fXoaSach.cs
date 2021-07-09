@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fXoaSach : Form
+    public partial class frmXoaSach : Form
     {
-        public fXoaSach()
+        public frmXoaSach()
         {
             InitializeComponent();
             listView1_ItemChecked();
@@ -27,21 +27,21 @@ namespace Giao_dien_quan_ly_thu_vien
             string query = "Select MASACH, TENSACH, TENTG From SACH LEFT JOIN TACGIA ON SACH.MATG = TACGIA.MATG";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
-            this.listView1.Items.Clear();
-            this.listView1.View = View.Details;
-            this.listView1.Columns.Add("MÃ SÁCH", 150);
-            this.listView1.Columns.Add("TÊN SÁCH", 370);
-            this.listView1.Columns.Add("TÊN TÁC GIẢ", 200);
-            this.listView1.GridLines = true;
-            this.listView1.FullRowSelect = true;
-            this.listView1.CheckBoxes = true;
+            this.dgvXoaSach.Items.Clear();
+            this.dgvXoaSach.View = View.Details;
+            this.dgvXoaSach.Columns.Add("MÃ SÁCH", 150);
+            this.dgvXoaSach.Columns.Add("TÊN SÁCH", 370);
+            this.dgvXoaSach.Columns.Add("TÊN TÁC GIẢ", 200);
+            this.dgvXoaSach.GridLines = true;
+            this.dgvXoaSach.FullRowSelect = true;
+            this.dgvXoaSach.CheckBoxes = true;
 
             int i = 0;
             foreach (DataRow row in data.Rows)
             {
-                this.listView1.Items.Add(row["MASACH"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENSACH"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENTG"].ToString());
+                this.dgvXoaSach.Items.Add(row["MASACH"].ToString());
+                this.dgvXoaSach.Items[i].SubItems.Add(row["TENSACH"].ToString());
+                this.dgvXoaSach.Items[i].SubItems.Add(row["TENTG"].ToString());
                 i++;
             }
         }
@@ -50,7 +50,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void bXoa_Click(object sender, EventArgs e)
         {
             int count0 = 0;
-            foreach (ListViewItem item in this.listView1.Items)
+            foreach (ListViewItem item in this.dgvXoaSach.Items)
             {
                 if (item.Checked)
                     count0++;
@@ -62,7 +62,7 @@ namespace Giao_dien_quan_ly_thu_vien
                 if (d == DialogResult.Yes)
                 {
                     int count = 0;
-                    foreach (ListViewItem item in this.listView1.Items)
+                    foreach (ListViewItem item in this.dgvXoaSach.Items)
                     {
                         if (item.Checked == true)
                         {

@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fNhaXuatBan : Form
+    public partial class frmNhaXuatBan : Form
     {
-        public fNhaXuatBan()
+        public frmNhaXuatBan()
         {
             InitializeComponent();
             listView1_SelectedIndexChanged();
@@ -23,17 +23,17 @@ namespace Giao_dien_quan_ly_thu_vien
             string query = "Select TENNHAXUATBAN From NHAXUATBAN";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
-            this.listView1.Clear();
-            this.listView1.Items.Clear();
-            this.listView1.View = View.Details;
-            this.listView1.Columns.Add("DANH SÁCH CÁC NHÀ XUẤT BẢN HIỆN CÓ", 610);
-            this.listView1.GridLines = true;
-            this.listView1.FullRowSelect = true;
+            this.dgvNhaXuatBan.Clear();
+            this.dgvNhaXuatBan.Items.Clear();
+            this.dgvNhaXuatBan.View = View.Details;
+            this.dgvNhaXuatBan.Columns.Add("DANH SÁCH CÁC NHÀ XUẤT BẢN HIỆN CÓ", 610);
+            this.dgvNhaXuatBan.GridLines = true;
+            this.dgvNhaXuatBan.FullRowSelect = true;
 
             int i = 0;
             foreach (DataRow row in data.Rows)
             {
-                this.listView1.Items.Add(row["TENNHAXUATBAN"].ToString());
+                this.dgvNhaXuatBan.Items.Add(row["TENNHAXUATBAN"].ToString());
                 i++;
             }
         }
@@ -66,10 +66,10 @@ namespace Giao_dien_quan_ly_thu_vien
         {
             string query = "Select TENNHAXUATBAN From NHAXUATBAN";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            cbXoaNXB.DataSource = data;
-            cbXoaNXB.ValueMember = "TENNHAXUATBAN";
-            cbXoaNXB.DisplayMember = "TENNHAXUATBAN";
-            cbXoaNXB.Text = null;
+            cboXoaNXB.DataSource = data;
+            cboXoaNXB.ValueMember = "TENNHAXUATBAN";
+            cboXoaNXB.DisplayMember = "TENNHAXUATBAN";
+            cboXoaNXB.Text = null;
         }
 
         private void bXoaNXB_Click(object sender, EventArgs e)
@@ -80,7 +80,7 @@ namespace Giao_dien_quan_ly_thu_vien
             {
                 try
                 {
-                    string query = "Delete From NHAXUATBAN Where TENNHAXUATBAN = '" + cbXoaNXB.Text.ToString() + "' AND TENNHAXUATBAN NOT IN (Select TENNHAXUATBAN From SACH)";
+                    string query = "Delete From NHAXUATBAN Where TENNHAXUATBAN = '" + cboXoaNXB.Text.ToString() + "' AND TENNHAXUATBAN NOT IN (Select TENNHAXUATBAN From SACH)";
                     DataTable data = DataProvider.Instance.ExecuteQuery(query);
                     listView1_SelectedIndexChanged();
                     cbXoaNXB_SelectedIndexChanged();

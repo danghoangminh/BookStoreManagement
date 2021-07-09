@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fLoaiSach : Form
+    public partial class frmLoaiSach : Form
     {
-        public fLoaiSach()
+        public frmLoaiSach()
         {
             InitializeComponent();
             listView1_SelectedIndexChanged();
@@ -28,17 +28,17 @@ namespace Giao_dien_quan_ly_thu_vien
             string query = "Select TENLOAISACH From LOAISACH";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
-            this.listView1.Clear();
-            this.listView1.Items.Clear();
-            this.listView1.View = View.Details;
-            this.listView1.Columns.Add("DANH SÁCH CÁC LOẠI SÁCH HIỆN CÓ", 610);
-            this.listView1.GridLines = true;
-            this.listView1.FullRowSelect = true;
+            this.dgvLoaiSach.Clear();
+            this.dgvLoaiSach.Items.Clear();
+            this.dgvLoaiSach.View = View.Details;
+            this.dgvLoaiSach.Columns.Add("DANH SÁCH CÁC LOẠI SÁCH HIỆN CÓ", 610);
+            this.dgvLoaiSach.GridLines = true;
+            this.dgvLoaiSach.FullRowSelect = true;
 
             int i = 0;
             foreach (DataRow row in data.Rows)
             {
-                this.listView1.Items.Add(row["TENLOAISACH"].ToString());
+                this.dgvLoaiSach.Items.Add(row["TENLOAISACH"].ToString());
                 i++;
             }
         }
@@ -47,10 +47,10 @@ namespace Giao_dien_quan_ly_thu_vien
         {
             string query = "Select TENLOAISACH From LOAISACH";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            cbXoaLoaiSach.DataSource = data;
-            cbXoaLoaiSach.ValueMember = "TENLOAISACH";
-            cbXoaLoaiSach.DisplayMember = "TENLOAISACH";
-            cbXoaLoaiSach.Text = null;
+            cboXoaLoaiSach.DataSource = data;
+            cboXoaLoaiSach.ValueMember = "TENLOAISACH";
+            cboXoaLoaiSach.DisplayMember = "TENLOAISACH";
+            cboXoaLoaiSach.Text = null;
         }
 
         private void bThemSach_Click(object sender, EventArgs e)
@@ -85,7 +85,7 @@ namespace Giao_dien_quan_ly_thu_vien
             {
                 try
                 {
-                    string query = "Delete From LOAISACH Where TENLOAISACH = '" + cbXoaLoaiSach.Text.ToString() + "' AND TENLOAISACH NOT IN (Select TENLOAISACH From SACH)";
+                    string query = "Delete From LOAISACH Where TENLOAISACH = '" + cboXoaLoaiSach.Text.ToString() + "' AND TENLOAISACH NOT IN (Select TENLOAISACH From SACH)";
                     DataTable data = DataProvider.Instance.ExecuteQuery(query);
                     listView1_SelectedIndexChanged();
                     cbXoaLoaiSach_SelectedIndexChanged();

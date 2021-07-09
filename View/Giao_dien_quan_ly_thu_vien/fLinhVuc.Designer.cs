@@ -1,7 +1,7 @@
 ﻿
 namespace Giao_dien_quan_ly_thu_vien
 {
-    partial class fLinhVuc
+    partial class frmLinhVuc
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,15 @@ namespace Giao_dien_quan_ly_thu_vien
         private void InitializeComponent()
         {
             this.fThoat = new System.Windows.Forms.Button();
-            this.bThem = new System.Windows.Forms.Button();
-            this.bXoa = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.dgvLinhVuc = new System.Windows.Forms.ListView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbThemLinhVuc = new System.Windows.Forms.TextBox();
-            this.txTenLinhVuc = new System.Windows.Forms.Label();
+            this.lblTenLinhVuc = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cbXoaLinhVuc = new System.Windows.Forms.ComboBox();
-            this.txThemLinhVuc = new System.Windows.Forms.Label();
+            this.cboXoaLinhVuc = new System.Windows.Forms.ComboBox();
+            this.lblThemLinhVuc = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -53,40 +53,40 @@ namespace Giao_dien_quan_ly_thu_vien
             this.fThoat.UseVisualStyleBackColor = true;
             this.fThoat.Click += new System.EventHandler(this.fThoat_Click);
             // 
-            // bThem
+            // btnThem
             // 
-            this.bThem.Location = new System.Drawing.Point(498, 9);
-            this.bThem.Name = "bThem";
-            this.bThem.Size = new System.Drawing.Size(121, 29);
-            this.bThem.TabIndex = 13;
-            this.bThem.Text = "THÊM";
-            this.bThem.UseVisualStyleBackColor = true;
-            this.bThem.Click += new System.EventHandler(this.bThem_Click);
+            this.btnThem.Location = new System.Drawing.Point(498, 9);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(121, 29);
+            this.btnThem.TabIndex = 13;
+            this.btnThem.Text = "THÊM";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.bThem_Click);
             // 
-            // bXoa
+            // btnXoa
             // 
-            this.bXoa.Location = new System.Drawing.Point(499, 9);
-            this.bXoa.Name = "bXoa";
-            this.bXoa.Size = new System.Drawing.Size(121, 29);
-            this.bXoa.TabIndex = 14;
-            this.bXoa.Text = "XÓA";
-            this.bXoa.UseVisualStyleBackColor = true;
-            this.bXoa.Click += new System.EventHandler(this.bXoa_Click);
+            this.btnXoa.Location = new System.Drawing.Point(499, 9);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(121, 29);
+            this.btnXoa.TabIndex = 14;
+            this.btnXoa.Text = "XÓA";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.bXoa_Click);
             // 
-            // listView1
+            // dgvLinhVuc
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(11, 12);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(640, 203);
-            this.listView1.TabIndex = 15;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.dgvLinhVuc.HideSelection = false;
+            this.dgvLinhVuc.Location = new System.Drawing.Point(11, 12);
+            this.dgvLinhVuc.Name = "dgvLinhVuc";
+            this.dgvLinhVuc.Size = new System.Drawing.Size(640, 203);
+            this.dgvLinhVuc.TabIndex = 15;
+            this.dgvLinhVuc.UseCompatibleStateImageBehavior = false;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.txbThemLinhVuc);
-            this.panel1.Controls.Add(this.txTenLinhVuc);
-            this.panel1.Controls.Add(this.bThem);
+            this.panel1.Controls.Add(this.lblTenLinhVuc);
+            this.panel1.Controls.Add(this.btnThem);
             this.panel1.Location = new System.Drawing.Point(11, 239);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(639, 69);
@@ -99,56 +99,56 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbThemLinhVuc.Size = new System.Drawing.Size(309, 27);
             this.txbThemLinhVuc.TabIndex = 1;
             // 
-            // txTenLinhVuc
+            // lblTenLinhVuc
             // 
-            this.txTenLinhVuc.AutoSize = true;
-            this.txTenLinhVuc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txTenLinhVuc.Location = new System.Drawing.Point(-1, 15);
-            this.txTenLinhVuc.Name = "txTenLinhVuc";
-            this.txTenLinhVuc.Size = new System.Drawing.Size(164, 23);
-            this.txTenLinhVuc.TabIndex = 0;
-            this.txTenLinhVuc.Text = "THÊM LĨNH VỰC";
+            this.lblTenLinhVuc.AutoSize = true;
+            this.lblTenLinhVuc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTenLinhVuc.Location = new System.Drawing.Point(-1, 15);
+            this.lblTenLinhVuc.Name = "lblTenLinhVuc";
+            this.lblTenLinhVuc.Size = new System.Drawing.Size(164, 23);
+            this.lblTenLinhVuc.TabIndex = 0;
+            this.lblTenLinhVuc.Text = "THÊM LĨNH VỰC";
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.cbXoaLinhVuc);
-            this.panel2.Controls.Add(this.txThemLinhVuc);
-            this.panel2.Controls.Add(this.bXoa);
+            this.panel2.Controls.Add(this.cboXoaLinhVuc);
+            this.panel2.Controls.Add(this.lblThemLinhVuc);
+            this.panel2.Controls.Add(this.btnXoa);
             this.panel2.Location = new System.Drawing.Point(10, 314);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(639, 69);
             this.panel2.TabIndex = 17;
             // 
-            // cbXoaLinhVuc
+            // cboXoaLinhVuc
             // 
-            this.cbXoaLinhVuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbXoaLinhVuc.FormattingEnabled = true;
-            this.cbXoaLinhVuc.Location = new System.Drawing.Point(169, 10);
-            this.cbXoaLinhVuc.Name = "cbXoaLinhVuc";
-            this.cbXoaLinhVuc.Size = new System.Drawing.Size(308, 28);
-            this.cbXoaLinhVuc.TabIndex = 15;
+            this.cboXoaLinhVuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboXoaLinhVuc.FormattingEnabled = true;
+            this.cboXoaLinhVuc.Location = new System.Drawing.Point(169, 10);
+            this.cboXoaLinhVuc.Name = "cboXoaLinhVuc";
+            this.cboXoaLinhVuc.Size = new System.Drawing.Size(308, 28);
+            this.cboXoaLinhVuc.TabIndex = 15;
             // 
-            // txThemLinhVuc
+            // lblThemLinhVuc
             // 
-            this.txThemLinhVuc.AutoSize = true;
-            this.txThemLinhVuc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txThemLinhVuc.Location = new System.Drawing.Point(-1, 15);
-            this.txThemLinhVuc.Name = "txThemLinhVuc";
-            this.txThemLinhVuc.Size = new System.Drawing.Size(150, 23);
-            this.txThemLinhVuc.TabIndex = 0;
-            this.txThemLinhVuc.Text = "XÓA LĨNH VỰC";
+            this.lblThemLinhVuc.AutoSize = true;
+            this.lblThemLinhVuc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblThemLinhVuc.Location = new System.Drawing.Point(-1, 15);
+            this.lblThemLinhVuc.Name = "lblThemLinhVuc";
+            this.lblThemLinhVuc.Size = new System.Drawing.Size(150, 23);
+            this.lblThemLinhVuc.TabIndex = 0;
+            this.lblThemLinhVuc.Text = "XÓA LĨNH VỰC";
             // 
-            // fLinhVuc
+            // frmLinhVuc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(663, 425);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.dgvLinhVuc);
             this.Controls.Add(this.fThoat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "fLinhVuc";
+            this.Name = "frmLinhVuc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LĨNH VỰC";
             this.panel1.ResumeLayout(false);
@@ -161,14 +161,14 @@ namespace Giao_dien_quan_ly_thu_vien
 
         #endregion
         private System.Windows.Forms.Button fThoat;
-        private System.Windows.Forms.Button bThem;
-        private System.Windows.Forms.Button bXoa;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.ListView dgvLinhVuc;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txbThemLinhVuc;
-        private System.Windows.Forms.Label txTenLinhVuc;
+        private System.Windows.Forms.Label lblTenLinhVuc;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cbXoaLinhVuc;
-        private System.Windows.Forms.Label txThemLinhVuc;
+        private System.Windows.Forms.ComboBox cboXoaLinhVuc;
+        private System.Windows.Forms.Label lblThemLinhVuc;
     }
 }

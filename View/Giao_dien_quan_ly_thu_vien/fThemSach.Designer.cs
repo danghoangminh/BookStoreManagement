@@ -1,7 +1,7 @@
 ﻿
 namespace Giao_dien_quan_ly_thu_vien
 {
-    partial class fThemSach
+    partial class frmThemSach
     {
         /// <summary>
         /// Required designer variable.
@@ -31,27 +31,27 @@ namespace Giao_dien_quan_ly_thu_vien
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbMaSach = new System.Windows.Forms.TextBox();
-            this.txMaSach = new System.Windows.Forms.Label();
-            this.cbTenTacGia = new System.Windows.Forms.ComboBox();
+            this.lblMaSach = new System.Windows.Forms.Label();
+            this.cboTenTacGia = new System.Windows.Forms.ComboBox();
             this.txbTenSach = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txMaTacGia = new System.Windows.Forms.Label();
-            this.txTenLinhVuc = new System.Windows.Forms.Label();
-            this.cbTenLinhVuc = new System.Windows.Forms.ComboBox();
+            this.lblTenSach = new System.Windows.Forms.Label();
+            this.lblMaTacGia = new System.Windows.Forms.Label();
+            this.lblTenLinhVuc = new System.Windows.Forms.Label();
+            this.cboTenLinhVuc = new System.Windows.Forms.ComboBox();
             this.numericUpDownGiaMua = new System.Windows.Forms.NumericUpDown();
-            this.txGiaMua = new System.Windows.Forms.Label();
+            this.lblGiaMua = new System.Windows.Forms.Label();
             this.numericUpDownLanTaiBan = new System.Windows.Forms.NumericUpDown();
-            this.txLanTaiBan = new System.Windows.Forms.Label();
+            this.lblLanTaiBan = new System.Windows.Forms.Label();
             this.numericUpDownGiaBia = new System.Windows.Forms.NumericUpDown();
-            this.txGiaBia = new System.Windows.Forms.Label();
-            this.dateTimePicker_NamXuatBan = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txTenLoaiSach = new System.Windows.Forms.Label();
-            this.cbTenLoaiSach = new System.Windows.Forms.ComboBox();
+            this.lblGiaBia = new System.Windows.Forms.Label();
+            this.dateTimePickerNamXuatBan = new System.Windows.Forms.DateTimePicker();
+            this.lblNamXuatBan = new System.Windows.Forms.Label();
+            this.lblTenLoaiSach = new System.Windows.Forms.Label();
+            this.cboTenLoaiSach = new System.Windows.Forms.ComboBox();
             this.fThoat = new System.Windows.Forms.Button();
-            this.bThem = new System.Windows.Forms.Button();
-            this.cbTenNXB = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.cboTenNXB = new System.Windows.Forms.ComboBox();
+            this.lblTenNhaXuatBan = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGiaMua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLanTaiBan)).BeginInit();
@@ -61,7 +61,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // panel2
             // 
             this.panel2.Controls.Add(this.txbMaSach);
-            this.panel2.Controls.Add(this.txMaSach);
+            this.panel2.Controls.Add(this.lblMaSach);
             this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(513, 75);
@@ -75,24 +75,24 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbMaSach.Size = new System.Drawing.Size(328, 27);
             this.txbMaSach.TabIndex = 1;
             // 
-            // txMaSach
+            // lblMaSach
             // 
-            this.txMaSach.AutoSize = true;
-            this.txMaSach.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txMaSach.Location = new System.Drawing.Point(3, 28);
-            this.txMaSach.Name = "txMaSach";
-            this.txMaSach.Size = new System.Drawing.Size(99, 23);
-            this.txMaSach.TabIndex = 0;
-            this.txMaSach.Text = "MÃ SÁCH";
+            this.lblMaSach.AutoSize = true;
+            this.lblMaSach.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMaSach.Location = new System.Drawing.Point(3, 28);
+            this.lblMaSach.Name = "lblMaSach";
+            this.lblMaSach.Size = new System.Drawing.Size(99, 23);
+            this.lblMaSach.TabIndex = 0;
+            this.lblMaSach.Text = "MÃ SÁCH";
             // 
-            // cbTenTacGia
+            // cboTenTacGia
             // 
-            this.cbTenTacGia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTenTacGia.FormattingEnabled = true;
-            this.cbTenTacGia.Location = new System.Drawing.Point(194, 156);
-            this.cbTenTacGia.Name = "cbTenTacGia";
-            this.cbTenTacGia.Size = new System.Drawing.Size(328, 28);
-            this.cbTenTacGia.TabIndex = 3;
+            this.cboTenTacGia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTenTacGia.FormattingEnabled = true;
+            this.cboTenTacGia.Location = new System.Drawing.Point(194, 156);
+            this.cboTenTacGia.Name = "cboTenTacGia";
+            this.cboTenTacGia.Size = new System.Drawing.Size(328, 28);
+            this.cboTenTacGia.TabIndex = 3;
             // 
             // txbTenSach
             // 
@@ -101,44 +101,44 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbTenSach.Size = new System.Drawing.Size(328, 27);
             this.txbTenSach.TabIndex = 2;
             // 
-            // label1
+            // lblTenSach
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(15, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TÊN SÁCH";
+            this.lblTenSach.AutoSize = true;
+            this.lblTenSach.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTenSach.Location = new System.Drawing.Point(15, 101);
+            this.lblTenSach.Name = "lblTenSach";
+            this.lblTenSach.Size = new System.Drawing.Size(107, 23);
+            this.lblTenSach.TabIndex = 0;
+            this.lblTenSach.Text = "TÊN SÁCH";
             // 
-            // txMaTacGia
+            // lblMaTacGia
             // 
-            this.txMaTacGia.AutoSize = true;
-            this.txMaTacGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txMaTacGia.Location = new System.Drawing.Point(16, 161);
-            this.txMaTacGia.Name = "txMaTacGia";
-            this.txMaTacGia.Size = new System.Drawing.Size(90, 23);
-            this.txMaTacGia.TabIndex = 0;
-            this.txMaTacGia.Text = "TÁC GIẢ";
+            this.lblMaTacGia.AutoSize = true;
+            this.lblMaTacGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMaTacGia.Location = new System.Drawing.Point(16, 161);
+            this.lblMaTacGia.Name = "lblMaTacGia";
+            this.lblMaTacGia.Size = new System.Drawing.Size(90, 23);
+            this.lblMaTacGia.TabIndex = 0;
+            this.lblMaTacGia.Text = "TÁC GIẢ";
             // 
-            // txTenLinhVuc
+            // lblTenLinhVuc
             // 
-            this.txTenLinhVuc.AutoSize = true;
-            this.txTenLinhVuc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txTenLinhVuc.Location = new System.Drawing.Point(13, 219);
-            this.txTenLinhVuc.Name = "txTenLinhVuc";
-            this.txTenLinhVuc.Size = new System.Drawing.Size(103, 23);
-            this.txTenLinhVuc.TabIndex = 0;
-            this.txTenLinhVuc.Text = "LĨNH VỰC";
+            this.lblTenLinhVuc.AutoSize = true;
+            this.lblTenLinhVuc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTenLinhVuc.Location = new System.Drawing.Point(13, 219);
+            this.lblTenLinhVuc.Name = "lblTenLinhVuc";
+            this.lblTenLinhVuc.Size = new System.Drawing.Size(103, 23);
+            this.lblTenLinhVuc.TabIndex = 0;
+            this.lblTenLinhVuc.Text = "LĨNH VỰC";
             // 
-            // cbTenLinhVuc
+            // cboTenLinhVuc
             // 
-            this.cbTenLinhVuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTenLinhVuc.FormattingEnabled = true;
-            this.cbTenLinhVuc.Location = new System.Drawing.Point(194, 214);
-            this.cbTenLinhVuc.Name = "cbTenLinhVuc";
-            this.cbTenLinhVuc.Size = new System.Drawing.Size(328, 28);
-            this.cbTenLinhVuc.TabIndex = 4;
+            this.cboTenLinhVuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTenLinhVuc.FormattingEnabled = true;
+            this.cboTenLinhVuc.Location = new System.Drawing.Point(194, 214);
+            this.cboTenLinhVuc.Name = "cboTenLinhVuc";
+            this.cboTenLinhVuc.Size = new System.Drawing.Size(328, 28);
+            this.cboTenLinhVuc.TabIndex = 4;
             // 
             // numericUpDownGiaMua
             // 
@@ -162,15 +162,15 @@ namespace Giao_dien_quan_ly_thu_vien
             0,
             0});
             // 
-            // txGiaMua
+            // lblGiaMua
             // 
-            this.txGiaMua.AutoSize = true;
-            this.txGiaMua.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txGiaMua.Location = new System.Drawing.Point(17, 398);
-            this.txGiaMua.Name = "txGiaMua";
-            this.txGiaMua.Size = new System.Drawing.Size(94, 23);
-            this.txGiaMua.TabIndex = 0;
-            this.txGiaMua.Text = "GIÁ MUA";
+            this.lblGiaMua.AutoSize = true;
+            this.lblGiaMua.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblGiaMua.Location = new System.Drawing.Point(17, 398);
+            this.lblGiaMua.Name = "lblGiaMua";
+            this.lblGiaMua.Size = new System.Drawing.Size(94, 23);
+            this.lblGiaMua.TabIndex = 0;
+            this.lblGiaMua.Text = "GIÁ MUA";
             // 
             // numericUpDownLanTaiBan
             // 
@@ -179,15 +179,15 @@ namespace Giao_dien_quan_ly_thu_vien
             this.numericUpDownLanTaiBan.Size = new System.Drawing.Size(328, 27);
             this.numericUpDownLanTaiBan.TabIndex = 8;
             // 
-            // txLanTaiBan
+            // lblLanTaiBan
             // 
-            this.txLanTaiBan.AutoSize = true;
-            this.txLanTaiBan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txLanTaiBan.Location = new System.Drawing.Point(17, 518);
-            this.txLanTaiBan.Name = "txLanTaiBan";
-            this.txLanTaiBan.Size = new System.Drawing.Size(129, 23);
-            this.txLanTaiBan.TabIndex = 0;
-            this.txLanTaiBan.Text = "LẦN TÁI BẢN";
+            this.lblLanTaiBan.AutoSize = true;
+            this.lblLanTaiBan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLanTaiBan.Location = new System.Drawing.Point(17, 518);
+            this.lblLanTaiBan.Name = "lblLanTaiBan";
+            this.lblLanTaiBan.Size = new System.Drawing.Size(129, 23);
+            this.lblLanTaiBan.TabIndex = 0;
+            this.lblLanTaiBan.Text = "LẦN TÁI BẢN";
             // 
             // numericUpDownGiaBia
             // 
@@ -211,52 +211,52 @@ namespace Giao_dien_quan_ly_thu_vien
             0,
             0});
             // 
-            // txGiaBia
+            // lblGiaBia
             // 
-            this.txGiaBia.AutoSize = true;
-            this.txGiaBia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txGiaBia.Location = new System.Drawing.Point(17, 461);
-            this.txGiaBia.Name = "txGiaBia";
-            this.txGiaBia.Size = new System.Drawing.Size(83, 23);
-            this.txGiaBia.TabIndex = 0;
-            this.txGiaBia.Text = "GIÁ BÌA";
+            this.lblGiaBia.AutoSize = true;
+            this.lblGiaBia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblGiaBia.Location = new System.Drawing.Point(17, 461);
+            this.lblGiaBia.Name = "lblGiaBia";
+            this.lblGiaBia.Size = new System.Drawing.Size(83, 23);
+            this.lblGiaBia.TabIndex = 0;
+            this.lblGiaBia.Text = "GIÁ BÌA";
             // 
-            // dateTimePicker_NamXuatBan
+            // dateTimePickerNamXuatBan
             // 
-            this.dateTimePicker_NamXuatBan.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker_NamXuatBan.Location = new System.Drawing.Point(194, 576);
-            this.dateTimePicker_NamXuatBan.Name = "dateTimePicker_NamXuatBan";
-            this.dateTimePicker_NamXuatBan.Size = new System.Drawing.Size(328, 27);
-            this.dateTimePicker_NamXuatBan.TabIndex = 9;
+            this.dateTimePickerNamXuatBan.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerNamXuatBan.Location = new System.Drawing.Point(194, 576);
+            this.dateTimePickerNamXuatBan.Name = "dateTimePickerNamXuatBan";
+            this.dateTimePickerNamXuatBan.Size = new System.Drawing.Size(328, 27);
+            this.dateTimePickerNamXuatBan.TabIndex = 9;
             // 
-            // label2
+            // lblNamXuatBan
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(17, 580);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "NĂM XUẤT BẢN";
+            this.lblNamXuatBan.AutoSize = true;
+            this.lblNamXuatBan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNamXuatBan.Location = new System.Drawing.Point(17, 580);
+            this.lblNamXuatBan.Name = "lblNamXuatBan";
+            this.lblNamXuatBan.Size = new System.Drawing.Size(155, 23);
+            this.lblNamXuatBan.TabIndex = 0;
+            this.lblNamXuatBan.Text = "NĂM XUẤT BẢN";
             // 
-            // txTenLoaiSach
+            // lblTenLoaiSach
             // 
-            this.txTenLoaiSach.AutoSize = true;
-            this.txTenLoaiSach.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txTenLoaiSach.Location = new System.Drawing.Point(15, 278);
-            this.txTenLoaiSach.Name = "txTenLoaiSach";
-            this.txTenLoaiSach.Size = new System.Drawing.Size(115, 23);
-            this.txTenLoaiSach.TabIndex = 0;
-            this.txTenLoaiSach.Text = "LOẠI SÁCH";
+            this.lblTenLoaiSach.AutoSize = true;
+            this.lblTenLoaiSach.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTenLoaiSach.Location = new System.Drawing.Point(15, 278);
+            this.lblTenLoaiSach.Name = "lblTenLoaiSach";
+            this.lblTenLoaiSach.Size = new System.Drawing.Size(115, 23);
+            this.lblTenLoaiSach.TabIndex = 0;
+            this.lblTenLoaiSach.Text = "LOẠI SÁCH";
             // 
-            // cbTenLoaiSach
+            // cboTenLoaiSach
             // 
-            this.cbTenLoaiSach.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTenLoaiSach.FormattingEnabled = true;
-            this.cbTenLoaiSach.Location = new System.Drawing.Point(194, 273);
-            this.cbTenLoaiSach.Name = "cbTenLoaiSach";
-            this.cbTenLoaiSach.Size = new System.Drawing.Size(328, 28);
-            this.cbTenLoaiSach.TabIndex = 5;
+            this.cboTenLoaiSach.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTenLoaiSach.FormattingEnabled = true;
+            this.cboTenLoaiSach.Location = new System.Drawing.Point(194, 273);
+            this.cboTenLoaiSach.Name = "cboTenLoaiSach";
+            this.cboTenLoaiSach.Size = new System.Drawing.Size(328, 28);
+            this.cboTenLoaiSach.TabIndex = 5;
             // 
             // fThoat
             // 
@@ -268,63 +268,63 @@ namespace Giao_dien_quan_ly_thu_vien
             this.fThoat.UseVisualStyleBackColor = true;
             this.fThoat.Click += new System.EventHandler(this.fThoat_Click);
             // 
-            // bThem
+            // btnThem
             // 
-            this.bThem.Location = new System.Drawing.Point(12, 646);
-            this.bThem.Name = "bThem";
-            this.bThem.Size = new System.Drawing.Size(185, 29);
-            this.bThem.TabIndex = 12;
-            this.bThem.Text = "THÊM";
-            this.bThem.UseVisualStyleBackColor = true;
-            this.bThem.Click += new System.EventHandler(this.bThem_Click);
+            this.btnThem.Location = new System.Drawing.Point(12, 646);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(185, 29);
+            this.btnThem.TabIndex = 12;
+            this.btnThem.Text = "THÊM";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.bThem_Click);
             // 
-            // cbTenNXB
+            // cboTenNXB
             // 
-            this.cbTenNXB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTenNXB.FormattingEnabled = true;
-            this.cbTenNXB.Location = new System.Drawing.Point(194, 332);
-            this.cbTenNXB.Name = "cbTenNXB";
-            this.cbTenNXB.Size = new System.Drawing.Size(328, 28);
-            this.cbTenNXB.TabIndex = 6;
+            this.cboTenNXB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTenNXB.FormattingEnabled = true;
+            this.cboTenNXB.Location = new System.Drawing.Point(194, 332);
+            this.cboTenNXB.Name = "cboTenNXB";
+            this.cboTenNXB.Size = new System.Drawing.Size(328, 28);
+            this.cboTenNXB.TabIndex = 6;
             // 
-            // label3
+            // lblTenNhaXuatBan
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(17, 337);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 23);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "TÊN NXB";
+            this.lblTenNhaXuatBan.AutoSize = true;
+            this.lblTenNhaXuatBan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTenNhaXuatBan.Location = new System.Drawing.Point(17, 337);
+            this.lblTenNhaXuatBan.Name = "lblTenNhaXuatBan";
+            this.lblTenNhaXuatBan.Size = new System.Drawing.Size(93, 23);
+            this.lblTenNhaXuatBan.TabIndex = 0;
+            this.lblTenNhaXuatBan.Text = "TÊN NXB";
             // 
-            // fThemSach
+            // frmThemSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(531, 686);
-            this.Controls.Add(this.dateTimePicker_NamXuatBan);
+            this.Controls.Add(this.dateTimePickerNamXuatBan);
             this.Controls.Add(this.numericUpDownLanTaiBan);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblNamXuatBan);
             this.Controls.Add(this.numericUpDownGiaBia);
-            this.Controls.Add(this.txLanTaiBan);
+            this.Controls.Add(this.lblLanTaiBan);
             this.Controls.Add(this.numericUpDownGiaMua);
-            this.Controls.Add(this.txGiaBia);
-            this.Controls.Add(this.cbTenNXB);
-            this.Controls.Add(this.txGiaMua);
-            this.Controls.Add(this.cbTenLoaiSach);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txTenLoaiSach);
-            this.Controls.Add(this.cbTenLinhVuc);
-            this.Controls.Add(this.txTenLinhVuc);
-            this.Controls.Add(this.cbTenTacGia);
-            this.Controls.Add(this.txMaTacGia);
+            this.Controls.Add(this.lblGiaBia);
+            this.Controls.Add(this.cboTenNXB);
+            this.Controls.Add(this.lblGiaMua);
+            this.Controls.Add(this.cboTenLoaiSach);
+            this.Controls.Add(this.lblTenNhaXuatBan);
+            this.Controls.Add(this.lblTenLoaiSach);
+            this.Controls.Add(this.cboTenLinhVuc);
+            this.Controls.Add(this.lblTenLinhVuc);
+            this.Controls.Add(this.cboTenTacGia);
+            this.Controls.Add(this.lblMaTacGia);
             this.Controls.Add(this.txbTenSach);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.bThem);
+            this.Controls.Add(this.lblTenSach);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.fThoat);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "fThemSach";
+            this.Name = "frmThemSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "THÊM SÁCH";
             this.panel2.ResumeLayout(false);
@@ -341,26 +341,26 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txbMaSach;
-        private System.Windows.Forms.Label txMaSach;
-        private System.Windows.Forms.ComboBox cbTenTacGia;
+        private System.Windows.Forms.Label lblMaSach;
+        private System.Windows.Forms.ComboBox cboTenTacGia;
         private System.Windows.Forms.TextBox txbTenSach;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label txMaTacGia;
-        private System.Windows.Forms.Label txTenLinhVuc;
-        private System.Windows.Forms.ComboBox cbTenLinhVuc;
+        private System.Windows.Forms.Label lblTenSach;
+        private System.Windows.Forms.Label lblMaTacGia;
+        private System.Windows.Forms.Label lblTenLinhVuc;
+        private System.Windows.Forms.ComboBox cboTenLinhVuc;
         private System.Windows.Forms.NumericUpDown numericUpDownGiaMua;
-        private System.Windows.Forms.Label txGiaMua;
-        private System.Windows.Forms.Label txLanTaiBan;
+        private System.Windows.Forms.Label lblGiaMua;
+        private System.Windows.Forms.Label lblLanTaiBan;
         private System.Windows.Forms.NumericUpDown numericUpDownGiaBia;
-        private System.Windows.Forms.Label txGiaBia;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker_NamXuatBan;
-        private System.Windows.Forms.Label txTenLoaiSach;
-        private System.Windows.Forms.ComboBox cbTenLoaiSach;
+        private System.Windows.Forms.Label lblGiaBia;
+        private System.Windows.Forms.Label lblNamXuatBan;
+        private System.Windows.Forms.DateTimePicker dateTimePickerNamXuatBan;
+        private System.Windows.Forms.Label lblTenLoaiSach;
+        private System.Windows.Forms.ComboBox cboTenLoaiSach;
         private System.Windows.Forms.NumericUpDown numericUpDownLanTaiBan;
         private System.Windows.Forms.Button fThoat;
-        private System.Windows.Forms.Button bThem;
-        private System.Windows.Forms.ComboBox cbTenNXB;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.ComboBox cboTenNXB;
+        private System.Windows.Forms.Label lblTenNhaXuatBan;
     }
 }

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fTaiKhoan : Form
+    public partial class frmTaiKhoan : Form
     {
         int bChonTK = 0;
-        public fTaiKhoan()
+        public frmTaiKhoan()
         {
             InitializeComponent();
             listView1_SelectedIndexChanged();
@@ -41,7 +41,7 @@ namespace Giao_dien_quan_ly_thu_vien
                         txbMKMoi.Text = "";
                         MessageBox.Show("CẬP NHẬP TÀI KHOẢN THÀNH CÔNG!", "THÔNG BÁO");
                         bChonTK = 0;
-                        fDangNhap f = new fDangNhap();
+                        frmDangNhap f = new frmDangNhap();
                         this.Hide();
                         //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
                         f.ShowDialog();
@@ -68,18 +68,18 @@ namespace Giao_dien_quan_ly_thu_vien
             string query = "Select USERNAME From TAIKHOAN";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
-            this.listView1.Clear();
-            this.listView1.Items.Clear();
-            this.listView1.View = View.Details;
-            this.listView1.Columns.Add("DANH SÁCH CÁC NGƯỜI DÙNG", 480);
-            this.listView1.GridLines = true;
-            this.listView1.FullRowSelect = true;
-            this.listView1.CheckBoxes = true;
+            this.dgvTaiKhoan.Clear();
+            this.dgvTaiKhoan.Items.Clear();
+            this.dgvTaiKhoan.View = View.Details;
+            this.dgvTaiKhoan.Columns.Add("DANH SÁCH CÁC NGƯỜI DÙNG", 480);
+            this.dgvTaiKhoan.GridLines = true;
+            this.dgvTaiKhoan.FullRowSelect = true;
+            this.dgvTaiKhoan.CheckBoxes = true;
 
             int i = 0;
             foreach (DataRow row in data.Rows)
             {
-                this.listView1.Items.Add(row["USERNAME"].ToString());
+                this.dgvTaiKhoan.Items.Add(row["USERNAME"].ToString());
                 i++;
             }
         }
@@ -87,7 +87,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void bChon_Click(object sender, EventArgs e)
         {
             int count = 0;
-            foreach (ListViewItem item in this.listView1.Items)
+            foreach (ListViewItem item in this.dgvTaiKhoan.Items)
             {
                 if (item.Checked)
                     count++;
@@ -100,7 +100,7 @@ namespace Giao_dien_quan_ly_thu_vien
             else if (count == 1)
             {
                 bChonTK = 1;
-                foreach (ListViewItem item in this.listView1.Items)
+                foreach (ListViewItem item in this.dgvTaiKhoan.Items)
                 {
                     if (item.Checked == true)
                     {
@@ -112,6 +112,11 @@ namespace Giao_dien_quan_ly_thu_vien
             {
                 MessageBox.Show("KHÔNG THỂ CẬP NHẬP CÙNG LÚC NHIỀU TÀI KHOẢN!", "THÔNG BÁO");
             }
+        }
+
+        private void lblTenDangNhap1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -10,9 +10,9 @@ using Giao_dien_quan_ly_thu_vien.DAO;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fThemSach : Form
+    public partial class frmThemSach : Form
     {
-        public fThemSach()
+        public frmThemSach()
         {
             InitializeComponent();
             txbMaSach_TextChanged();
@@ -32,33 +32,33 @@ namespace Giao_dien_quan_ly_thu_vien
         {
             string query = "Select MATG, TENTG from TACGIA";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            cbTenTacGia.DataSource = data;
-            cbTenTacGia.ValueMember = "MATG";
-            cbTenTacGia.DisplayMember = "TENTG";
+            cboTenTacGia.DataSource = data;
+            cboTenTacGia.ValueMember = "MATG";
+            cboTenTacGia.DisplayMember = "TENTG";
         }
 
         private void cbTenLinhVuc_SelectedIndexChanged()
         {
             string query = "Select TENLINHVUC from LINHVUC";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            cbTenLinhVuc.DataSource = data;
-            cbTenLinhVuc.DisplayMember = "TENLINHVUC";
+            cboTenLinhVuc.DataSource = data;
+            cboTenLinhVuc.DisplayMember = "TENLINHVUC";
         }
 
         private void cbTenLoaiSach_SelectedIndexChanged()
         {
             string query = "Select TENLOAISACH from LOAISACH";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            cbTenLoaiSach.DataSource = data;
-            cbTenLoaiSach.DisplayMember = "TENLOAISACH";
+            cboTenLoaiSach.DataSource = data;
+            cboTenLoaiSach.DisplayMember = "TENLOAISACH";
         }
 
         private void cbTenNXB_SelectedIndexChanged()
         {
             string query = "Select TENNHAXUATBAN from NHAXUATBAN";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
-            cbTenNXB.DataSource = data;
-            cbTenNXB.DisplayMember = "TENNHAXUATBAN";
+            cboTenNXB.DataSource = data;
+            cboTenNXB.DisplayMember = "TENNHAXUATBAN";
         }
 
         private void fThoat_Click(object sender, EventArgs e)
@@ -68,16 +68,16 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private void bThem_Click(object sender, EventArgs e)
         {
-            if (txbTenSach.Text == "" || cbTenTacGia.Text == "" || cbTenLinhVuc.Text == "" || cbTenLoaiSach.Text == "" || cbTenNXB.Text == "")
+            if (txbTenSach.Text == "" || cboTenTacGia.Text == "" || cboTenLinhVuc.Text == "" || cboTenLoaiSach.Text == "" || cboTenNXB.Text == "")
             {
                 MessageBox.Show("VUI LÒNG ĐIỀN ĐỦ THÔNG TIN!", "THÔNG BÁO");
             }
             else
             {
                 string query = "Insert into SACH values('" + txbMaSach.Text + "','" + txbTenSach.Text + "'," +
-                        "(Select MATG From TACGIA Where TENTG = '" + cbTenTacGia.Text.ToString() + "'),'" + cbTenLinhVuc.Text + "','" + cbTenLoaiSach.Text + "','" + numericUpDownGiaMua.Value + "'," +
-                        "'" + numericUpDownGiaBia.Value + "','" + numericUpDownLanTaiBan.Value + "','" + cbTenNXB.Text.ToString() + "'," +
-                        "'" + dateTimePicker_NamXuatBan.Text + "')";
+                        "(Select MATG From TACGIA Where TENTG = '" + cboTenTacGia.Text.ToString() + "'),'" + cboTenLinhVuc.Text + "','" + cboTenLoaiSach.Text + "','" + numericUpDownGiaMua.Value + "'," +
+                        "'" + numericUpDownGiaBia.Value + "','" + numericUpDownLanTaiBan.Value + "','" + cboTenNXB.Text.ToString() + "'," +
+                        "'" + dateTimePickerNamXuatBan.Text + "')";
                 DataTable data = DataProvider.Instance.ExecuteQuery(query);
                 MessageBox.Show("ĐÃ THÊM!", "THÔNG BÁO");
                 txbMaSach_TextChanged();
@@ -89,7 +89,7 @@ namespace Giao_dien_quan_ly_thu_vien
                 numericUpDownGiaMua.Value = 1000;
                 numericUpDownGiaBia.Value = 1000;
                 numericUpDownLanTaiBan.Value = 0;
-                dateTimePicker_NamXuatBan.Text = DateTime.Now.ToString();
+                dateTimePickerNamXuatBan.Text = DateTime.Now.ToString();
             }
         }
     }

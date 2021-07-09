@@ -9,13 +9,13 @@ using System.Windows.Forms;
 
 namespace Giao_dien_quan_ly_thu_vien
 {
-    public partial class fViewTong : Form
+    public partial class frmViewTong : Form
     {
-        public fViewTong(string username)
+        public frmViewTong(string username)
         {
             InitializeComponent();
             listView1_SelectedIndexChanged();
-            txbUser.Text = username;
+            txbTenNguoiDung.Text = username;
         }
 
         private void DangxuatToolStripMenuItem_Click(object sender, EventArgs e)
@@ -26,7 +26,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void CapnhapToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Khi ấn đăng nhập thì hiện ra giao diện fTaiKhoan
-            fTaiKhoan f = new fTaiKhoan();
+            frmTaiKhoan f = new frmTaiKhoan();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
@@ -37,7 +37,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void ThemsachToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Khi ấn đăng nhập thì hiện ra giao diện fThemSach
-            fThemSach f = new fThemSach();
+            frmThemSach f = new frmThemSach();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
@@ -48,7 +48,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void XoasachToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Khi ấn đăng nhập thì hiện ra giao diện fXoaSach
-            fXoaSach f = new fXoaSach();
+            frmXoaSach f = new frmXoaSach();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
@@ -59,7 +59,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void SuasachToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Khi ấn đăng nhập thì hiện ra giao diện fSuaSach
-            fSuaSach f = new fSuaSach();
+            frmSuaSach f = new frmSuaSach();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
@@ -70,7 +70,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void LinhvucToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Khi ấn đăng nhập thì hiện ra giao diện fLinhVuc
-            fLinhVuc f = new fLinhVuc();
+            frmLinhVuc f = new frmLinhVuc();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
@@ -81,7 +81,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void LoaisachToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Khi ấn đăng nhập thì hiện ra giao diện fLoaiSach
-            fLoaiSach f = new fLoaiSach();
+            frmLoaiSach f = new frmLoaiSach();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
@@ -92,7 +92,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void KhoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Khi ấn đăng nhập thì hiện ra giao diện fKho
-            fKho f = new fKho();
+            frmKho f = new frmKho();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
@@ -103,7 +103,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void NhaxuatbanToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Khi ấn đăng nhập thì hiện ra giao diện fNhaXuatBan
-            fNhaXuatBan f = new fNhaXuatBan();
+            frmNhaXuatBan f = new frmNhaXuatBan();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
@@ -114,7 +114,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void HoadonToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Khi ấn đăng nhập thì hiện ra giao diện fHoaDon
-            fHoaDon f = new fHoaDon();
+            frmHoaDon f = new frmHoaDon();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
@@ -125,7 +125,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void ThongkeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Khi ấn đăng nhập thì hiện ra giao diện fThongKe
-            fThongKe f = new fThongKe();
+            frmThongKe f = new frmThongKe();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
@@ -135,7 +135,7 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private void XoaTGToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fXoaTacGia f = new fXoaTacGia();
+            frmXoaTacGia f = new frmXoaTacGia();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
@@ -145,7 +145,7 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private void ThemTGToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fThemTacGia f = new fThemTacGia();
+            frmThemTacGia f = new frmThemTacGia();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
@@ -155,7 +155,7 @@ namespace Giao_dien_quan_ly_thu_vien
 
         private void SuaTGToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fSuaTacGia f = new fSuaTacGia();
+            frmSuaTacGia f = new frmSuaTacGia();
             this.Hide();
             //Khi thao tác trên dialog xong thì mới chạy lệnh show ở dưới
             f.ShowDialog();
@@ -166,7 +166,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void fViewTong_Load()
         {
             DateTime tg = DateTime.Now;
-            txTime.Text = tg.ToString("dddd, dd/MM/yyyy");
+            lblTime.Text = tg.ToString("dddd, dd/MM/yyyy");
            //string query = "Select USERNAME From TAIKHOAN";
            // object data = DataProvider.Instance.ExecuteScalar(query);
             //txbUser.Text = data.ToString();
@@ -180,41 +180,49 @@ namespace Giao_dien_quan_ly_thu_vien
                 "ON SACH.MATG = TACGIA.MATG";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
-            this.listView1.Clear();
-            this.listView1.Items.Clear();
-            this.listView1.View = View.Details;
-            this.listView1.Columns.Add("TÊN SÁCH", 400);
-            this.listView1.Columns.Add("TÁC GIẢ", 250);
-            this.listView1.Columns.Add("LĨNH VỰC", 220);
-            this.listView1.Columns.Add("LOẠI SÁCH", 200);
-            this.listView1.Columns.Add("GIÁ BÌA", 200);
-            this.listView1.Columns.Add("LẦN TB", 70);
-            this.listView1.Columns.Add("TÊN NXB", 140);
-            this.listView1.Columns.Add("NĂM XB", 120);
-            this.listView1.GridLines = true;
-            this.listView1.FullRowSelect = true;
+            this.dgvSach.Clear();
+            this.dgvSach.Items.Clear();
+            this.dgvSach.View = View.Details;
+            this.dgvSach.Columns.Add("TÊN SÁCH", 400);
+            this.dgvSach.Columns.Add("TÁC GIẢ", 250);
+            this.dgvSach.Columns.Add("LĨNH VỰC", 220);
+            this.dgvSach.Columns.Add("LOẠI SÁCH", 200);
+            this.dgvSach.Columns.Add("GIÁ BÌA", 200);
+            this.dgvSach.Columns.Add("LẦN TB", 70);
+            this.dgvSach.Columns.Add("TÊN NXB", 140);
+            this.dgvSach.Columns.Add("NĂM XB", 120);
+            this.dgvSach.GridLines = true;
+            this.dgvSach.FullRowSelect = true;
 
             int i = 0;
             foreach (DataRow row in data.Rows)
             {
-                this.listView1.Items.Add(row["TENSACH"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENTG"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENLINHVUC"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENLOAISACH"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["GIABIA"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["LANTAIBAN"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["TENNHAXUATBAN"].ToString());
-                this.listView1.Items[i].SubItems.Add(row["NAMXUATBAN"].ToString());
+                this.dgvSach.Items.Add(row["TENSACH"].ToString());
+                this.dgvSach.Items[i].SubItems.Add(row["TENTG"].ToString());
+                this.dgvSach.Items[i].SubItems.Add(row["TENLINHVUC"].ToString());
+                this.dgvSach.Items[i].SubItems.Add(row["TENLOAISACH"].ToString());
+                this.dgvSach.Items[i].SubItems.Add(row["GIABIA"].ToString());
+                this.dgvSach.Items[i].SubItems.Add(row["LANTAIBAN"].ToString());
+                this.dgvSach.Items[i].SubItems.Add(row["TENNHAXUATBAN"].ToString());
+                this.dgvSach.Items[i].SubItems.Add(row["NAMXUATBAN"].ToString());
                 i++;
             }
 
             
+            
             string timenow = DateTime.Now.ToString("yyyy/MM/dd");
             string query2 = "Select SUM(TONGTIEN) AS [DOANHTHU] From HOADON Where NGAYLAP = '" + timenow + "'";
             object data2 = DataProvider.Instance.ExecuteScalar(query2);
-            txbDoanhThu.Text = data2.ToString() + " VND";
+            if (data2.ToString() == "")
+            {
+                txbDoanhThu.Text = 0 + " VND";
+            }
+            else
+            {
+                txbDoanhThu.Text = data2.ToString() + " VND";
+            }
 
-            string query3 = "Select Count(MAHOADON) From HOADON";
+            string query3 = "Select Count(MAHOADON) From HOADON Where NGAYLAP = '" + timenow + "'"; 
             object data3 = DataProvider.Instance.ExecuteScalar(query3);
             txbSLKhach.Text = data3.ToString() + " người";
         }
