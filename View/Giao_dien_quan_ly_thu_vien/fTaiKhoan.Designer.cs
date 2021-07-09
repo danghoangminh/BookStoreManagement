@@ -37,7 +37,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbMKMoiNhapLai = new System.Windows.Forms.TextBox();
             this.lblNhapLai = new System.Windows.Forms.Label();
             this.btnCapNhap = new System.Windows.Forms.Button();
-            this.fThoat = new System.Windows.Forms.Button();
             this.dgvTaiKhoan = new System.Windows.Forms.ListView();
             this.btnChon = new System.Windows.Forms.Button();
             this.txbMKHienTai = new System.Windows.Forms.TextBox();
@@ -59,18 +58,18 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbTenDangNhap.Location = new System.Drawing.Point(239, 24);
             this.txbTenDangNhap.Name = "txbTenDangNhap";
             this.txbTenDangNhap.ReadOnly = true;
-            this.txbTenDangNhap.Size = new System.Drawing.Size(271, 27);
+            this.txbTenDangNhap.Size = new System.Drawing.Size(270, 27);
             this.txbTenDangNhap.TabIndex = 7;
             // 
             // lblTenDangNhap
             // 
             this.lblTenDangNhap.AutoSize = true;
-            this.lblTenDangNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTenDangNhap.Location = new System.Drawing.Point(3, 27);
+            this.lblTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTenDangNhap.Location = new System.Drawing.Point(3, 23);
             this.lblTenDangNhap.Name = "lblTenDangNhap";
-            this.lblTenDangNhap.Size = new System.Drawing.Size(173, 24);
+            this.lblTenDangNhap.Size = new System.Drawing.Size(170, 28);
             this.lblTenDangNhap.TabIndex = 0;
-            this.lblTenDangNhap.Text = "TÊN ĐĂNG NHẬP";
+            this.lblTenDangNhap.Text = "TÊN ĐĂNG NHẬP:";
             this.lblTenDangNhap.Click += new System.EventHandler(this.lblTenDangNhap1_Click);
             // 
             // txbMKMoi
@@ -84,12 +83,12 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblMatKhauMoi
             // 
             this.lblMatKhauMoi.AutoSize = true;
-            this.lblMatKhauMoi.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblMatKhauMoi.Location = new System.Drawing.Point(15, 288);
+            this.lblMatKhauMoi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMatKhauMoi.Location = new System.Drawing.Point(15, 284);
             this.lblMatKhauMoi.Name = "lblMatKhauMoi";
-            this.lblMatKhauMoi.Size = new System.Drawing.Size(159, 24);
+            this.lblMatKhauMoi.Size = new System.Drawing.Size(158, 28);
             this.lblMatKhauMoi.TabIndex = 0;
-            this.lblMatKhauMoi.Text = "MẬT KHẨU MỚI";
+            this.lblMatKhauMoi.Text = "MẬT KHẨU MỚI:";
             // 
             // txbMKMoiNhapLai
             // 
@@ -102,32 +101,22 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblNhapLai
             // 
             this.lblNhapLai.AutoSize = true;
-            this.lblNhapLai.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNhapLai.Location = new System.Drawing.Point(15, 337);
+            this.lblNhapLai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNhapLai.Location = new System.Drawing.Point(15, 333);
             this.lblNhapLai.Name = "lblNhapLai";
-            this.lblNhapLai.Size = new System.Drawing.Size(100, 24);
+            this.lblNhapLai.Size = new System.Drawing.Size(101, 28);
             this.lblNhapLai.TabIndex = 0;
-            this.lblNhapLai.Text = "NHẬP LẠI";
+            this.lblNhapLai.Text = "NHẬP LẠI:";
             // 
             // btnCapNhap
             // 
-            this.btnCapNhap.Location = new System.Drawing.Point(11, 405);
+            this.btnCapNhap.Location = new System.Drawing.Point(126, 384);
             this.btnCapNhap.Name = "btnCapNhap";
-            this.btnCapNhap.Size = new System.Drawing.Size(183, 29);
+            this.btnCapNhap.Size = new System.Drawing.Size(276, 29);
             this.btnCapNhap.TabIndex = 5;
             this.btnCapNhap.Text = "CẬP NHẬT";
             this.btnCapNhap.UseVisualStyleBackColor = true;
             this.btnCapNhap.Click += new System.EventHandler(this.bCapNhap_Click);
-            // 
-            // fThoat
-            // 
-            this.fThoat.Location = new System.Drawing.Point(385, 405);
-            this.fThoat.Name = "fThoat";
-            this.fThoat.Size = new System.Drawing.Size(136, 29);
-            this.fThoat.TabIndex = 6;
-            this.fThoat.Text = "THOÁT";
-            this.fThoat.UseVisualStyleBackColor = true;
-            this.fThoat.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgvTaiKhoan
             // 
@@ -159,19 +148,19 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblMatKhauHienTai
             // 
             this.lblMatKhauHienTai.AutoSize = true;
-            this.lblMatKhauHienTai.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblMatKhauHienTai.Location = new System.Drawing.Point(15, 241);
+            this.lblMatKhauHienTai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMatKhauHienTai.Location = new System.Drawing.Point(15, 237);
             this.lblMatKhauHienTai.Name = "lblMatKhauHienTai";
-            this.lblMatKhauHienTai.Size = new System.Drawing.Size(203, 24);
+            this.lblMatKhauHienTai.Size = new System.Drawing.Size(197, 28);
             this.lblMatKhauHienTai.TabIndex = 0;
-            this.lblMatKhauHienTai.Text = "MẬT KHẨU HIỆN TẠI";
+            this.lblMatKhauHienTai.Text = "MẬT KHẨU HIỆN TẠI:";
             // 
             // frmTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(533, 442);
+            this.ClientSize = new System.Drawing.Size(533, 425);
             this.Controls.Add(this.txbMKHienTai);
             this.Controls.Add(this.txbMKMoiNhapLai);
             this.Controls.Add(this.txbMKMoi);
@@ -180,7 +169,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.Controls.Add(this.btnChon);
             this.Controls.Add(this.lblMatKhauHienTai);
             this.Controls.Add(this.dgvTaiKhoan);
-            this.Controls.Add(this.fThoat);
             this.Controls.Add(this.btnCapNhap);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -204,7 +192,6 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.TextBox txbMKMoiNhapLai;
         private System.Windows.Forms.Label lblNhapLai;
         private System.Windows.Forms.Button btnCapNhap;
-        private System.Windows.Forms.Button fThoat;
         private System.Windows.Forms.ListView dgvTaiKhoan;
         private System.Windows.Forms.Button btnChon;
         private System.Windows.Forms.TextBox txbMKHienTai;

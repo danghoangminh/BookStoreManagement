@@ -1186,19 +1186,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USER\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\OneDrive\\Tài liệu\\GitHub\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj",
+      "projectUniqueName": "E:\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj",
       "projectName": "Giao_dien_quan_ly_thu_vien",
-      "projectPath": "C:\\Users\\USER\\OneDrive\\Tài liệu\\GitHub\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj",
-      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\OneDrive\\Tài liệu\\GitHub\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\obj\\",
+      "projectPath": "E:\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\Giao_dien_quan_ly_thu_vien.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "E:\\quan-li-nha-sach\\View\\Giao_dien_quan_ly_thu_vien\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

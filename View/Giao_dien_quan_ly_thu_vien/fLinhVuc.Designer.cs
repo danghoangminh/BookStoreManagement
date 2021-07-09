@@ -29,7 +29,6 @@ namespace Giao_dien_quan_ly_thu_vien
         /// </summary>
         private void InitializeComponent()
         {
-            this.fThoat = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.dgvLinhVuc = new System.Windows.Forms.ListView();
@@ -42,16 +41,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // fThoat
-            // 
-            this.fThoat.Location = new System.Drawing.Point(404, 389);
-            this.fThoat.Name = "fThoat";
-            this.fThoat.Size = new System.Drawing.Size(226, 29);
-            this.fThoat.TabIndex = 12;
-            this.fThoat.Text = "THOÁT";
-            this.fThoat.UseVisualStyleBackColor = true;
-            this.fThoat.Click += new System.EventHandler(this.fThoat_Click);
             // 
             // btnThem
             // 
@@ -78,7 +67,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.dgvLinhVuc.HideSelection = false;
             this.dgvLinhVuc.Location = new System.Drawing.Point(11, 12);
             this.dgvLinhVuc.Name = "dgvLinhVuc";
-            this.dgvLinhVuc.Size = new System.Drawing.Size(640, 203);
+            this.dgvLinhVuc.Size = new System.Drawing.Size(640, 221);
             this.dgvLinhVuc.TabIndex = 15;
             this.dgvLinhVuc.UseCompatibleStateImageBehavior = false;
             // 
@@ -102,12 +91,12 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblTenLinhVuc
             // 
             this.lblTenLinhVuc.AutoSize = true;
-            this.lblTenLinhVuc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTenLinhVuc.Location = new System.Drawing.Point(-1, 15);
+            this.lblTenLinhVuc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTenLinhVuc.Location = new System.Drawing.Point(3, 10);
             this.lblTenLinhVuc.Name = "lblTenLinhVuc";
-            this.lblTenLinhVuc.Size = new System.Drawing.Size(164, 23);
+            this.lblTenLinhVuc.Size = new System.Drawing.Size(159, 28);
             this.lblTenLinhVuc.TabIndex = 0;
-            this.lblTenLinhVuc.Text = "THÊM LĨNH VỰC";
+            this.lblTenLinhVuc.Text = "THÊM LĨNH VỰC:";
             // 
             // panel2
             // 
@@ -131,22 +120,21 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblThemLinhVuc
             // 
             this.lblThemLinhVuc.AutoSize = true;
-            this.lblThemLinhVuc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblThemLinhVuc.Location = new System.Drawing.Point(-1, 15);
+            this.lblThemLinhVuc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblThemLinhVuc.Location = new System.Drawing.Point(4, 9);
             this.lblThemLinhVuc.Name = "lblThemLinhVuc";
-            this.lblThemLinhVuc.Size = new System.Drawing.Size(150, 23);
+            this.lblThemLinhVuc.Size = new System.Drawing.Size(147, 28);
             this.lblThemLinhVuc.TabIndex = 0;
-            this.lblThemLinhVuc.Text = "XÓA LĨNH VỰC";
+            this.lblThemLinhVuc.Text = "XÓA LĨNH VỰC:";
             // 
             // frmLinhVuc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 425);
+            this.ClientSize = new System.Drawing.Size(663, 391);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvLinhVuc);
-            this.Controls.Add(this.fThoat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmLinhVuc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -160,7 +148,6 @@ namespace Giao_dien_quan_ly_thu_vien
         }
 
         #endregion
-        private System.Windows.Forms.Button fThoat;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.ListView dgvLinhVuc;

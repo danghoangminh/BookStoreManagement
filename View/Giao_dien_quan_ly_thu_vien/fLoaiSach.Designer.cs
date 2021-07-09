@@ -38,7 +38,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.cboXoaLoaiSach = new System.Windows.Forms.ComboBox();
             this.lblXoaLoaiSach = new System.Windows.Forms.Label();
             this.btnXoaLoaiSach = new System.Windows.Forms.Button();
-            this.fThoat = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +47,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.dgvLoaiSach.HideSelection = false;
             this.dgvLoaiSach.Location = new System.Drawing.Point(11, 12);
             this.dgvLoaiSach.Name = "dgvLoaiSach";
-            this.dgvLoaiSach.Size = new System.Drawing.Size(640, 203);
+            this.dgvLoaiSach.Size = new System.Drawing.Size(640, 218);
             this.dgvLoaiSach.TabIndex = 16;
             this.dgvLoaiSach.UseCompatibleStateImageBehavior = false;
             // 
@@ -72,12 +71,12 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblThemLoaiSach
             // 
             this.lblThemLoaiSach.AutoSize = true;
-            this.lblThemLoaiSach.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblThemLoaiSach.Location = new System.Drawing.Point(-1, 15);
+            this.lblThemLoaiSach.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblThemLoaiSach.Location = new System.Drawing.Point(3, 11);
             this.lblThemLoaiSach.Name = "lblThemLoaiSach";
-            this.lblThemLoaiSach.Size = new System.Drawing.Size(176, 23);
+            this.lblThemLoaiSach.Size = new System.Drawing.Size(169, 28);
             this.lblThemLoaiSach.TabIndex = 0;
-            this.lblThemLoaiSach.Text = "THÊM LOẠI SÁCH";
+            this.lblThemLoaiSach.Text = "THÊM LOẠI SÁCH:";
             // 
             // btnThemLoaiSach
             // 
@@ -111,12 +110,12 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblXoaLoaiSach
             // 
             this.lblXoaLoaiSach.AutoSize = true;
-            this.lblXoaLoaiSach.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblXoaLoaiSach.Location = new System.Drawing.Point(-1, 15);
+            this.lblXoaLoaiSach.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblXoaLoaiSach.Location = new System.Drawing.Point(3, 9);
             this.lblXoaLoaiSach.Name = "lblXoaLoaiSach";
-            this.lblXoaLoaiSach.Size = new System.Drawing.Size(162, 23);
+            this.lblXoaLoaiSach.Size = new System.Drawing.Size(157, 28);
             this.lblXoaLoaiSach.TabIndex = 0;
-            this.lblXoaLoaiSach.Text = "XÓA LOẠI SÁCH";
+            this.lblXoaLoaiSach.Text = "XÓA LOẠI SÁCH:";
             // 
             // btnXoaLoaiSach
             // 
@@ -128,22 +127,11 @@ namespace Giao_dien_quan_ly_thu_vien
             this.btnXoaLoaiSach.UseVisualStyleBackColor = true;
             this.btnXoaLoaiSach.Click += new System.EventHandler(this.bXoaSach_Click);
             // 
-            // fThoat
-            // 
-            this.fThoat.Location = new System.Drawing.Point(405, 386);
-            this.fThoat.Name = "fThoat";
-            this.fThoat.Size = new System.Drawing.Size(226, 29);
-            this.fThoat.TabIndex = 19;
-            this.fThoat.Text = "THOÁT";
-            this.fThoat.UseVisualStyleBackColor = true;
-            this.fThoat.Click += new System.EventHandler(this.fThoat_Click);
-            // 
             // frmLoaiSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 425);
-            this.Controls.Add(this.fThoat);
+            this.ClientSize = new System.Drawing.Size(663, 392);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvLoaiSach);
@@ -170,6 +158,5 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.ComboBox cboXoaLoaiSach;
         private System.Windows.Forms.Label lblXoaLoaiSach;
         private System.Windows.Forms.Button btnXoaLoaiSach;
-        private System.Windows.Forms.Button fThoat;
     }
 }

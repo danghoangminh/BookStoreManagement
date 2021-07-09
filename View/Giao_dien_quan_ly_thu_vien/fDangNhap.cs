@@ -80,5 +80,10 @@ namespace Giao_dien_quan_ly_thu_vien
         {
 
         }
+
+        private void lblTenDangNhap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

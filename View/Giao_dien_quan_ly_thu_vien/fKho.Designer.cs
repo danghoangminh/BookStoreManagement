@@ -37,7 +37,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.bThemKho = new System.Windows.Forms.Button();
             this.txMaSach_Them = new System.Windows.Forms.Label();
             this.btnXoaSach = new System.Windows.Forms.Button();
-            this.fThoat = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txbMaSachSua = new System.Windows.Forms.TextBox();
             this.Sua_numericUpDownSoLuong = new System.Windows.Forms.NumericUpDown();
@@ -109,12 +108,12 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblSoLuongThem
             // 
             this.lblSoLuongThem.AutoSize = true;
-            this.lblSoLuongThem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSoLuongThem.Location = new System.Drawing.Point(0, 52);
+            this.lblSoLuongThem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSoLuongThem.Location = new System.Drawing.Point(7, 52);
             this.lblSoLuongThem.Name = "lblSoLuongThem";
-            this.lblSoLuongThem.Size = new System.Drawing.Size(91, 23);
+            this.lblSoLuongThem.Size = new System.Drawing.Size(85, 20);
             this.lblSoLuongThem.TabIndex = 17;
-            this.lblSoLuongThem.Text = "Số lượng";
+            this.lblSoLuongThem.Text = "SỐ LƯỢNG:";
             // 
             // bThemKho
             // 
@@ -129,12 +128,11 @@ namespace Giao_dien_quan_ly_thu_vien
             // txMaSach_Them
             // 
             this.txMaSach_Them.AutoSize = true;
-            this.txMaSach_Them.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txMaSach_Them.Location = new System.Drawing.Point(-1, 15);
+            this.txMaSach_Them.Location = new System.Drawing.Point(7, 18);
             this.txMaSach_Them.Name = "txMaSach_Them";
-            this.txMaSach_Them.Size = new System.Drawing.Size(85, 23);
+            this.txMaSach_Them.Size = new System.Drawing.Size(77, 20);
             this.txMaSach_Them.TabIndex = 0;
-            this.txMaSach_Them.Text = "Mã sách";
+            this.txMaSach_Them.Text = "MÃ SÁCH:";
             // 
             // btnXoaSach
             // 
@@ -145,16 +143,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.btnXoaSach.Text = "XÓA SÁCH ";
             this.btnXoaSach.UseVisualStyleBackColor = true;
             this.btnXoaSach.Click += new System.EventHandler(this.bXoaSach_Click);
-            // 
-            // fThoat
-            // 
-            this.fThoat.Location = new System.Drawing.Point(551, 686);
-            this.fThoat.Name = "fThoat";
-            this.fThoat.Size = new System.Drawing.Size(226, 29);
-            this.fThoat.TabIndex = 21;
-            this.fThoat.Text = "THOÁT";
-            this.fThoat.UseVisualStyleBackColor = true;
-            this.fThoat.Click += new System.EventHandler(this.fThoat_Click);
             // 
             // panel3
             // 
@@ -201,12 +189,11 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblSoLuongSua
             // 
             this.lblSoLuongSua.AutoSize = true;
-            this.lblSoLuongSua.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSoLuongSua.Location = new System.Drawing.Point(-1, 49);
+            this.lblSoLuongSua.Location = new System.Drawing.Point(8, 52);
             this.lblSoLuongSua.Name = "lblSoLuongSua";
-            this.lblSoLuongSua.Size = new System.Drawing.Size(91, 23);
+            this.lblSoLuongSua.Size = new System.Drawing.Size(85, 20);
             this.lblSoLuongSua.TabIndex = 17;
-            this.lblSoLuongSua.Text = "Số lượng";
+            this.lblSoLuongSua.Text = "SỐ LƯỢNG:";
             // 
             // btnLuu
             // 
@@ -221,12 +208,11 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblMaSach_Sua
             // 
             this.lblMaSach_Sua.AutoSize = true;
-            this.lblMaSach_Sua.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMaSach_Sua.Location = new System.Drawing.Point(-1, 15);
+            this.lblMaSach_Sua.Location = new System.Drawing.Point(8, 16);
             this.lblMaSach_Sua.Name = "lblMaSach_Sua";
-            this.lblMaSach_Sua.Size = new System.Drawing.Size(85, 23);
+            this.lblMaSach_Sua.Size = new System.Drawing.Size(77, 20);
             this.lblMaSach_Sua.TabIndex = 0;
-            this.lblMaSach_Sua.Text = "Mã sách";
+            this.lblMaSach_Sua.Text = "MÃ SÁCH:";
             // 
             // dgvChonSach
             // 
@@ -244,15 +230,15 @@ namespace Giao_dien_quan_ly_thu_vien
             this.lblChonSach.AutoSize = true;
             this.lblChonSach.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblChonSach.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblChonSach.Location = new System.Drawing.Point(12, 380);
+            this.lblChonSach.Location = new System.Drawing.Point(12, 370);
             this.lblChonSach.Name = "lblChonSach";
-            this.lblChonSach.Size = new System.Drawing.Size(113, 24);
+            this.lblChonSach.Size = new System.Drawing.Size(129, 24);
             this.lblChonSach.TabIndex = 24;
-            this.lblChonSach.Text = "Chọn Sách";
+            this.lblChonSach.Text = "CHỌN SÁCH";
             // 
             // btnChonSua
             // 
-            this.btnChonSua.Location = new System.Drawing.Point(11, 225);
+            this.btnChonSua.Location = new System.Drawing.Point(10, 225);
             this.btnChonSua.Name = "btnChonSua";
             this.btnChonSua.Size = new System.Drawing.Size(121, 29);
             this.btnChonSua.TabIndex = 25;
@@ -281,7 +267,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.Controls.Add(this.dgvChonSach);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnXoaSach);
-            this.Controls.Add(this.fThoat);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -306,7 +291,6 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.Label txMaSach_Them;
         private System.Windows.Forms.Button bThemKho;
         private System.Windows.Forms.Button btnXoaSach;
-        private System.Windows.Forms.Button fThoat;
         private System.Windows.Forms.Label lblSoLuongThem;
         private System.Windows.Forms.NumericUpDown Nhap_numericUpDownSoLuong;
         private System.Windows.Forms.Panel panel3;

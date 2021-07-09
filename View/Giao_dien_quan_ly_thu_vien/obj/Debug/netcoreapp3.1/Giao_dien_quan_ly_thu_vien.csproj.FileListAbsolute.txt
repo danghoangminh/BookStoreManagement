@@ -89,48 +89,93 @@ C:\Users\LENOVO\Desktop\PJQLNS-main (1)\PJQLNS-main\View\Giao_dien_quan_ly_thu_v
 C:\Users\LENOVO\Desktop\PJQLNS-main (1)\PJQLNS-main\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmViewTong.resources
 C:\Users\LENOVO\Desktop\PJQLNS-main (1)\PJQLNS-main\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmXoaSach.resources
 C:\Users\LENOVO\Desktop\PJQLNS-main (1)\PJQLNS-main\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmXoaTacGia.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.exe
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.deps.json
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.runtimeconfig.json
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.runtimeconfig.dev.json
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.pdb
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\ControlzEx.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\EntityFramework.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\itextsharp.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\System.Text.Json.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.csproj.AssemblyReference.cache
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmBaoCao.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmDangNhap.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmHoaDon.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmKho.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmLinhVuc.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmLoaiSach.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmNhaXuatBan.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmSuaSach.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmSuaTacGia.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmTaiKhoan.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmThemSach.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmThemTacGia.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmThongKe.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmViewTong.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmXoaSach.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmXoaTacGia.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.Properties.Resources.resources
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.csproj.GenerateResource.cache
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.AssemblyInfoInputs.cache
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.AssemblyInfo.cs
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.csproj.CoreCompileInputs.cache
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.csproj.CopyComplete
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.dll
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.pdb
-C:\Users\USER\OneDrive\Tài liệu\GitHub\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.genruntimeconfig.cache
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.exe
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.deps.json
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.runtimeconfig.json
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.runtimeconfig.dev.json
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.pdb
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\ControlzEx.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\itextsharp.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmBaoCao.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmDangNhap.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmHoaDon.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmKho.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmLinhVuc.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmLoaiSach.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmNhaXuatBan.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmSuaSach.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmSuaTacGia.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmTaiKhoan.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmThemSach.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmThemTacGia.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmThongKe.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmViewTong.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmXoaSach.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmXoaTacGia.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.Properties.Resources.resources
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.AssemblyInfoInputs.cache
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.AssemblyInfo.cs
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.csproj.CopyComplete
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.dll
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.pdb
+C:\Users\Admin\Downloads\quan-li-nha-sach-finalcode\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.genruntimeconfig.cache
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.exe
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.deps.json
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.runtimeconfig.json
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.runtimeconfig.dev.json
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.pdb
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\ControlzEx.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\EntityFramework.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\itextsharp.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.csproj.AssemblyReference.cache
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmBaoCao.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmDangNhap.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmHoaDon.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmKho.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmLinhVuc.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmLoaiSach.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmNhaXuatBan.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmSuaSach.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmSuaTacGia.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmTaiKhoan.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmThemSach.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmThemTacGia.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmThongKe.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmViewTong.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmXoaSach.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.frmXoaTacGia.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.Properties.Resources.resources
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.csproj.GenerateResource.cache
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.AssemblyInfoInputs.cache
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.AssemblyInfo.cs
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.csproj.CoreCompileInputs.cache
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.csproj.CopyComplete
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.dll
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.pdb
+E:\quan-li-nha-sach\View\Giao_dien_quan_ly_thu_vien\obj\Debug\netcoreapp3.1\Giao_dien_quan_ly_thu_vien.genruntimeconfig.cache

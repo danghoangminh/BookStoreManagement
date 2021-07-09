@@ -30,7 +30,6 @@ namespace Giao_dien_quan_ly_thu_vien
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnThoat = new System.Windows.Forms.Button();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txbMatKhau = new System.Windows.Forms.TextBox();
@@ -45,7 +44,6 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnThoat);
             this.panel1.Controls.Add(this.btnDangNhap);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
@@ -55,21 +53,11 @@ namespace Giao_dien_quan_ly_thu_vien
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // btnThoat
-            // 
-            this.btnThoat.Location = new System.Drawing.Point(392, 162);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(121, 29);
-            this.btnThoat.TabIndex = 4;
-            this.btnThoat.Text = "THOÁT";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            this.btnThoat.Click += new System.EventHandler(this.bThoat_Click);
-            // 
             // btnDangNhap
             // 
-            this.btnDangNhap.Location = new System.Drawing.Point(185, 162);
+            this.btnDangNhap.Location = new System.Drawing.Point(341, 162);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(121, 29);
+            this.btnDangNhap.Size = new System.Drawing.Size(175, 29);
             this.btnDangNhap.TabIndex = 3;
             this.btnDangNhap.Text = "ĐĂNG NHẬP";
             this.btnDangNhap.UseVisualStyleBackColor = true;
@@ -96,10 +84,10 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblMatKhau
             // 
             this.lblMatKhau.AutoSize = true;
-            this.lblMatKhau.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMatKhau.Location = new System.Drawing.Point(3, 27);
+            this.lblMatKhau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMatKhau.Location = new System.Drawing.Point(3, 24);
             this.lblMatKhau.Name = "lblMatKhau";
-            this.lblMatKhau.Size = new System.Drawing.Size(116, 23);
+            this.lblMatKhau.Size = new System.Drawing.Size(115, 28);
             this.lblMatKhau.TabIndex = 0;
             this.lblMatKhau.Text = "MẬT KHẨU:";
             // 
@@ -122,12 +110,13 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblTenDangNhap
             // 
             this.lblTenDangNhap.AutoSize = true;
-            this.lblTenDangNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTenDangNhap.Location = new System.Drawing.Point(3, 27);
+            this.lblTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTenDangNhap.Location = new System.Drawing.Point(3, 23);
             this.lblTenDangNhap.Name = "lblTenDangNhap";
-            this.lblTenDangNhap.Size = new System.Drawing.Size(174, 23);
+            this.lblTenDangNhap.Size = new System.Drawing.Size(170, 28);
             this.lblTenDangNhap.TabIndex = 0;
             this.lblTenDangNhap.Text = "TÊN ĐĂNG NHẬP:";
+            this.lblTenDangNhap.Click += new System.EventHandler(this.lblTenDangNhap_Click);
             // 
             // frmDangNhap
             // 
@@ -158,6 +147,5 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.Label lblMatKhau;
         private System.Windows.Forms.TextBox txbTenDangNhap;
         private System.Windows.Forms.Button btnDangNhap;
-        private System.Windows.Forms.Button btnThoat;
     }
 }

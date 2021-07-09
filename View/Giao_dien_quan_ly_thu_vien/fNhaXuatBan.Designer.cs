@@ -38,7 +38,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.cboXoaNXB = new System.Windows.Forms.ComboBox();
             this.lblXoaNXB = new System.Windows.Forms.Label();
             this.btnXoaNXB = new System.Windows.Forms.Button();
-            this.fThoat = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +47,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.dgvNhaXuatBan.HideSelection = false;
             this.dgvNhaXuatBan.Location = new System.Drawing.Point(11, 12);
             this.dgvNhaXuatBan.Name = "dgvNhaXuatBan";
-            this.dgvNhaXuatBan.Size = new System.Drawing.Size(640, 203);
+            this.dgvNhaXuatBan.Size = new System.Drawing.Size(640, 219);
             this.dgvNhaXuatBan.TabIndex = 17;
             this.dgvNhaXuatBan.UseCompatibleStateImageBehavior = false;
             // 
@@ -72,12 +71,12 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblThemNXB
             // 
             this.lblThemNXB.AutoSize = true;
-            this.lblThemNXB.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblThemNXB.Location = new System.Drawing.Point(-1, 15);
+            this.lblThemNXB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblThemNXB.Location = new System.Drawing.Point(3, 11);
             this.lblThemNXB.Name = "lblThemNXB";
-            this.lblThemNXB.Size = new System.Drawing.Size(110, 23);
+            this.lblThemNXB.Size = new System.Drawing.Size(111, 28);
             this.lblThemNXB.TabIndex = 0;
-            this.lblThemNXB.Text = "THÊM NXB";
+            this.lblThemNXB.Text = "THÊM NXB:";
             // 
             // btnThemNXB
             // 
@@ -111,12 +110,12 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblXoaNXB
             // 
             this.lblXoaNXB.AutoSize = true;
-            this.lblXoaNXB.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblXoaNXB.Location = new System.Drawing.Point(-1, 15);
+            this.lblXoaNXB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblXoaNXB.Location = new System.Drawing.Point(3, 10);
             this.lblXoaNXB.Name = "lblXoaNXB";
-            this.lblXoaNXB.Size = new System.Drawing.Size(96, 23);
+            this.lblXoaNXB.Size = new System.Drawing.Size(99, 28);
             this.lblXoaNXB.TabIndex = 0;
-            this.lblXoaNXB.Text = "XÓA NXB";
+            this.lblXoaNXB.Text = "XÓA NXB:";
             // 
             // btnXoaNXB
             // 
@@ -128,22 +127,11 @@ namespace Giao_dien_quan_ly_thu_vien
             this.btnXoaNXB.UseVisualStyleBackColor = true;
             this.btnXoaNXB.Click += new System.EventHandler(this.bXoaNXB_Click);
             // 
-            // fThoat
-            // 
-            this.fThoat.Location = new System.Drawing.Point(405, 384);
-            this.fThoat.Name = "fThoat";
-            this.fThoat.Size = new System.Drawing.Size(226, 29);
-            this.fThoat.TabIndex = 20;
-            this.fThoat.Text = "THOÁT";
-            this.fThoat.UseVisualStyleBackColor = true;
-            this.fThoat.Click += new System.EventHandler(this.fThoat_Click);
-            // 
             // frmNhaXuatBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 425);
-            this.Controls.Add(this.fThoat);
+            this.ClientSize = new System.Drawing.Size(663, 390);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvNhaXuatBan);
@@ -170,6 +158,5 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.ComboBox cboXoaNXB;
         private System.Windows.Forms.Label lblXoaNXB;
         private System.Windows.Forms.Button btnXoaNXB;
-        private System.Windows.Forms.Button fThoat;
     }
 }

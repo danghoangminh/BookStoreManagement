@@ -38,7 +38,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbQueQuan = new System.Windows.Forms.TextBox();
             this.lblQueQuan = new System.Windows.Forms.Label();
             this.btnLuu = new System.Windows.Forms.Button();
-            this.fThoat = new System.Windows.Forms.Button();
             this.chkNgaySinh = new System.Windows.Forms.CheckBox();
             this.dateTimePicker_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.lblNgaySinh = new System.Windows.Forms.Label();
@@ -70,12 +69,12 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblMaTacGia
             // 
             this.lblMaTacGia.AutoSize = true;
-            this.lblMaTacGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMaTacGia.Location = new System.Drawing.Point(3, 28);
+            this.lblMaTacGia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMaTacGia.Location = new System.Drawing.Point(3, 23);
             this.lblMaTacGia.Name = "lblMaTacGia";
-            this.lblMaTacGia.Size = new System.Drawing.Size(126, 23);
+            this.lblMaTacGia.Size = new System.Drawing.Size(123, 28);
             this.lblMaTacGia.TabIndex = 0;
-            this.lblMaTacGia.Text = "MÃ TÁC GIẢ";
+            this.lblMaTacGia.Text = "MÃ TÁC GIẢ:";
             // 
             // txbTenTacGia
             // 
@@ -87,12 +86,12 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblTenTacGia
             // 
             this.lblTenTacGia.AutoSize = true;
-            this.lblTenTacGia.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTenTacGia.Location = new System.Drawing.Point(591, 90);
+            this.lblTenTacGia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTenTacGia.Location = new System.Drawing.Point(591, 85);
             this.lblTenTacGia.Name = "lblTenTacGia";
-            this.lblTenTacGia.Size = new System.Drawing.Size(134, 23);
+            this.lblTenTacGia.Size = new System.Drawing.Size(127, 28);
             this.lblTenTacGia.TabIndex = 0;
-            this.lblTenTacGia.Text = "TÊN TÁC GIẢ";
+            this.lblTenTacGia.Text = "TÊN TÁC GIẢ:";
             // 
             // chkQueQuan
             // 
@@ -115,32 +114,22 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblQueQuan
             // 
             this.lblQueQuan.AutoSize = true;
-            this.lblQueQuan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblQueQuan.Location = new System.Drawing.Point(591, 143);
+            this.lblQueQuan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblQueQuan.Location = new System.Drawing.Point(591, 138);
             this.lblQueQuan.Name = "lblQueQuan";
-            this.lblQueQuan.Size = new System.Drawing.Size(113, 23);
+            this.lblQueQuan.Size = new System.Drawing.Size(117, 28);
             this.lblQueQuan.TabIndex = 0;
-            this.lblQueQuan.Text = "QUÊ QUÁN";
+            this.lblQueQuan.Text = "QUÊ QUÁN:";
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(12, 346);
+            this.btnLuu.Location = new System.Drawing.Point(820, 293);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(278, 29);
             this.btnLuu.TabIndex = 15;
             this.btnLuu.Text = "LƯU";
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.bbLuu_Click);
-            // 
-            // fThoat
-            // 
-            this.fThoat.Location = new System.Drawing.Point(980, 346);
-            this.fThoat.Name = "fThoat";
-            this.fThoat.Size = new System.Drawing.Size(121, 29);
-            this.fThoat.TabIndex = 14;
-            this.fThoat.Text = "THOÁT";
-            this.fThoat.UseVisualStyleBackColor = true;
-            this.fThoat.Click += new System.EventHandler(this.fThoat_Click);
             // 
             // chkNgaySinh
             // 
@@ -164,12 +153,12 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblNgaySinh
             // 
             this.lblNgaySinh.AutoSize = true;
-            this.lblNgaySinh.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNgaySinh.Location = new System.Drawing.Point(591, 200);
+            this.lblNgaySinh.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNgaySinh.Location = new System.Drawing.Point(591, 193);
             this.lblNgaySinh.Name = "lblNgaySinh";
-            this.lblNgaySinh.Size = new System.Drawing.Size(117, 23);
+            this.lblNgaySinh.Size = new System.Drawing.Size(118, 28);
             this.lblNgaySinh.TabIndex = 0;
-            this.lblNgaySinh.Text = "NGÀY SINH";
+            this.lblNgaySinh.Text = "NGÀY SINH:";
             // 
             // chkNgayMat
             // 
@@ -193,12 +182,12 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblNgayMat
             // 
             this.lblNgayMat.AutoSize = true;
-            this.lblNgayMat.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNgayMat.Location = new System.Drawing.Point(591, 253);
+            this.lblNgayMat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNgayMat.Location = new System.Drawing.Point(591, 246);
             this.lblNgayMat.Name = "lblNgayMat";
-            this.lblNgayMat.Size = new System.Drawing.Size(114, 23);
+            this.lblNgayMat.Size = new System.Drawing.Size(114, 28);
             this.lblNgayMat.TabIndex = 0;
-            this.lblNgayMat.Text = "NGÀY MẤT";
+            this.lblNgayMat.Text = "NGÀY MẤT:";
             // 
             // dgvTacGia
             // 
@@ -211,7 +200,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             // btnChon
             // 
-            this.btnChon.Location = new System.Drawing.Point(12, 281);
+            this.btnChon.Location = new System.Drawing.Point(12, 293);
             this.btnChon.Name = "btnChon";
             this.btnChon.Size = new System.Drawing.Size(130, 29);
             this.btnChon.TabIndex = 18;
@@ -223,7 +212,7 @@ namespace Giao_dien_quan_ly_thu_vien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1113, 383);
+            this.ClientSize = new System.Drawing.Size(1113, 331);
             this.Controls.Add(this.chkNgayMat);
             this.Controls.Add(this.chkNgaySinh);
             this.Controls.Add(this.dateTimePicker_NgayMat);
@@ -237,7 +226,6 @@ namespace Giao_dien_quan_ly_thu_vien
             this.Controls.Add(this.lblQueQuan);
             this.Controls.Add(this.lblTenTacGia);
             this.Controls.Add(this.dgvTacGia);
-            this.Controls.Add(this.fThoat);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -259,7 +247,6 @@ namespace Giao_dien_quan_ly_thu_vien
         private System.Windows.Forms.TextBox txbQueQuan;
         private System.Windows.Forms.Label lblQueQuan;
         private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button fThoat;
         private System.Windows.Forms.CheckBox chkNgaySinh;
         private System.Windows.Forms.DateTimePicker dateTimePicker_NgaySinh;
         private System.Windows.Forms.Label lblNgaySinh;

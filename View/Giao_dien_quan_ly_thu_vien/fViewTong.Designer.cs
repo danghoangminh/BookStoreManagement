@@ -89,14 +89,14 @@ namespace Giao_dien_quan_ly_thu_vien
             // CapnhapToolStripMenuItem
             // 
             this.CapnhapToolStripMenuItem.Name = "CapnhapToolStripMenuItem";
-            this.CapnhapToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.CapnhapToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
             this.CapnhapToolStripMenuItem.Text = "CẬP NHẬT";
             this.CapnhapToolStripMenuItem.Click += new System.EventHandler(this.CapnhapToolStripMenuItem_Click);
             // 
             // DangxuatToolStripMenuItem
             // 
             this.DangxuatToolStripMenuItem.Name = "DangxuatToolStripMenuItem";
-            this.DangxuatToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.DangxuatToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
             this.DangxuatToolStripMenuItem.Text = "ĐĂNG XUẤT";
             this.DangxuatToolStripMenuItem.Click += new System.EventHandler(this.DangxuatToolStripMenuItem_Click);
             // 
@@ -207,20 +207,20 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblTenNguoiDung
             // 
             this.lblTenNguoiDung.AutoSize = true;
-            this.lblTenNguoiDung.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTenNguoiDung.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTenNguoiDung.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.lblTenNguoiDung.Location = new System.Drawing.Point(941, 28);
+            this.lblTenNguoiDung.Location = new System.Drawing.Point(935, 35);
             this.lblTenNguoiDung.Name = "lblTenNguoiDung";
-            this.lblTenNguoiDung.Size = new System.Drawing.Size(92, 20);
+            this.lblTenNguoiDung.Size = new System.Drawing.Size(110, 20);
             this.lblTenNguoiDung.TabIndex = 2;
-            this.lblTenNguoiDung.Text = "Người dùng:";
+            this.lblTenNguoiDung.Text = "NGƯỜI DÙNG:";
             // 
             // txbTenNguoiDung
             // 
             this.txbTenNguoiDung.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbTenNguoiDung.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txbTenNguoiDung.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txbTenNguoiDung.Location = new System.Drawing.Point(1051, 28);
+            this.txbTenNguoiDung.Location = new System.Drawing.Point(1051, 35);
             this.txbTenNguoiDung.Name = "txbTenNguoiDung";
             this.txbTenNguoiDung.ReadOnly = true;
             this.txbTenNguoiDung.Size = new System.Drawing.Size(110, 20);
@@ -241,10 +241,10 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblDoanhthu
             // 
             this.lblDoanhthu.AutoSize = true;
-            this.lblDoanhthu.Font = new System.Drawing.Font("Segoe UI", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblDoanhthu.Location = new System.Drawing.Point(765, 493);
+            this.lblDoanhthu.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDoanhthu.Location = new System.Drawing.Point(12, 491);
             this.lblDoanhthu.Name = "lblDoanhthu";
-            this.lblDoanhthu.Size = new System.Drawing.Size(181, 17);
+            this.lblDoanhthu.Size = new System.Drawing.Size(200, 20);
             this.lblDoanhthu.TabIndex = 6;
             this.lblDoanhthu.Text = "DOANH THU TRONG NGÀY:";
             // 
@@ -253,7 +253,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.txbDoanhThu.BackColor = System.Drawing.SystemColors.Control;
             this.txbDoanhThu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbDoanhThu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbDoanhThu.Location = new System.Drawing.Point(952, 489);
+            this.txbDoanhThu.Location = new System.Drawing.Point(235, 488);
             this.txbDoanhThu.Name = "txbDoanhThu";
             this.txbDoanhThu.Size = new System.Drawing.Size(263, 23);
             this.txbDoanhThu.TabIndex = 7;
@@ -261,37 +261,39 @@ namespace Giao_dien_quan_ly_thu_vien
             // lblTime
             // 
             this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(12, 491);
+            this.lblTime.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTime.Location = new System.Drawing.Point(955, 491);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(246, 20);
+            this.lblTime.Size = new System.Drawing.Size(260, 20);
             this.lblTime.TabIndex = 4;
             this.lblTime.Text = "Thứ xxxx, ngày yy, tháng zz, năm tttt";
             // 
             // lblSoLuongKhach
             // 
             this.lblSoLuongKhach.AutoSize = true;
-            this.lblSoLuongKhach.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lblSoLuongKhach.Location = new System.Drawing.Point(362, 491);
+            this.lblSoLuongKhach.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSoLuongKhach.Location = new System.Drawing.Point(12, 527);
             this.lblSoLuongKhach.Name = "lblSoLuongKhach";
-            this.lblSoLuongKhach.Size = new System.Drawing.Size(157, 20);
+            this.lblSoLuongKhach.Size = new System.Drawing.Size(142, 20);
             this.lblSoLuongKhach.TabIndex = 8;
-            this.lblSoLuongKhach.Text = "SL khách trong ngày:";
+            this.lblSoLuongKhach.Text = "SỐ LƯỢNG KHÁCH:";
             // 
             // txbSLKhach
             // 
             this.txbSLKhach.BackColor = System.Drawing.SystemColors.Control;
             this.txbSLKhach.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbSLKhach.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbSLKhach.Location = new System.Drawing.Point(525, 489);
+            this.txbSLKhach.Location = new System.Drawing.Point(235, 524);
             this.txbSLKhach.Name = "txbSLKhach";
-            this.txbSLKhach.Size = new System.Drawing.Size(234, 23);
+            this.txbSLKhach.Size = new System.Drawing.Size(263, 23);
             this.txbSLKhach.TabIndex = 9;
+            this.txbSLKhach.TextChanged += new System.EventHandler(this.txbSLKhach_TextChanged);
             // 
             // frmViewTong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1227, 520);
+            this.ClientSize = new System.Drawing.Size(1227, 555);
             this.Controls.Add(this.txbSLKhach);
             this.Controls.Add(this.lblSoLuongKhach);
             this.Controls.Add(this.txbDoanhThu);
@@ -306,6 +308,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.Name = "frmViewTong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÍ NHÀ SÁCH";
+            this.Load += new System.EventHandler(this.fViewTong_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
