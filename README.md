@@ -1,7 +1,8 @@
 # Tổng quan
-- Đồ án môn học Nhập môn Công Nghệ Phần Mềm - GVHD: Huỳnh Ngọc Tín, Trần Khánh Nguyên:
+- Đồ án môn học Nhập môn Công Nghệ Phần Mềm
   - Tên đề tài: Quản lý nhà sách
-  - Mô tả: Quản lý cho một cửa hàng bán sách.
+  - Mô tả: Quản lý cho một cửa hàng bán sách
+  - GVHD: Huỳnh Ngọc Tín, Trần Khánh Nguyên
 - Thành Viên:
   - [Đặng Hoàng Minh](https://github.com/danghoangminh) - 18520311
   - [Nguyễn Hoài Nam](https://github.com/hoainam2310) - 18521126
