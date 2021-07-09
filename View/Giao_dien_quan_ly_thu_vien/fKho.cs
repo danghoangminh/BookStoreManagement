@@ -1,4 +1,4 @@
-﻿using Giao_dien_quan_ly_thu_vien.DAO;
+using Giao_dien_quan_ly_thu_vien.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +30,7 @@ namespace Giao_dien_quan_ly_thu_vien
             this.listView1.View = View.Details;
             this.listView1.Columns.Add("MÃ SÁCH", 200);
             this.listView1.Columns.Add("TÊN SÁCH", 370);
-            this.listView1.Columns.Add("SỐ LƯỢNG", 160);
+            this.listView1.Columns.Add("SỐ LƯỢNG CÒN LẠI", 160);
             this.listView1.GridLines = true;
             this.listView1.FullRowSelect = true;
             this.listView1.CheckBoxes = true;
@@ -135,8 +135,7 @@ namespace Giao_dien_quan_ly_thu_vien
         private void listView2_SelectedIndexChanged()
         {
             string query = "Select MASACH, TENSACH, TENTG, TENLINHVUC, TENLOAISACH, GIAMUA, GIABIA, " +
-                "LANTAIBAN, TENNHAXUATBAN, NAMXUATBAN From SACH LEFT JOIN TACGIA ON SACH.MATG = TACGIA.MATG " +
-                "Where MASACH IN(Select SACH.MASACH From SACH Except (Select KHO.MASACH From KHO))";
+                "LANTAIBAN, TENNHAXUATBAN, NAMXUATBAN From SACH LEFT JOIN TACGIA ON SACH.MATG = TACGIA.MATG";
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
@@ -228,6 +227,5 @@ namespace Giao_dien_quan_ly_thu_vien
         {
             this.Close();
         }
-
     }
 }

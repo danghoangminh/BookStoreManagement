@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -74,10 +74,12 @@ namespace Giao_dien_quan_ly_thu_vien
             }
             else
             {
+                DateTime namxb = dateTimePickerNamXuatBan.Value;
+                
                 string query = "Insert into SACH values('" + txbMaSach.Text + "','" + txbTenSach.Text + "'," +
                         "(Select MATG From TACGIA Where TENTG = '" + cboTenTacGia.Text.ToString() + "'),'" + cboTenLinhVuc.Text + "','" + cboTenLoaiSach.Text + "','" + numericUpDownGiaMua.Value + "'," +
                         "'" + numericUpDownGiaBia.Value + "','" + numericUpDownLanTaiBan.Value + "','" + cboTenNXB.Text.ToString() + "'," +
-                        "'" + dateTimePickerNamXuatBan.Text + "')";
+                        "'" + namxb.ToString("yyyy-MM-dd") + "')";
                 DataTable data = DataProvider.Instance.ExecuteQuery(query);
                 MessageBox.Show("ĐÃ THÊM!", "THÔNG BÁO");
                 txbMaSach_TextChanged();
