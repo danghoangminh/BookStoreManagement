@@ -12,7 +12,7 @@
   - Ngôn ngữ: C#
   - Môi trường: .Net Framework 4.6
   - Database: SQL Server
-- Mã nguồn: https://github.com/danghoangminh/quan-li-nha-sach
+- Mã nguồn: https://github.com/danghoangminh/BookStoreManagement
 
 # Mục lục
 - [Tổng quan](#tổng-quan)
@@ -270,7 +270,7 @@ Xuất báo cáo chi tiết về số lượng bán đượccác loại sách, d
 ## 5.2. Mô tả chi tiết kiến trúc hệ thống
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/folderview.png)
 - Ứng dụng được thiết kế theo mô hình 2 lớp (được viết chung trong 1 project) gồm:
-  - View xử lý giao diện và xử lí tác vụ.
+  - View xử lý giao diện và xử lý tác vụ.
   - DAO gọi các truy xuất từ csdl (SQL).
 # 6. Quy ước viết mã
 ## 6.1. Quy tắc đặt tên
