@@ -11,7 +11,7 @@
   - Ngôn ngữ: C#
   - Môi trường: .Net Framework 4.6
   - Database: SQL Server
-- Mã nguồn: [https://github.com/danghoangminh/quan-li-nha-sach](https://github.com/danghoangminh/quan-li-nha-sach)
+- Mã nguồn: https://github.com/danghoangminh/quan-li-nha-sach
 
 # Mục lục
 # 1. Xác định bài toán
@@ -221,8 +221,110 @@ Xuất báo cáo chi tiết về số lượng bán đượccác loại sách, d
 - Ứng dụng được thiết kế theo mô hình 2 lớp (được viết chung trong 1 project) gồm:
   - View xử lý giao diện và xử lí tác vụ.
   - DAO gọi các truy xuất từ csdl (SQL).
-# 6. Kết quả thực hiện
-## 6.1. Môi trường phát triển và Môi trường triển khai
+# 6. Quy ước viết mã
+## 6.1. Quy tắc đặt tên
+| Kiểu        | Mô tả           | Ví dụ        |
+|-------------|-----------------|--------------|
+| Pascal Case | Chữ cái đầu tiên trong từ định danh và chữ cái đầu tiên của mỗi từ nối theo sau phải được viết hoa. Sử dụng Pascal Case để đặt tên cho một tên có từ 3 ký tự trở lên | `CodingConv` |
+| Camel Case  | Chữ cái đầu tiên trong từ định danh là chữ thường và chữ cái đầu tiên của mối từ nối theo sau phải được viết hoa          | `codingConv` |
+| Uppercase   | Tất cả các ký tự trong từ định danh phải được viết hoa. Sử dụng quy tắc này đối với tên định danh có từ 2 ký tự trở xuống | `System.IO ` |
+## 6.2. Quy tắc sử dụng khi code
+| Loại            | Kiểu        | Ví dụ                 | Ghi chú                  |
+|-----------------|-------------|-----------------------|--------------------------|
+| Tên biến        | Camel Case  | `firstName`           | Danh từ                  |
+| Hằng số         | Uppercase   | `FIRST_WEEK_DAY`      | Có gạch chân giữa các từ |
+| Tên class, enum | Pascal Case | `CreateUser`          | Danh từ                  |
+| Tham số         | Camel Case  | `displayTime`         | Danh từ                  |
+| Thuộc tính      | Pascal Case | `BackgroundColor`     | Danh từ                  |
+| Phương thức     | Pascal Case | `GetAge()`            | Có gạch chân giữa các từ |
+| Sự kiện         | Pascal Case | `SelectedIndexChanged`| Có gạch chân giữa các từ |
+| Giao diện       | Pascal Case | `IButtonControl`      | Có gạch chân giữa các từ |
+- Tránh thêm các tiền tố hoặc hậu tố dư thừa vô nghĩa:
+  - Không nên:
+  ```
+  enum BorderEnum { ... }
+  class CHuman { ... }
+  ```
+  - Nên:
+  ```
+  enum Border { ... }
+  class Human { ... }
+  ```
+- Không thêm tên lớp chứa vào tên thuộc tính:
+  - Không nên:
+  ```
+  Animal.WeightAnimal
+  ```
+  - Nên:
+  ```
+  Animal.Weight
+  ```
+- Tên biến, phương thức bool phải thể hiện được ý nghĩa nếu trả về true hoặc false. Nên sử dụng tiền tố “Is” “Can” “Has” trước tên biến, phương thức:
+  - Không nên:
+  ```
+  bool CheckAdmin(int n) { }
+  bool Expired() { }
+  bool checked = true;
+  ```
+  - Nên:
+  ```
+  bool IsAdmin(int n) { }
+  bool IsExpired() { }
+  bool isChecked = true;
+  ```
+- Không dùng các tên giống nhau(chỉ phân biệt kiểu chữ in hoa hay thường). Ta khó nhận ra các định danh nhất là khi trong cùng ngữ cảnh và chỉ phân biệt các định danh bằng kiểu chữ in hoa/thường.
+- Không tạo 2 namespace cùng tên và chỉ khác nhau ở kiểu chữ viết(chữ hoa/Chữ thường), ví dụ:
+  ```
+  Namespace SunAsterisk
+  Namespace sunAsterisk
+  ```
+- Không nên xây dựng 1 phương thức với các tham số có cùng tên và chỉ khác nhau kiểu chữ, ví dụ:
+  ```
+  void MyFunction(string a, string A)
+  ```
+- Không xây dựng 1 kiểu với các tên property giống nhau và chỉ phân biệt ở kiểu chữ, ví dụ:
+  ```
+  int Color {get, set}
+  int COLOR {get, set}
+  ```
+## 6.3. Tiền tố một số control
+Bắt buộc đặt tên cho tất cả các control có tham gia xử lý dưới nền. Một số control được đặt theo kiểu Pascal với phần tiền tố như sau:
+| Control      | Tiền tố | Ví dụ       |
+|--------------|---------|-------------|
+| Panel        | pnl     | pnlGroup    |
+| Checkbox     | chk     | chkReadOnly |
+| ComboBox     | cbo     | cboEnglish  |
+| Button       | btn     | btnSave     |
+| Dialog       | dlg     | dlgFileOpen |
+| Form         | frm     | frmLogin    |
+| Textbox      | txb     | txbUser     |
+| User Control | uc      | ucBooks     |
+| Label        | lbl     | lblName     |
+| DataGridView | dgv     | dgvBook     |
+## 6.4. Quy định phân bố mã nguồn
+- Mỗi file mã nguồn chỉ chứa duy nhất một class. Tên class chính phải trùng với tên file mã nguồn. Ví dụ: Class Student sẽ được chứa trong file Student.cs.
+- Với các kiểu enum, struct độc lập đơn giản ngoài class có thể được khai báo trong một file mã nguồn riêng hoặc trong file mã nguồn của class khác.
+- Interface phải được khai báo trong một file mã nguồn riêng.
+- Thứ tự khai báo:
+  - Khối khai báo thư viện
+  ```
+  using System.Data;
+  using System.Drawing;
+  ```
+  - Khai báo namespace
+  ```
+  namespace SQLBackup;
+  ```
+  - Khai báo các struct/enum độc lập (nếu có)
+  ```
+  public enum HumanClass { A, B, C, D, E }
+  ```
+  - Khai báo lớp chính
+  ```
+  public class Student : Human {}
+  ```
+# 7. Kết quả thực hiện
+## 7.1. Môi trường phát triển và Môi trường triển khai
 - Môi trường phát triển ứng dụng:
   - Hệ điều hành: Microsoft Windows 10
   - Hệ quản trị cơ sở dữ liệu: Microsoft SQL Server
@@ -232,9 +334,9 @@ Xuất báo cáo chi tiết về số lượng bán đượccác loại sách, d
   - Hệ điều hành: Microsoft Windows
   - Cần cài đặt .Net Framework 4.0 hoặc cao hơn
   - Để chương trình hoạt động cần có đủ các dll trong folder dll
-## 6.2. Kết quả đạt được:
+## 7.2. Kết quả đạt được:
 - Chương trình đã được hoàn thiện hầu hết các chức năng, nhưng vẫn có những chức năng chưa được hoàn thiện như: Thêm tài khoản, Xuất file báo cáo dạng PDF hoặc Excel.
-## 6.3. Hướng phát triển:
+## 7.3. Hướng phát triển:
 - Hoàn thiện các chức năng và giao diện chưa hoàn tất.
 - Cải thiện hiệu năng của chương trình để phù hợp với thực tiễn.
 - Bổ sung các chức năng liên quan đến CSDL: backup/restore.
