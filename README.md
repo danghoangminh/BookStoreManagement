@@ -103,7 +103,7 @@ Kế hoạch gồm 5 giai đoạn:
 
 - Design: Thiết kế sơ đồ luồng dữ liệu, thiết kế dữ liệu, thiết kế giao diện và thiết kế xử lý (24/04 đến 21/05)
 
-- Development: phát triển các chức năng của phần mền và cơ sở dữ liệu (21/05 - 05/07)
+- Development: phát triển các chức năng của phần mềm và cơ sở dữ liệu (21/05 - 05/07)
 
 - Testing: kiểm thử phần mềm và fix lỗi gặp phải (05/07 - 10/07)
 
