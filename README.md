@@ -195,7 +195,6 @@ Cho phép thêm loại sách mới vào database. Nếu muốn xóa thì chọn 
 Cho phép thêm nhà xuất bản mới vào database. Nếu muốn xóa thì chọn nhà xuất bản cần xóa ở menu bên dưới và bấm nút xóa.
 ### 4.2.13. Màn hình fKho
 ![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/Kho.png)
-
 Gồm 2 phần:
 - Phần trên: cho phép sửa số lượng sách có trong kho hoặc xóa luôn sách.
 - Phần dưới: thêm số lượng cho đầu sách có trong kho.
