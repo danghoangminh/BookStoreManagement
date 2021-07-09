@@ -1,4 +1,4 @@
-﻿using Giao_dien_quan_ly_thu_vien.DAO;
+using Giao_dien_quan_ly_thu_vien.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -144,9 +144,11 @@ namespace Giao_dien_quan_ly_thu_vien
         {
             if (bChonTG == 1)
             {
+                DateTime ngaysinh = dateTimePicker_NgaySinh.Value;
+                DateTime ngaymat = dateTimePicker_NgayMat.Value;
                 string query = "UPDATE TACGIA" +
-                    " SET TENTACGIA = '" + txbTenTacGia.Text + "', NAMSINH = '" + dateTimePicker_NgaySinh.Text + "', " +
-                    "NAMMAT = '" + dateTimePicker_NgayMat.Text + "', QUEQUAN = '" + txbQueQuan.Text + "' WHERE MATACGIA = '" + txbMaTacGia.Text + "'";
+                    " SET TENTACGIA = '" + txbTenTacGia.Text + "', NAMSINH = '" + ngaysinh.ToString("yyyy-MM-dd") + "', " +
+                    "NAMMAT = '" + ngaymat.ToString("yyyy-MM-dd") + "', QUEQUAN = '" + txbQueQuan.Text + "' WHERE MATACGIA = '" + txbMaTacGia.Text + "'";
                 DataTable data = DataProvider.Instance.ExecuteQuery(query);                
                 MessageBox.Show("ĐÃ CẬP NHẬP", "THÔNG BÁO"); 
                 txbMaTacGia.Text = "";
