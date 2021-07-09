@@ -45,7 +45,7 @@ namespace Giao_dien_quan_ly_thu_vien
                 else if (!chkNgaySinh.Checked && chkNgayMat.Checked)
                 {
                      query = "Insert into TACGIA VALUES ('" + txbMaTacGia.Text + "', '" + txbTenTacGia.Text + "', '" +
-                           dateTimePicker_NgaySinh + "', '" + null + "', '" + txbQueQuan.Text + "')";      
+                           dateTimePicker_NgaySinh.Text + "', '" + null + "', '" + txbQueQuan.Text + "')";      
                 }
                 else if (chkNgaySinh.Checked  && chkNgayMat.Checked )
                 {
