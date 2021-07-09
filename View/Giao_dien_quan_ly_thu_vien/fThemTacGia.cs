@@ -1,4 +1,4 @@
-﻿using Giao_dien_quan_ly_thu_vien.DAO;
+using Giao_dien_quan_ly_thu_vien.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,16 +36,18 @@ namespace Giao_dien_quan_ly_thu_vien
             }
             else
             {
+                DateTime ngaysinh = dateTimePicker_NgaySinh.Value;
+                DateTime ngaymat = dateTimePicker_NgayMat.Value;
                 string query;
                 if (chkNgaySinh.Checked  && !chkNgayMat.Checked )
                 {
                     query = "Insert into TACGIA VALUES ('" + txbMaTacGia.Text + "', '" + txbTenTacGia.Text + "', '" +
-                           null + "', '" + dateTimePicker_NgayMat.Text + "', '" + txbQueQuan.Text + "')";      
+                           null + "', '" + ngaymat.ToString("yyyy-MM-dd") + "', '" + txbQueQuan.Text + "')";      
                 }
                 else if (!chkNgaySinh.Checked && chkNgayMat.Checked)
                 {
                      query = "Insert into TACGIA VALUES ('" + txbMaTacGia.Text + "', '" + txbTenTacGia.Text + "', '" +
-                           dateTimePicker_NgaySinh.Text + "', '" + null + "', '" + txbQueQuan.Text + "')";      
+                           ngaysinh.ToString("yyyy-MM-dd") + "', '" + null + "', '" + txbQueQuan.Text + "')";      
                 }
                 else if (chkNgaySinh.Checked  && chkNgayMat.Checked )
                 {
@@ -55,7 +57,7 @@ namespace Giao_dien_quan_ly_thu_vien
                 else 
                 {
                     query = "Insert into TACGIA VALUES ('" + txbMaTacGia.Text + "', '" + txbTenTacGia.Text + "', '" +
-                           dateTimePicker_NgaySinh.Text + "', '" + dateTimePicker_NgayMat.Text + "', '" + txbQueQuan.Text + "')";
+                           ngaysinh.ToString("yyyy-MM-dd") + "', '" + ngaymat.ToString("yyyy-MM-dd") + "', '" + txbQueQuan.Text + "')";
                 }
                 DataTable data = DataProvider.Instance.ExecuteQuery(query);
                 MessageBox.Show("ĐÃ THÊM!", "THÔNG BÁO");
