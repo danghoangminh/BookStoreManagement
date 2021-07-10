@@ -115,7 +115,7 @@ Kế hoạch gồm 5 giai đoạn:
 - Issues tracking: Github
 # 3. Thiết kế dữ liệu
 ## 3.1. Sơ đồ logic
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/database.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/database.png)
 ## 3.2. Mô tả chi tiết các kiểu dữ liệu trong sơ đồ logic
 ### 3.2.1. Bảng TAIKHOAN
 | STT | Tên thuộc tính | Kiểu          | Ràng buộc                   | Ý nghĩa/Ghi chú             |
@@ -197,78 +197,78 @@ Kế hoạch gồm 5 giai đoạn:
 | 16  | fBaoCao      | Hiển thị danh sách các đầu sách đã bán được, doanh thu, lợi nhuận trong khoảng ngày chọn |
 ## 4.2. Mô tả chi tiết mỗi màn hình
 ### 4.2.1. Màn hình fDangNhap
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/DangNhap.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/DangNhap.png)
 
 Người dùng điền thông tin Username/Password để đăng nhập. Nếu đăng nhập thất bại quá 3 lần sẽ tự tắt chương trình.
 ### 4.2.2. Màn hình fViewTong
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/Quanlynhasach.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/Quanlynhasach.png)
 
 Hiển thị những đầu sách có trong database, doanh thu và số lượng khách trong ngày hôm đó. Menu ở trên chứa các chức năng của chương trình.
 ### 4.2.3. Màn hình fTaiKhoan
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/ThayDoiThongTinAcc.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/ThayDoiThongTinAcc.png)
 
 Cho phép thay đổi mật khẩu của tài khoản, yêu cầu nhập đúng mật khẩu cũ khi muốn thay đổi mật khẩu mới.
 ### 4.2.4. Màn hình fThemSach
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/ThemSach.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/ThemSach.png)
 
 Cho phép thêm đầu sách mới vào database. Yêu cầu nhập đầy đủ thông tin, nếu không sẽ báo lỗi nhập thiếu và yêu cầu bổ sung.
 ### 4.2.5. Màn hình fSuaSach
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/SuaSach.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/SuaSach.png)
 
 Cho phép sửa thông tin sách trong database. Yêu cầu nhập đầy đủ thông tin, nếu không sẽ báo lỗi nhập thiếu và yêu cầu bổ sung.
 ### 4.2.6. Màn hình fXoaSach
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/XoaSach.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/XoaSach.png)
 
 Cho phép xóa sách trong database. Chọn sách cần xóa trong list sách hiển thị.
 ### 4.2.7. Màn hình fThemTacGia
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/ThemTG.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/ThemTG.png)
 
 Cho phép thêm tác giả mới vào database. Yêu cầu nhập tên tác giả, nếu không sẽ báo lỗi nhập thiếu và yêu cầu bổ sung. Đối với ô Quê Quán, Năm Sinh, Năm Mất nếu không có thì phải chọn nút 'CHƯA RÕ' không sẽ báo lỗi thiếu thông tin.
 ### 4.2.8. Màn hình fSuaTacGia
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/SuaTG.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/SuaTG.png)
 
 Cho phép sửa thông tin tác giả trong database. Yêu cầu nhập tên tác giả, nếu không sẽ báo lỗi nhập thiếu và yêu cầu bổ sung. Đối với ô Quê Quán, Năm Sinh, Năm Mất nếu không có thì phải chọn nút 'CHƯA RÕ' không sẽ báo lỗi thiếu thông tin.
 ### 4.2.9. Màn hình fXoaTacGia
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/XoaTG.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/XoaTG.png)
 
 Cho phép xóa tác giả trong database. Chọn tác giả cần xóa trong list sách hiển thị.
 ### 4.2.10. Màn hình fLinhVuc
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/LinhVuc.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/LinhVuc.png)
 
 Cho phép thêm lĩnh vực mới vào database. Nếu muốn xóa thì chọn lĩnh vực cần xóa ở menu bên dưới và bấm nút xóa.
 ### 4.2.11. Màn hình fLoaiSach
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/LoaiSach.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/LoaiSach.png)
 
 Cho phép thêm loại sách mới vào database. Nếu muốn xóa thì chọn loại sách cần xóa ở menu bên dưới và bấm nút xóa.
 ### 4.2.12. Màn hình fNhaXuatBan
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/NXB.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/NXB.png)
 
 Cho phép thêm nhà xuất bản mới vào database. Nếu muốn xóa thì chọn nhà xuất bản cần xóa ở menu bên dưới và bấm nút xóa.
 ### 4.2.13. Màn hình fKho
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/Kho.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/Kho.png)
 Gồm 2 phần:
 - Phần trên: cho phép sửa số lượng sách có trong kho hoặc xóa luôn sách.
 - Phần dưới: thêm số lượng cho đầu sách có trong kho.
 ### 4.2.14. Màn hình fHoaDon
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/HoaDon.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/HoaDon.png)
 Gồm 2 phần:
 - Phần trên: hiển thị danh sách hóa đơn hiện có trong database cho phép xóa/sửa hóa đơn và xem chi tiết hóa đơn đó ở bảng kế bên.
 - Phần dưới: thêm/sửa hóa đơn, thêm vật phẩm vô hóa đơn, yêu cầu nhập đầy đủ thông tin.
 ### 4.2.15. Màn hình fThongKe
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/ThongKe.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/ThongKe.png)
 Chọn khoảng ngày cần thống kê bán hàng, phần mềm sẽ hiển thị những hóa đơn trong khoảng ngày được chọn.
 ### 4.2.16. Màn hình fBaoCao
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/Scene/BaoCao.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/Scene/BaoCao.png)
 Xuất báo cáo chi tiết về số lượng bán đượccác loại sách, doanh thu và lợi nhuận trong khoảng ngày đã chọn ở màn hình fThongKe.
 # 5. Thiết kế kiến trúc
 ## 5.1. Kiến trúc hệ thống
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/layer.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/layer.png)
 | Thành phần | Diễn giải                         |
 |------------|-----------------------------------|
 | Client     | Ứng dụng tương tác với người dùng |
 | Data       | Nơi chứa dữ liệu của hệ thống     |
 ## 5.2. Mô tả chi tiết kiến trúc hệ thống
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/folderview.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/folderview.png)
 - Ứng dụng được thiết kế theo mô hình 2 lớp (được viết chung trong 1 project) gồm:
   - View xử lý giao diện và xử lý tác vụ.
   - DAO gọi các truy xuất từ csdl (SQL).
