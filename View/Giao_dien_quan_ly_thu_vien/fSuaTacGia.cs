@@ -147,8 +147,8 @@ namespace Giao_dien_quan_ly_thu_vien
                 DateTime ngaysinh = dateTimePicker_NgaySinh.Value;
                 DateTime ngaymat = dateTimePicker_NgayMat.Value;
                 string query = "UPDATE TACGIA" +
-                    " SET TENTACGIA = '" + txbTenTacGia.Text + "', NAMSINH = '" + ngaysinh.ToString("yyyy-MM-dd") + "', " +
-                    "NAMMAT = '" + ngaymat.ToString("yyyy-MM-dd") + "', QUEQUAN = '" + txbQueQuan.Text + "' WHERE MATACGIA = '" + txbMaTacGia.Text + "'";
+                    " SET TENTG = '" + txbTenTacGia.Text + "', NAMSINH = '" + ngaysinh.ToString("yyyy-MM-dd") + "', " +
+                    "NAMMAT = '" + ngaymat.ToString("yyyy-MM-dd") + "', QUEQUAN = '" + txbQueQuan.Text + "' WHERE MATG = '" + txbMaTacGia.Text + "'";
                 DataTable data = DataProvider.Instance.ExecuteQuery(query);                
                 MessageBox.Show("ĐÃ CẬP NHẬP", "THÔNG BÁO"); 
                 txbMaTacGia.Text = "";
