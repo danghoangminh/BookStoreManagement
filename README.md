@@ -94,7 +94,7 @@ Mô hình này gồm các giai đoạn xử lý nối tiếp nhau như sau:
 
 - Testing: thực hiện kiểm thử cho nhóm các thành phần và kiểm thử hệ thống. Kiểm tra các ngoại lệ có thể xảy ra và sửa lỗi
 ## 2.2. Kế hoạch
-![](https://github.com/danghoangminh/quan-li-nha-sach/blob/finalcode/roadmap.png)
+![](https://github.com/danghoangminh/BookStoreManagement/blob/finalcode/roadmap.png)
 
 Kế hoạch gồm 5 giai đoạn:
 - Analysis: Phân tích yêu cầu bài toán (03/04 đến 11/04)
